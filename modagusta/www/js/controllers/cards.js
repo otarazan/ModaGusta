@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [, 'ionic.contrib.ui.tinderCards'])
 
-.controller('CardsController',  function($scope,$http, $ionicPopup){
+.controller('CardsController',  function($scope,$http, $ionicPopup, $rootScope){
 
   // An alert dialog
   $scope.showAlert = function() {
@@ -33,17 +33,16 @@ angular.module('starter.controllers', [, 'ionic.contrib.ui.tinderCards'])
 
     $scope.cardSwipedRight = function(index) {
       console.log('Right swipe: item stored');
-      //Get cards
-      $scope.savedCards =window.localStorage.getItem("savedCards");
-      //if this is the first time,create list
-      if ($scope.savedCards == null ){
-        $scope.savedCards = [];
-      }
-      $scope.savedCards.push(angular.extend({}, $scope.cards[index]));
-      //set card
-      console.log(JSON.stringify($scope.savedCards));
-      window.localStorage.setItem("savedCards",JSON.stringify($scope.savedCards));
 
+         if ($rootScope.wishList == null ){
+                $rootScope.wishList = [];
+          }
+
+         $rootScope.wishList.push(angular.extend({},$scope.cards[index]));
+          window.localStorage['wishList'] = JSON.stringify($rootScope.wishList);
+
+          var wishList = JSON.parse(window.localStorage['wishList'] || '{}');
+          console.log(wishList);
 
     }
 
