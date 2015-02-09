@@ -8,6 +8,7 @@
             <td-card id="td-card" ng-repeat="card in cards" on-destroy="cardDestroyed($index)"
                      on-swipe-left="cardSwipedLeft($index)" on-swipe-right="cardSwipedRight($index)"
                      on-partial-swipe="cardPartialSwipe(amt)" on-doubletap="onDoubletap($index)"  on-release="onRelease()"  on-tap="onTap($index)" on-touch="cardTouch($index)">
+
                 <div class="title">
                     {{card.title}}
                 </div>
@@ -18,5 +19,16 @@
                 </div>
             </td-card>
         </td-cards>
+
+        <div align="center" style="margin-top:400px">
+            <button class="button button-positive" ng-click="btnDislike()">
+                <i class="icon ion-close"></i>
+            </button>
+            <button class="button button-positive" onclick="window.plugins.socialsharing.share('Message, subject, image and link',
+        'The subject', 'https://www.google.nl/images/srpr/logo4w.png', 'http://www.x-services.nl')"><i class="icon ion-share"></i></button>
+            <button class="button button-positive">
+                <i class="icon ion-heart"></i>
+            </button>
+        </div>
     </ion-pane>
 </ion-nav-view>

@@ -75,5 +75,16 @@ angular.module('starter.controllers', [, 'ionic.contrib.ui.tinderCards'])
     // called asynchronously if an error occurs
     // or server returns response with an error status.
   });
+
+
+  $scope.btnDislike = function(){
+
+  };
+
+  $scope.btnLike = function(){
+
+  };
+
+
 });
 var server="http://localhost:3000/";
