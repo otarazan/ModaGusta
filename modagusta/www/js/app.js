@@ -80,4 +80,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             $scope.closeLogin();
           }, 1000);
         };
+
+
+        //Read saved card info
+
+         $scope.savedCards=JSON.parse(window.localStorage.getItem("savedCards"));
+          //if this is the first time,create list
+          if ($scope.savedCards==null){
+            $scope.savedCards = [];
+         }
+
       });

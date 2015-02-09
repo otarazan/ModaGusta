@@ -32,11 +32,25 @@ angular.module('starter.controllers', [, 'ionic.contrib.ui.tinderCards'])
     }
 
     $scope.cardSwipedRight = function(index) {
-      console.log('Right swipe');
+      console.log('Right swipe: item stored');
+      //Get cards
+      $scope.savedCards =window.localStorage.getItem("savedCards");
+      //if this is the first time,create list
+      if ($scope.savedCards == null ){
+        $scope.savedCards = [];
+      }
+      $scope.savedCards= $scope.cards;
+      $scope.savedCards.push(angular.extend({}, $scope.cards[index]));
+      //set card
+      console.log("wrte");
+      console.log(JSON.stringify($scope.savedCards));
+      window.localStorage.setItem("savedCards",JSON.stringify($scope.savedCards));
+
+
     }
 
     $scope.onDoubletap = function(index) {
-      console.log('Rig21321321ht swipe');
+      console.log('Right swipe');
       touched=false;
     }
 
