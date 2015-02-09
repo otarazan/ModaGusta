@@ -39,10 +39,8 @@ angular.module('starter.controllers', [, 'ionic.contrib.ui.tinderCards'])
       if ($scope.savedCards == null ){
         $scope.savedCards = [];
       }
-      $scope.savedCards= $scope.cards;
       $scope.savedCards.push(angular.extend({}, $scope.cards[index]));
       //set card
-      console.log("wrte");
       console.log(JSON.stringify($scope.savedCards));
       window.localStorage.setItem("savedCards",JSON.stringify($scope.savedCards));
 
