@@ -32,14 +32,16 @@ myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,l
     }
 
     $scope.cardSwipedRight = function(index) {
-      console.log('Right swipe: item stored');
+        console.log('Right swipe: item stored');
 
-         if ($rootScope.wishList == null ){
-                $rootScope.wishList = [];
-          }
+        var wishList=localStorageService.get('wishList');
 
-         $rootScope.wishList.push(angular.extend({},$scope.cards[index]));
-         localStorageService.set('wishList', $rootScope.wishList);
+        if (wishList == null ){
+            wishList = [];
+        }
+
+        wishList.push(angular.extend({},$scope.cards[index]));
+        localStorageService.set('wishList', wishList);
 
     }
 
@@ -71,19 +73,6 @@ myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,l
     // called asynchronously if an error occurs
     // or server returns response with an error status.
   });
-
-
-  $scope.btnDislike = function(){
-
-  };
-
-  $scope.btnLike = function(){
-
-  $scope.cardSwipedRight();
-
-
-  };
-
 
 });
 var server="http://localhost:3000/";
