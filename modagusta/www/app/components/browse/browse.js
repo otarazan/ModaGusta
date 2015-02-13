@@ -32,15 +32,20 @@ myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,l
     }
 
     $scope.cardSwipedRight = function(index) {
-        console.log('Right swipe: item stored');
+        console.log('Right swipe: item stored'+$scope.cards[index].id);
+        var card = $scope.cards[index]
 
         var wishList=localStorageService.get('wishList');
 
         if (wishList == null ){
             wishList = [];
         }
-
-        wishList.push(angular.extend({},$scope.cards[index]));
+        for (var oldCard in wishList){
+            if(oldCard.id==card.id ){
+             break;
+            }
+        }
+        wishList.push(angular.extend({},card));
         localStorageService.set('wishList', wishList);
 
     }
