@@ -25,8 +25,8 @@ myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,l
       $scope.cards.push(angular.extend({}, newCard));
     }
 
-    for(var i = 0; i < 3; i++){
-    $scope.addCard()
+    for(var i = 0; i < 12; i++){
+      $scope.addCard()
     };//readability :)
 
     $scope.cardSwipedLeft = function(index) {
@@ -42,14 +42,18 @@ myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,l
         if (wishList == null ){
             wishList = [];
         }
-        for (var oldCard in wishList){
-            if(oldCard.id==card.id ){
-             break;
-            }
+        //if there are similar items dont add{
+        console.log(JSON.stringify(wishList));
+
+        for (i = 0; i < wishList.length; i++) {
+          if(card.id==wishList[i].id){
+            console.log("same item ignored");
+            return false;
+          }
         }
         wishList.push(angular.extend({},card));
         localStorageService.set('wishList', wishList);
-
+        return true;
     }
 
     $scope.onDoubletap = function(index) {
