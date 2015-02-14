@@ -25,7 +25,7 @@ myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,l
       $scope.cards.push(angular.extend({}, newCard));
     }
 
-    for(var i = 0; i < 12; i++){
+    for(var i = 0; i < 3; i++){
     $scope.addCard()
     };//readability :)
 
