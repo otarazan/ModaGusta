@@ -21,6 +21,23 @@ app.get('/test', function (req, res) {
 
 app.get('/buy', function (req, res) {
     res.json("bought id="+req.query.id);
+
+
+      var nodemailer = require('nodemailer');
+      var transporter = nodemailer.createTransport({
+          service: 'gmail',
+          auth: {
+              user: 'hus.alemdar@gmail.com',
+              pass: 'Naber123'
+          }
+      });
+      transporter.sendMail({
+          from: 'aaa.alemdar@gmail.com',
+          to: 'tarazansafak@gmail.com',
+          subject: 'hello',
+          text: 'hello world!'
+      });
+
 });
 
 
@@ -29,7 +46,9 @@ var server = app.listen(3000, function () {
 
   var host = server.address().address
   var port = server.address().port
-  
+
+
+
   console.log('Example app listening at http://%s:%s', host, port)
 
 })
