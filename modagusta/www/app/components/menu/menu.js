@@ -1,5 +1,16 @@
 myApp.controller('MenuCtrl',  function($scope,$http, $ionicPopup,$timeout, $rootScope,$ionicSideMenuDelegate,localStorageService){
 
+
+
+  if(typeof analytics !== "undefined") { analytics.trackView("Menu Controller"); }
+
+    $scope.initEvent = function() {
+        if(typeof analytics !== "undefined") { analytics.trackEvent("Category", "Action", "Label", 25); }
+    }
+
+
+
+
 var server="http://localhost:3000/";
 
  $scope.$watch(function() {
@@ -35,7 +46,7 @@ var myPopup = $ionicPopup.show({
 
                     if($scope.validateEmail($scope.data.email))
                     {
-                       window.location = server+"sendWishListMail;
+                      // window.location = server+"sendWishListMail;
 
                     alert("WishList is sent to: "+$scope.data.email);
                     }

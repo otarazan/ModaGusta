@@ -6,7 +6,7 @@
 |        | Product filter      |          |   
 | OK     | Swipe left to pass  |          |  
 | OK       | Swipe right to add wishlist                                                                                      |          |  
-|        | Liked item can be send via whatsapp,Liked item can be shared via instagram,Liked item can be shared via facebook |          |  
+| OK       | Liked item can be send via whatsapp,Liked item can be shared via instagram,Liked item can be shared via facebook |          |  
 | OK       | Wishlist can be send via email   |  How is this possible without DB?        |  
 |        |   |          |   
 |        | Google analytics       |          |   
