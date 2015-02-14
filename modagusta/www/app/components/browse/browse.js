@@ -3,11 +3,11 @@
 myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,localStorageService){
 
 
-  if(typeof analytics !== "undefined") { analytics.trackView("Browse Controller"); }
-
-    $scope.initEvent = function() {
-        if(typeof analytics !== "undefined") { analytics.trackEvent("Category", "Action", "Label", 25); }
-    }
+//  if(typeof analytics !== "undefined") { analytics.trackView("Browse Controller"); }
+//
+//    $scope.initEvent = function() {
+//        if(typeof analytics !== "undefined") { analytics.trackEvent("Category", "Action", "Label", 25); }
+//    }
 
 
   // An alert dialog
@@ -96,8 +96,6 @@ myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,l
   });
 
 });
-<<<<<<< HEAD
+
 var server="http://localhost:3000/";
-=======
-var server="http://localhost:3000/";
->>>>>>> 96212ef3ae2d1e74a1010f33789c3fdc4562b62b
+

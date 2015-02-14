@@ -1,12 +1,12 @@
 myApp.controller('MenuCtrl',  function($scope,$http, $ionicPopup,$timeout, $rootScope,$ionicSideMenuDelegate,localStorageService){
 
 
-
-  if(typeof analytics !== "undefined") { analytics.trackView("Menu Controller"); }
-
-    $scope.initEvent = function() {
-        if(typeof analytics !== "undefined") { analytics.trackEvent("Category", "Action", "Label", 25); }
-    }
+//
+//  if(typeof analytics !== "undefined") { analytics.trackView("Menu Controller"); }
+//
+//    $scope.initEvent = function() {
+//        if(typeof analytics !== "undefined") { analytics.trackEvent("Category", "Action", "Label", 25); }
+//    }
 
 
 
@@ -46,11 +46,9 @@ var myPopup = $ionicPopup.show({
 
                     if($scope.validateEmail($scope.data.email))
                     {
-<<<<<<< HEAD
 
-=======
                        window.location = server+"sendWishListMail";
->>>>>>> 96212ef3ae2d1e74a1010f33789c3fdc4562b62b
+
 
                     alert("WishList is sent to: "+$scope.data.email);
                     }
