@@ -23,20 +23,27 @@ app.get('/buy', function (req, res) {
     res.json("bought id="+req.query.id);
 
 
-      var nodemailer = require('nodemailer');
-      var transporter = nodemailer.createTransport({
-          service: 'gmail',
-          auth: {
-              user: 'hus.alemdar@gmail.com',
-              pass: 'Naber123'
-          }
-      });
-      transporter.sendMail({
-          from: 'aaa.alemdar@gmail.com',
-          to: 'tarazansafak@gmail.com',
-          subject: 'hello',
-          text: 'hello world!'
-      });
+});
+
+app.get('/sendWishListMail', function (req, res) {
+
+
+var nodemailer = require('nodemailer');
+ var transporter = nodemailer.createTransport({
+                                service: 'gmail',
+                                auth: {
+                                    user: 'hus.alemdar@gmail.com',
+                                    pass: 'Naber123'
+                                }
+                            });
+                            transporter.sendMail({
+                                from: 'hus.alemdar@gmail.com',
+                                to: 'tarazansafak@gmail.com',
+                                subject: 'ModaGusta WishList'
+                            });
+
+    res.json("ok");
+
 
 });
 

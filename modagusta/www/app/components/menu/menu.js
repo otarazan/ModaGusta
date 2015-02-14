@@ -33,9 +33,9 @@ var myPopup = $ionicPopup.show({
              e.preventDefault();
            } else {
 
-
                     if($scope.validateEmail($scope.data.email))
                     {
+                       window.location = server+"sendWishListMail;
 
                     alert("WishList is sent to: "+$scope.data.email);
                     }
