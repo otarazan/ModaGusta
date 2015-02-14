@@ -19,13 +19,13 @@ var myApp = angular.module('starter', ['ionic','ionic.contrib.ui.tinderCards','L
       StatusBar.styleDefault();
     }
 
-//            if(typeof analytics !== "undefined") {
-//                 analytics.startTrackerWithId("UA-47701506-5");
-//                 alert("google analytics is available")
-//            }else {
-//                     console.log("Google Analytics Unavailable");
-//                        alert("google analytics is NOT available")
-//            }
+            if(typeof analytics !== "undefined") {      
+			analytics.startTrackerWithId("UA-47701506-5");
+                 alert("google analytics is available")
+            }else {
+                     console.log("Google Analytics Unavailable");
+                        alert("google analytics is NOT available")
+            }
 
   });
 })
