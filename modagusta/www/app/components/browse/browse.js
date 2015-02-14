@@ -27,20 +27,21 @@ myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,l
     var cardTypes = data;
 
     $scope.cards = [];
-
-    $scope.addCard = function(i) {
-      var newCard = cardTypes[Math.floor(Math.random() * cardTypes.length)];
-      $scope.cards.push(angular.extend({}, newCard));
-    }
-
-    for(var i = 0; i < 3; i++){
-    $scope.addCard()
-    };//readability :)
+    
+    for (i = 0; i < cardTypes.length; i++) {
+      $scope.cards.push(angular.extend({}, cardTypes[i]));
+    };
 
     $scope.cardSwipedLeft = function(index) {
       console.log('Left swipe');
     }
 
+    $scope.likedBtn = function(index) {
+      //Remote last item manually
+      $(".td-cards td-card:last").fadeOut(100,function(){this.remove();});
+      //Continue same as swiping
+      $scope.cardSwipedRight(index);
+    }
     $scope.cardSwipedRight = function(index) {
         console.log('Right swipe: item stored'+$scope.cards[index].id);
         var card = $scope.cards[index]
@@ -50,14 +51,18 @@ myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,l
         if (wishList == null ){
             wishList = [];
         }
-        for (var oldCard in wishList){
-            if(oldCard.id==card.id ){
-             break;
-            }
+        //if there are similar items dont add{
+        console.log(JSON.stringify(wishList));
+
+        for (i = 0; i < wishList.length; i++) {
+          if(card.id==wishList[i].id){
+            console.log("same item ignored");
+            return false;
+          }
         }
         wishList.push(angular.extend({},card));
         localStorageService.set('wishList', wishList);
-
+        return true;
     }
 
     $scope.onDoubletap = function(index) {
@@ -91,4 +96,8 @@ myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,l
   });
 
 });
-var server="http://192.168.1.5:3000/";
+<<<<<<< HEAD
+var server="http://localhost:3000/";
+=======
+var server="http://localhost:3000/";
+>>>>>>> 96212ef3ae2d1e74a1010f33789c3fdc4562b62b
