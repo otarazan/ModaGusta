@@ -25,7 +25,9 @@ myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,l
       $scope.cards.push(angular.extend({}, newCard));
     }
 
-    for(var i = 0; i < 12; i++) $scope.addCard();
+    for(var i = 0; i < 12; i++){
+    $scope.addCard()
+    };//readability :)
 
     $scope.cardSwipedLeft = function(index) {
       console.log('Left swipe');
@@ -67,6 +69,7 @@ myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,l
     $scope.onTap = function(index) {
       console.log($scope.cards[index].image);
       window.location = server+"buy?id="+$scope.cards[index].id
+
     }
 
     $scope.cardDestroyed = function(index) {

@@ -20,8 +20,7 @@ $scope.data = {}
 
 var myPopup = $ionicPopup.show({
      template: '<input type="normal" ng-model="data.email">',
-     title: 'Enter Wi-Fi Password',
-     subTitle: 'Please use normal things',
+     title: 'Please enter your E-mail.',
      scope: $scope,
      buttons: [
        { text: 'Cancel' },
@@ -37,8 +36,6 @@ var myPopup = $ionicPopup.show({
 
                     if($scope.validateEmail($scope.data.email))
                     {
-
-
 
                     alert("WishList is sent to: "+$scope.data.email);
                     }
@@ -67,7 +64,12 @@ $scope.validateEmail = function(email){
 }//validateEmail
 
 
+$scope.btnRemoveFromWishList = function(index){
 
+$scope.wishList.splice($scope.wishList.indexOf(index), 1);
+ localStorageService.set('wishList', $scope.wishList);
+
+};
 
 
 $scope.clearWishList = function(){

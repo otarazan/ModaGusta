@@ -65,7 +65,7 @@
         </ion-header-bar>
         <ion-content>
             <ion-list>
-                <ion-item nav-clear menu-close ng-repeat="card in wishList">
+                <ion-item nav-clear  ng-repeat="card in wishList">
 
                     <div >
                         <div style="float:left;">
@@ -75,14 +75,14 @@
                             {{card.title}}
                         </div>
                         <div style="float:left;">
-                            <a href="http://localhost:3000/buy?id={{card.id}}" target="_blank">
+                            <a ng-href="http://localhost:3000/buy?id={{card.id}}" target="_blank">
                             <button class="button button-positive button-small" ng-click="btnBuy()">
                                 BUY
                             </button>
                                 </a>
                         </div>
                         <div style="float:left;">
-                            <button class="button button-assertive button-small" ng-click="btnRemoveFromWishList()">
+                            <button class="button button-assertive button-small" ng-click="btnRemoveFromWishList({{card.id}})">
                                 <i class="icon ion-close"></i>
                             </button>
                         </div>
