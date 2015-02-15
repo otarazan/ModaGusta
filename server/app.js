@@ -51,18 +51,17 @@ app.post('/sendWishListMail', function(req, res) {
 
 
     req.on('data', function(data) {
-        var wishList=JSON.parse(data.toString());
+        var wishList=JSON.parse(data.toString()).wishList;
         console.log("Received mail data");
-        console.log(wishList.size);
-        console.log(wishList[0]);
+
         //Prepare data in mail format
         var mail = "Your Wish List:<br>";
         for (i = 0; i < wishList.length; i++) {
             console.log(mail);
-            mail += wishList[i].title + "<a href='#'><img height='60' width='60' src=''/></a><br>";
+            mail += wishList[i].title + "<a href='#'><img height='60' width='60' src='http://localhost:8100/"+ wishList[i].image +"'/></a><br>";
         };
         console.log(mail);
-      /*  var nodemailer = require('nodemailer');
+        var nodemailer = require('nodemailer');
         var transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
@@ -76,7 +75,6 @@ app.post('/sendWishListMail', function(req, res) {
             subject: 'ModaGusta WishList',
             html: mail
         });
-*/
         res.json("ok");
 
 
