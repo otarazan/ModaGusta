@@ -10,6 +10,17 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
 
 
 
+    //LogintoReklamAPI
+    $http.post("http://feed.reklamaction.com/restapi/account/login", {"login":"olcaytarazan@gmail.com","password":"Maria!123"}).
+          success(function(data, status, headers, config) {
+                console.log("ok");
+          }).
+          error(function(data, status, headers, config) {
+                console.log("fail");
+          });
+
+
+
     $scope.validateEmail = function(email) {
 
             var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
