@@ -15,8 +15,8 @@
     "shelljs": "^0.3.0"
   },
   "cordovaPlugins": [
-    "nl.x-services.plugins.socialsharing",
-    "https://github.com/jcjee/email-composer.git",
-    "https://github.com/danwilson/google-analytics-plugin.git"
+    "https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git",
+    "https://github.com/danwilson/google-analytics-plugin.git",
+    "org.apache.cordova.inappbrowser"
   ]
 }
