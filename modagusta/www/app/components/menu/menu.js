@@ -1,12 +1,12 @@
 myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $rootScope, $ionicSideMenuDelegate, localStorageService) {
 
 
-//
-//  if(typeof analytics !== "undefined") { analytics.trackView("Menu Controller"); }
-//
-//    $scope.initEvent = function() {
-//        if(typeof analytics !== "undefined") { analytics.trackEvent("Category", "Action", "Label", 25); }
-//    }
+
+  if(typeof analytics !== "undefined") { analytics.trackView("Menu Controller"); }
+
+    $scope.initEvent = function() {
+        if(typeof analytics !== "undefined") { analytics.trackEvent("Category", "Action", "Label", 25); }
+    }
 
 
 //
@@ -86,10 +86,11 @@ $.ajax({
                         if ($scope.validateEmail($scope.data.email)) {
                             $http.post(server+"sendWishListMail", {wishList:$scope.wishList}).
                                   success(function(data, status, headers, config) {
-                                        console.log("ok");
+                                        console.log("sending mail isk");
+                                        alert("Mail is sent to: "+$scope.data.email);
                                   }).
                                   error(function(data, status, headers, config) {
-                                        console.log("fail");
+                                        console.log("error sending mail");
                                   });
                         } else {
                             alert("Please enter a valid email... ");

@@ -3,11 +3,11 @@
 myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,localStorageService){
 
 
-//  if(typeof analytics !== "undefined") { analytics.trackView("Browse Controller"); }
-//
-//    $scope.initEvent = function() {
-//        if(typeof analytics !== "undefined") { analytics.trackEvent("Category", "Action", "Label", 25); }
-//    }
+  if(typeof analytics !== "undefined") { analytics.trackView("Browse Controller"); }
+
+    $scope.initEvent = function() {
+        if(typeof analytics !== "undefined") { analytics.trackEvent("Category", "Action", "Label", 25); }
+    }
 
 
   $http.get(server+'test').

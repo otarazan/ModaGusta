@@ -9,7 +9,7 @@ var myApp = angular.module('starter', ['ionic','ionic.contrib.ui.tinderCards','L
 
 
 
-.run(function($ionicPlatform) {
+.run(['$ionicPlatform',function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -21,23 +21,25 @@ var myApp = angular.module('starter', ['ionic','ionic.contrib.ui.tinderCards','L
       StatusBar.styleDefault();
     }
 
-//            if(typeof analytics !== "undefined") {
-//			analytics.startTrackerWithId("UA-47701506-5");
-//                 // alert("google analytics is available");
-//                 console.log("analytic is working");
-//            }else {
-//                     console.log("Google Analytics Unavailable");
-//                        //alert("google analytics is NOT available");
-//                         console.log("analytic is NOT working");
-//            }
+ if(typeof analytics !== "undefined") {
+			window.analytics.startTrackerWithId("UA-47701506-5");
+                  alert("google analytics is available");
+                console.log("analytic is working");
+                window.analytics.trackView('Main');
+                window.analytics.debugMode()
+            }else {
+                     console.log("Google Analytics Unavailable");
+                        alert("google analytics is NOT available");
+                         console.log("analytic is NOT working");
+
+            }
 
   });
-})
+}]).config(function($stateProvider, $urlRouterProvider) {
 
-.config(function($stateProvider, $urlRouterProvider) {
-  $stateProvider
 
-  .state('app', {
+
+  $stateProvider.state('app', {
     url: "/app",
     abstract: true,
     templateUrl: "app/components/menu/menu.html",
@@ -73,8 +75,6 @@ myApp.config(function ($httpProvider,localStorageServiceProvider) {
     .setPrefix('myApp')
     .setStorageType('sessionStorage')
     .setNotify(true, true);
- $httpProvider.defaults.useXDomain = true;
-        delete $httpProvider.defaults.headers.common['X-Requested-With'];
 });
 
 
