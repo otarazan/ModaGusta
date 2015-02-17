@@ -15,8 +15,6 @@
     "shelljs": "^0.3.0"
   },
   "cordovaPlugins": [
-    "https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git",
-    "https://github.com/danwilson/google-analytics-plugin.git",
-    "org.apache.cordova.inappbrowser"
+    "https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git"
   ]
 }

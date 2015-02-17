@@ -1,12 +1,12 @@
 myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $rootScope, $ionicSideMenuDelegate, localStorageService) {
 
 
-
-  if(typeof analytics !== "undefined") { analytics.trackView("Menu Controller"); }
-
-    $scope.initEvent = function() {
-        if(typeof analytics !== "undefined") { analytics.trackEvent("Category", "Action", "Label", 25); }
-    }
+//
+//  if(typeof analytics !== "undefined") { analytics.trackView("Menu Controller"); }
+//
+//    $scope.initEvent = function() {
+//        if(typeof analytics !== "undefined") { analytics.trackEvent("Category", "Action", "Label", 25); }
+//    }
 
 
 //
@@ -107,7 +107,7 @@ $.ajax({
 
 
 
-    var server="http://localhost:3000/";
+    var server="http://192.168.1.12:3000/";
 
     $scope.$watch(function() {
         return $ionicSideMenuDelegate.isOpenRight();

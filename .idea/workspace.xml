@@ -2,13 +2,90 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c76fa30-72ed-4195-a482-95173a86175b" name="Default" comment="">
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\.fetch.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\android\UniversalAnalyticsPlugin.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\android\libGoogleAnalyticsServices.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\ios\GAI.h" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\ios\GAIDictionaryBuilder.h" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\ios\GAIEcommerceFields.h" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\ios\GAIEcommerceProduct.h" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\ios\GAIEcommerceProductAction.h" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\ios\GAIEcommercePromotion.h" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\ios\GAIFields.h" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\ios\GAILogger.h" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\ios\GAITrackedViewController.h" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\ios\GAITracker.h" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\ios\UniversalAnalyticsPlugin.h" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\ios\UniversalAnalyticsPlugin.m" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\ios\libAdIdAccess.a" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\ios\libGoogleAnalyticsServices.a" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\lavaca\AnalyticsService.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\com.danielcwilson.plugins.googleanalytics\www\analytics.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\.fetch.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\NOTICE" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\RELEASENOTES.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\doc\de\index.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\doc\es\index.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\doc\fr\index.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\doc\index.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\doc\it\index.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\doc\ja\index.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\doc\ko\index.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\doc\pl\index.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\doc\ru\index.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\doc\zh\index.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\amazon\InAppBrowser.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\amazon\InAppChromeClient.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\android\InAppBrowser.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\android\InAppBrowserDialog.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\android\InAppChromeClient.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-hdpi\ic_action_next_item.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-hdpi\ic_action_previous_item.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-hdpi\ic_action_remove.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-mdpi\ic_action_next_item.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-mdpi\ic_action_previous_item.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-mdpi\ic_action_remove.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-xhdpi\ic_action_next_item.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-xhdpi\ic_action_previous_item.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-xhdpi\ic_action_remove.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-xxhdpi\ic_action_next_item.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-xxhdpi\ic_action_previous_item.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-xxhdpi\ic_action_remove.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\blackberry10\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\firefoxos\InAppBrowserProxy.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\ios\CDVInAppBrowser.h" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\ios\CDVInAppBrowser.m" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\ubuntu\InAppBrowser.qml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\ubuntu\InAppBrowser_escapeScript.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\ubuntu\close.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\ubuntu\inappbrowser.cpp" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\ubuntu\inappbrowser.h" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\windows\InAppBrowserProxy.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\src\wp\InAppBrowser.cs" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\tests\plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\tests\resources\inject.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\tests\resources\inject.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\tests\resources\inject.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\tests\resources\local.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\tests\resources\local.pdf" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\tests\resources\video.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\tests\tests.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\www\inappbrowser.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\Freelance\ModaGusta\modagusta\plugins\org.apache.cordova.inappbrowser\www\windows8\InAppBrowserProxy.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modagusta/plugins/android.json" afterPath="$PROJECT_DIR$/modagusta/plugins/android.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modagusta/www/app/app.js" afterPath="$PROJECT_DIR$/modagusta/www/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/app.js" afterPath="$PROJECT_DIR$/server/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modagusta/www/app/components/browse/browse.js" afterPath="$PROJECT_DIR$/modagusta/www/app/components/browse/browse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modagusta/www/index.html" afterPath="$PROJECT_DIR$/modagusta/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js" afterPath="$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modagusta/package.json" afterPath="$PROJECT_DIR$/modagusta/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modagusta/www/app/components/settings/settings.js" afterPath="$PROJECT_DIR$/modagusta/www/app/components/settings/settings.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ModaGusta.iws" />
@@ -32,38 +109,7 @@
     <favorites_list name="ModaGusta" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="menu.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33854908" vertical-offset="136" max-vertical-offset="2210">
-              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modagusta/www/app/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="746" max-vertical-offset="1462">
-              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modagusta/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="799">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,16 +129,17 @@
         <option value="$PROJECT_DIR$/modagusta/www/css/cards.css" />
         <option value="$PROJECT_DIR$/modagusta/www/app/components/browse/browse.html" />
         <option value="$PROJECT_DIR$/modagusta/www/app/components/menu/menu.html" />
-        <option value="$PROJECT_DIR$/modagusta/www/app/components/settings/settings.js" />
         <option value="$PROJECT_DIR$/modagusta/platforms/android/assets/www/app/components/menu/menu.js" />
         <option value="$PROJECT_DIR$/modagusta/platforms/android/ant-build/proguard.txt" />
         <option value="$PROJECT_DIR$/modagusta/plugins/android.json" />
         <option value="$PROJECT_DIR$/modagusta/package.json" />
         <option value="$PROJECT_DIR$/server/app.js" />
-        <option value="$PROJECT_DIR$/modagusta/www/app/components/browse/browse.js" />
         <option value="$PROJECT_DIR$/modagusta/www/index.html" />
+        <option value="$PROJECT_DIR$/modagusta/www/app/components/settings/settings.js" />
         <option value="$PROJECT_DIR$/modagusta/www/app/app.js" />
         <option value="$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js" />
+        <option value="$PROJECT_DIR$/modagusta/www/app/components/browse/browse.js" />
+        <option value="$PROJECT_DIR$/modagusta/platforms/android/ant-build/CordovaApp.ap_.d" />
       </list>
     </option>
   </component>
@@ -254,66 +301,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ModaGusta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ModaGusta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modagusta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ModaGusta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ModaGusta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modagusta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="browse" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -512,7 +499,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1552" height="853" extended-state="1" />
+    <frame x="-8" y="-8" width="1552" height="853" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -526,7 +513,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18359375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14973958" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44489247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -536,7 +524,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44591346" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -561,14 +548,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="1638">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/menu/menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1069" max-vertical-offset="1836">
@@ -853,24 +832,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/settings/settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06882591" vertical-offset="0" max-vertical-offset="494">
-          <caret line="2" column="4" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/menu/menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="1944">
           <caret line="78" column="16" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modagusta/plugins/nl.x-services.plugins.socialsharing/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3706" max-vertical-offset="7361">
-          <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -888,40 +853,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/browse/browse.js">
+    <entry file="file://$PROJECT_DIR$/modagusta/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.10306407" vertical-offset="99" max-vertical-offset="799">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="984" max-vertical-offset="1700">
-          <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modagusta/www/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="746" max-vertical-offset="1462">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1700">
+          <caret line="86" column="35" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modagusta/www/index.html">
+    <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/settings/settings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="799">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33854908" vertical-offset="136" max-vertical-offset="2210">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="2210">
+          <caret line="109" column="35" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modagusta/www/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modagusta/platforms/android/ant-build/CordovaApp.ap_.d">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64675325" vertical-offset="8421" max-vertical-offset="8806">
+          <caret line="510" column="103" selection-start-line="510" selection-start-column="103" selection-end-line="510" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/browse/browse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="950" max-vertical-offset="1666">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61388886" vertical-offset="0" max-vertical-offset="360">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
           <folding />
         </state>
       </provider>
