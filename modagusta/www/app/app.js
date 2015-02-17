@@ -7,6 +7,8 @@
 
 var myApp = angular.module('starter', ['ionic','ionic.contrib.ui.tinderCards','LocalStorageModule'])
 
+
+
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -65,9 +67,14 @@ var myApp = angular.module('starter', ['ionic','ionic.contrib.ui.tinderCards','L
   $urlRouterProvider.otherwise('/app/browse');
 });
 
-myApp.config(function (localStorageServiceProvider) {
+
+myApp.config(function ($httpProvider,localStorageServiceProvider) {
   localStorageServiceProvider
     .setPrefix('myApp')
     .setStorageType('sessionStorage')
-    .setNotify(true, true)
+    .setNotify(true, true);
+ $httpProvider.defaults.useXDomain = true;
+        delete $httpProvider.defaults.headers.common['X-Requested-With'];
 });
+
+

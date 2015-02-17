@@ -9,15 +9,31 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
     }
 
 
+//
+//    //LogintoReklamAPI
+//    $http.post("http://feed.reklamaction.com/restapi/account/login/", {"login":"nihan.meral@adsalsagroup.com","password":"tradsalsa4"}).
+//          success(function(data, status, headers, config) {
+//                console.log("reklamaction is ok");
+//          }).
+//          error(function(data, status, headers, config) {
+//                console.log("reklamaction fail result: " + status);
+//          });
 
-    //LogintoReklamAPI
-    $http.post("http://feed.reklamaction.com/restapi/account/login", {"login":"olcaytarazan@gmail.com","password":"Maria!123"}).
-          success(function(data, status, headers, config) {
-                console.log("ok");
-          }).
-          error(function(data, status, headers, config) {
-                console.log("fail");
-          });
+
+$.ajax({
+  type: "POST",
+  url: "http://private-anon-375fa4c77-reklamactionfeed.apiary-proxy.com/restapi/account/login",
+  data: "{\"login\":\"nihan.meral@adsalsagroup.com\",\"password\":\"tradsalsa4\"}",
+  success: function(data, status, headers, config) {
+            console.log("reklamaction is ok");
+             },
+
+  fail:  function(data, status, headers, config) {
+             console.log("reklamaction fail result: " + status);
+          }
+});
+
+
 
 
 
@@ -51,7 +67,7 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
     $scope.sendWishListMail = function() {
 
         $scope.data = {}
-        $scope.data.email="olcaytarazan@gmail.com";
+        $scope.data.email="tarazansafak@gmail.com";
         var myPopup = $ionicPopup.show({
             template: '<input type="text" ng-model="data.email">',
             title: 'Please enter your E-mail.',

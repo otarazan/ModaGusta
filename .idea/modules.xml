@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ModaGusta.iml" filepath="$PROJECT_DIR$/.idea/ModaGusta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modagusta/plugins/com.danielcwilson.plugins.googleanalytics/com.danielcwilson.plugins.googleanalytics.iml" filepath="$PROJECT_DIR$/modagusta/plugins/com.danielcwilson.plugins.googleanalytics/com.danielcwilson.plugins.googleanalytics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modagusta/plugins/nl.x-services.plugins.socialsharing/src/nl.x-services.plugins.socialsharing.iml" filepath="$PROJECT_DIR$/modagusta/plugins/nl.x-services.plugins.socialsharing/src/nl.x-services.plugins.socialsharing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modagusta/plugins/org.apache.cordova.inappbrowser/src/org.apache.cordova.inappbrowser.iml" filepath="$PROJECT_DIR$/modagusta/plugins/org.apache.cordova.inappbrowser/src/org.apache.cordova.inappbrowser.iml" />
     </modules>
   </component>
 </project>

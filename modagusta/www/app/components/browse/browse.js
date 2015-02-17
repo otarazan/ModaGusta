@@ -10,18 +10,6 @@ myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,l
     }
 
 
-  // An alert dialog
-  $scope.showAlert = function() {
-    var alertPopup = $ionicPopup.alert({
-      title: 'Don\'t eat that!',
-      template: 'It might taste good'
-    });
-    alertPopup.then(function(res) {
-      console.log('Thank you for not eating my delicious ice cream cone');
-    });
-  };
-
-
   $http.get(server+'test').
   success(function(data, status, headers, config) {
     var cardTypes = data;
@@ -33,7 +21,10 @@ myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,l
     };
 
     $scope.cardSwipedLeft = function(index) {
-      console.log('Left swipe');
+
+         //Remote last item manually
+            $(".td-cards td-card:last").fadeOut(100,function(){this.remove();});
+
     }
 
     $scope.likedBtn = function(index) {
@@ -52,11 +43,11 @@ myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,l
             wishList = [];
         }
         //if there are similar items dont add{
-        console.log(JSON.stringify(wishList));
+     //   console.log(JSON.stringify(wishList));
 
         for (i = 0; i < wishList.length; i++) {
           if(card.id==wishList[i].id){
-            console.log("same item ignored");
+       //     console.log("same item ignored");
             return false;
           }
         }
@@ -66,28 +57,28 @@ myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,l
     }
 
     $scope.onDoubletap = function(index) {
-      console.log('Right swipe');
+     // console.log('Right swipe');
       touched=false;
     }
 
     $scope.cardTouch = function(index) {
-      console.log('Touched');
+    //  console.log('Touched');
 
     }
 
     $scope.onRelease = function(index) {
-      console.log('Released');
+    //  console.log('Released');
     }
 
     $scope.onTap = function(index) {
-      console.log($scope.cards[index].image);
+   //   console.log($scope.cards[index].image);
       window.location = server+"buy?id="+$scope.cards[index].id
 
     }
 
     $scope.cardDestroyed = function(index) {
       $scope.cards.splice(index, 1);
-      console.log('Card removed');
+   //   console.log('Card removed');
     }
   }).
   error(function(data, status, headers, config) {

@@ -71,7 +71,7 @@ app.post('/sendWishListMail', function(req, res) {
         });
         transporter.sendMail({
             from: 'hus.alemdar@gmail.com',
-            to: 'olcaytarazan@gmail.com',
+            to: 'tarazansafak@gmail.com',
             subject: 'ModaGusta WishList',
             html: mail
         });
