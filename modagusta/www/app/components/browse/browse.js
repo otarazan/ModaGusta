@@ -88,5 +88,5 @@ myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,l
 
 });
 
-var server="http://192.168.1.12:3000/";
+var server="http://1ocalhost:3000/";
 

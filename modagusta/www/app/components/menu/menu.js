@@ -1,6 +1,6 @@
 myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $rootScope, $ionicSideMenuDelegate, localStorageService) {
 
-
+var reklamActionToken;
 
   if(typeof analytics !== "undefined") { analytics.trackView("Menu Controller"); }
 
@@ -9,23 +9,16 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
     }
 
 
-//
-//    //LogintoReklamAPI
-//    $http.post("http://feed.reklamaction.com/restapi/account/login/", {"login":"nihan.meral@adsalsagroup.com","password":"tradsalsa4"}).
-//          success(function(data, status, headers, config) {
-//                console.log("reklamaction is ok");
-//          }).
-//          error(function(data, status, headers, config) {
-//                console.log("reklamaction fail result: " + status);
-//          });
 
 
 $.ajax({
   type: "POST",
-  url: "http://private-anon-375fa4c77-reklamactionfeed.apiary-proxy.com/restapi/account/login",
+  url: "http://feed.reklamaction.com/restapi/account/login",
   data: "{\"login\":\"nihan.meral@adsalsagroup.com\",\"password\":\"tradsalsa4\"}",
   success: function(data, status, headers, config) {
             console.log("reklamaction is ok");
+            reklamActionToken = data;
+            $scope.getProductID(reklamActionToken);
              },
 
   fail:  function(data, status, headers, config) {
@@ -33,10 +26,32 @@ $.ajax({
           }
 });
 
+$scope.getProductID = function(token){
+
+$http.get('http://feed.reklamaction.com/restapi/offers?accessToken='+token).
+  success(function(data, status, headers, config) {
+   console.log("product id" + JSON.stringify(data));
+    $scope.getproductsWithID('1691',token);
+  }).
+  error(function(data, status, headers, config) {
+ console.log("cant get product IDs");
+  });
+
+};
 
 
 
+$scope.getproductsWithID = function(id,token){
+$http.get('http://feed.reklamaction.com/restapi/products/offer/'+id+'?accessToken='+token).
+  success(function(data, status, headers, config) {
+   console.log("products" + JSON.stringify(data));
 
+  }).
+  error(function(data, status, headers, config) {
+ console.log("cant get products with ID");
+  });
+
+};
     $scope.validateEmail = function(email) {
 
             var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -108,7 +123,7 @@ $.ajax({
 
 
 
-    var server="http://192.168.1.12:3000/";
+    var server="http://localhost:3000/";
 
     $scope.$watch(function() {
         return $ionicSideMenuDelegate.isOpenRight();
