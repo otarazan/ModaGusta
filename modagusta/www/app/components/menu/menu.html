@@ -12,30 +12,46 @@
     </ion-side-menu-content>
 
 
-    <ion-side-menu side="left">
+    <ion-side-menu width="myWidthValue + 400" side="left">
         <ion-header-bar class="bar-stable">
             <h1 class="title">Menu</h1>
         </ion-header-bar>
         <ion-content>
             <ion-list>
-                <ion-item nav-clear menu-close href="#/app/browse">
-                    Browse
-                </ion-item>
-                <ion-item nav-clear menu-close href="#/app/settings">
-                    Settings
-                </ion-item>
                 <ion-item nav-clear menu-close href="#">
                     Filter
                     <div class="list">
 
                         <label class="item item-input item-select">
                             <div class="input-label">
-                                Category
+                                Kategoriler
                             </div>
                             <select>
-                                <option>All Categories</option>
-                                <option selected>2</option>
-                                <option>3</option>
+                                <option selected>Tümü</option>
+                                <option>Ayakkabı</option>
+                                <option>Çanta</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="list">
+
+                    <label class="item item-input item-select">
+                        <div class="input-label">
+                            İndirimler
+                        </div>
+                        <select>
+                            <option selected>Tümü</option>
+                        </select>
+                    </label>
+                </div>
+                    <div class="list">
+
+                        <label class="item item-input item-select">
+                            <div class="input-label">
+                                Fiyatlar
+                            </div>
+                            <select>
+                                <option selected>Tümü</option>
                             </select>
                         </label>
                     </div>
@@ -43,15 +59,19 @@
 
                         <label class="item item-input item-select">
                             <div class="input-label">
-                                Category
+                               Markalar
                             </div>
                             <select>
-                                <option>All Categories</option>
-                                <option selected>2</option>
-                                <option>3</option>
+                                <option selected>Tümü</option>
                             </select>
                         </label>
                     </div>
+                </ion-item>
+                <ion-item>
+                    <button type="button" class="btn btn-default">Filtrele</button>
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/settings">
+                    Settings
                 </ion-item>
             </ion-list>
         </ion-content>

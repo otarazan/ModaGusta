@@ -11,47 +11,20 @@ var reklamActionToken;
 
 
 
-$.ajax({
-  type: "POST",
-  url: "http://feed.reklamaction.com/restapi/account/login",
-  data: "{\"login\":\"nihan.meral@adsalsagroup.com\",\"password\":\"tradsalsa4\"}",
-  success: function(data, status, headers, config) {
-            console.log("reklamaction is ok");
-            reklamActionToken = data;
-            $scope.getProductID(reklamActionToken);
-             },
+//
+//$scope.getProductID = function(token){
+//
+//$http.get('http://feed.reklamaction.com/restapi/offers?accessToken='+token).
+//  success(function(data, status, headers, config) {
+//   console.log("product id" + JSON.stringify(data));
+//    $scope.getproductsWithID('1691',token);
+//  }).
+//  error(function(data, status, headers, config) {
+// console.log("cant get product IDs");
+//  });
+//
+//};
 
-  fail:  function(data, status, headers, config) {
-             console.log("reklamaction fail result: " + status);
-          }
-});
-
-$scope.getProductID = function(token){
-
-$http.get('http://feed.reklamaction.com/restapi/offers?accessToken='+token).
-  success(function(data, status, headers, config) {
-   console.log("product id" + JSON.stringify(data));
-    $scope.getproductsWithID('1691',token);
-  }).
-  error(function(data, status, headers, config) {
- console.log("cant get product IDs");
-  });
-
-};
-
-
-
-$scope.getproductsWithID = function(id,token){
-$http.get('http://feed.reklamaction.com/restapi/products/offer/'+id+'?accessToken='+token).
-  success(function(data, status, headers, config) {
-   console.log("products" + JSON.stringify(data));
-
-  }).
-  error(function(data, status, headers, config) {
- console.log("cant get products with ID");
-  });
-
-};
     $scope.validateEmail = function(email) {
 
             var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

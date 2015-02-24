@@ -23,13 +23,13 @@ var myApp = angular.module('starter', ['ionic','ionic.contrib.ui.tinderCards','L
 
  if(typeof analytics !== "undefined") {
 			window.analytics.startTrackerWithId("UA-47701506-5");
-                  alert("google analytics is available");
+             //     alert("google analytics is available");
                 console.log("analytic is working");
                 window.analytics.trackView('Main');
                 window.analytics.debugMode()
             }else {
                      console.log("Google Analytics Unavailable");
-                        alert("google analytics is NOT available");
+            //            alert("google analytics is NOT available");
                          console.log("analytic is NOT working");
 
             }

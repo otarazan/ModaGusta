@@ -10,14 +10,67 @@ myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,l
     }
 
 
-  $http.get(server+'test').
+  $http.get("http://api.gelirortaklari.com/feed?id=7235&key=bc34a7f1f7a2bd5dff42e9708530e63f7164&offset=0&count=10").
   success(function(data, status, headers, config) {
+osman  = data;
+  data = x2js.xml_str2json(data);
+
     var cardTypes = data;
 
     $scope.cards = [];
-    
-    for (i = 0; i < cardTypes.length; i++) {
-      $scope.cards.push(angular.extend({}, cardTypes[i]));
+
+    for (i = 0; i <data.products.product.length; i++) {
+
+    var discount = ((data.products.product[i].price - data.products.product[i].deal_price)/data.products.product[i].price)*100;
+    var eachProduct;
+
+
+      eachProduct =
+                         {
+                             "id": data.products.product[i].product_id,
+                             "title": data.products.product[i].title,
+                             "image":$rootScope.eachImgUrl,
+                             "productURL":data.products.product[i].product_url,
+                             "gender":data.products.product[i].gender,
+                             "merchantCategory":data.products.product[i].merchant_category,
+                             "cat1": data.products.product[i].category1,
+                             "cat2": data.products.product[i].category2,
+                             "cat3":data.products.product[i].category3,
+                             "des1": data.products.product[i].description1,
+                             "des2": data.products.product[i].description2,
+                             "des3":data.products.product[i].description3,
+                             "brandName": data.products.product[i].brand_name,
+                             "modelName": data.products.product[i].model_name,
+                             "oldPrice": data.products.product[i].price,
+                             "newPrice":data.products.product[i].deal_price,
+                             "discountRate":discount,
+                             "city":data.products.product[i].city,
+                             "startDate":data.products.product[i].start_date,
+                             "endDate":data.products.product[i].end_date,
+                             "shortTitle":data.products.product[i].short_title
+                         };
+
+
+            $http.get(data.products.product[i].product_url).
+              success(function(data, status, headers, config) {
+
+            $rootScope.eachImgUrl= $(data).find("[id='zoom1']").attr("href");
+
+                  eachProduct =
+                                     {
+                                         "image":$rootScope.eachImgUrl
+                                      };
+                    $scope.cards.push(angular.extend({}, eachProduct));
+
+              }).
+              error(function(data, status, headers, config) {
+                // called asynchronously if an error occurs
+                // or server returns response with an error status.
+              });
+
+
+console.log(eachProduct);
+
     };
 
     $scope.cardSwipedLeft = function(index) {
