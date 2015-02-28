@@ -12,11 +12,77 @@ var app = express()
 /**
  * Connect to MongoDB.
  */
- mongoose.connect("mongodb://localhost:27017/modagusta");
-mongoose.connection.on('error', function() {
-  console.error('MongoDB Connection Error. Please make sure that MongoDB is running.');
+// mongoose.connect("mongodb://localhost:27017/modagusta");
+//mongoose.connection.on('error', function() {
+//  console.error('MongoDB Connection Error. Please make sure that MongoDB is running.');
+//});
+
+
+var mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost/modagusta');
+
+var db = mongoose.connection;
+
+db.on('error', function (err) {
+console.log('connection error', err);
+});
+db.once('open', function () {
+
+
+
+var kittySchema = mongoose.Schema({
+    name: String
 });
 
+var Kitten = mongoose.model('Kitten', kittySchema);
+
+var silence = new Kitten({ name: 'Silence' });
+
+
+
+silence.save(function (err, fluffy) {
+  if (err) return console.error(err);
+
+  console.log("saved");
+
+
+
+
+
+
+
+});
+
+request('http://api.gelirortaklari.com/feed?id=7235&key=bc34a7f1f7a2bd5dff42e9708530e63f7164&offset=0&count=10', function (error, response, body) {
+  if (!error && response.statusCode == 200) {
+
+
+
+
+parseString(body, function (err, result) {
+
+ //a = JSON.stringify(result);
+ //console.log(result.products.product[2]);
+    for (i = 0; i <result.products.product.length; i++) {
+console.log(result.products.product[i]);
+}
+
+});
+ }
+})
+
+
+
+
+
+
+
+
+
+
+console.log('connected.');
+});
 
 
 //load all files in modes dir
@@ -60,14 +126,18 @@ app.all('*', function(req, res, next) {
 app.use('/', routes);
 
 
-var xmlparser = require('./parser.js');
-xmlparser.parse();
+//var xmlparser = require('./parser.js');
+//var data = xmlparser.parse();
 
 
+var request = require('request');
+var parseString = require('xml2js').parseString;
 var server = app.listen(3000, function() {
 
     var host = server.address().address
     var port = server.address().port
+
+
 
 
 
