@@ -2,33 +2,20 @@ var express = require('express');
 var mongoose = require('mongoose');
 var routes = require('./routes/routes');
 var fs = require('fs');
-
-
-/**
- * Create Express server.
- */
+var http = require('http');
+var cheerio = require('cheerio');
 var app = express()
-
-/**
- * Connect to MongoDB.
- */
-// mongoose.connect("mongodb://localhost:27017/modagusta");
-//mongoose.connection.on('error', function() {
-//  console.error('MongoDB Connection Error. Please make sure that MongoDB is running.');
-//});
-
-
 var mongoose = require('mongoose');
+
+var db = mongoose.connection;
 
 mongoose.connect('mongodb://localhost/modagusta');
 
-var db = mongoose.connection;
 
 db.on('error', function (err) {
 console.log('connection error', err);
 });
 db.once('open', function () {
-
 
 
 var kittySchema = mongoose.Schema({
@@ -39,22 +26,18 @@ var Kitten = mongoose.model('Kitten', kittySchema);
 
 var silence = new Kitten({ name: 'Silence' });
 
-
-
 silence.save(function (err, fluffy) {
   if (err) return console.error(err);
 
   console.log("saved");
 
-
-
-
-
-
-
 });
 
-request('http://api.gelirortaklari.com/feed?id=7235&key=bc34a7f1f7a2bd5dff42e9708530e63f7164&offset=0&count=10', function (error, response, body) {
+
+
+
+
+request('http://api.gelirortaklari.com/feed?id=7235&key=bc34a7f1f7a2bd5dff42e9708530e63f7164&page=1', function (error, response, body) {
   if (!error && response.statusCode == 200) {
 
 
@@ -62,17 +45,53 @@ request('http://api.gelirortaklari.com/feed?id=7235&key=bc34a7f1f7a2bd5dff42e970
 
 parseString(body, function (err, result) {
 
- //a = JSON.stringify(result);
- //console.log(result.products.product[2]);
     for (i = 0; i <result.products.product.length; i++) {
-console.log(result.products.product[i]);
+
+    var discount = ((result.products.product[i].price - result.products.product[i].deal_price)/result.products.product[i].price)*100;
+    var eachProduct;
+     eachProduct =
+                         {
+                             "id": result.products.product[i].product_id,
+                             "title": result.products.product[i].title,
+                             "productURL":result.products.product[i].product_url,
+                             "gender":result.products.product[i].gender,
+                             "merchantCategory":result.products.product[i].merchant_category,
+                             "cat1": result.products.product[i].category1,
+                             "cat2": result.products.product[i].category2,
+                             "cat3":result.products.product[i].category3,
+                             "des1": result.products.product[i].description1,
+                             "des2": result.products.product[i].description2,
+                             "des3":result.products.product[i].description3,
+                             "brandName": result.products.product[i].brand_name,
+                             "modelName": result.products.product[i].model_name,
+                             "oldPrice": result.products.product[i].price,
+                             "newPrice":result.products.product[i].deal_price,
+                             "discountRate":discount,
+                             "city":result.products.product[i].city,
+                             "startDate":result.products.product[i].start_date,
+                             "endDate":result.products.product[i].end_date,
+                             "shortTitle":result.products.product[i].short_title
+                         };
+
+console.log(i);
+request(result.products.product[i].product_url[0], function (error, response, body) {
+if (!error && response.statusCode == 200) {
+   $ = cheerio.load(body);
+    eachProduct["image"] = $('#zoom1').attr('href');
+console.log(eachProduct );
+
+
 }
+  })
 
-});
+
+
+
+}// for
+
+});//parse string body
  }
-})
-
-
+})// get all products from gelirortaklari
 
 
 
