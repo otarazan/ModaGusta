@@ -2,18 +2,472 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c76fa30-72ed-4195-a482-95173a86175b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/classes.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/dexedLibs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/libGoogleAnalyticsServices1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/libGoogleAnalyticsServices2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modagusta/www/app/app.js" afterPath="$PROJECT_DIR$/modagusta/www/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modagusta/www/app/components/browse/browse.html" afterPath="$PROJECT_DIR$/modagusta/www/app/components/browse/browse.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/.npmignore" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/.npmignore" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/.travis.yml" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/83.coffee" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/83.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/AUTHORS" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/AUTHORS" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/Config.xml" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/Config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/Depp.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/Depp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/LICENSE-W3C.html" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/LICENSE-W3C.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/LICENSE.txt" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/LICENSE" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/LICENSE" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/LICENSE" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/LazyWrapper.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/LazyWrapper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/LodashWrapper.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/LodashWrapper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/MapCache.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/MapCache.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/README.md" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/README.md" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/README.md" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/README.md" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/SetCache.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/SetCache.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLAttribute.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLAttribute.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLBuilder.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLBuilder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLCData.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLCData.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLComment.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLComment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLDTDAttList.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLDTDAttList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLDTDElement.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLDTDElement.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLDTDEntity.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLDTDEntity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLDTDNotation.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLDTDNotation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLDeclaration.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLDeclaration.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLDocType.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLDocType.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLElement.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLElement.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLNode.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLNode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLProcessingInstruction.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLProcessingInstruction.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLRaw.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLRaw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLStringifier.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLStringifier.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLText.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/XMLText.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/after.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/after.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/all.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/any.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/any.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/app.js" afterPath="$PROJECT_DIR$/server/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayCopy.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayCopy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayEach.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayEach.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayEachRight.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayEachRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayEvery.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayEvery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayFilter.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayFilter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayMap.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayMap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayMax.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayMax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayMin.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayMin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayReduce.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayReduce.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayReduceRight.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arrayReduceRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arraySome.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/arraySome.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/ary.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/ary.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/assign.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/assign.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/assignDefaults.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/assignDefaults.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/assignOwnDefaults.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/assignOwnDefaults.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/at.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/at.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/att.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/att.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/attempt.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/attempt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/attribute-name.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/attribute-name.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/attribute-no-space.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/attribute-no-space.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/backflow.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/backflow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseAssign.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseAssign.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseAt.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseAt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseBindAll.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseBindAll.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseCallback.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseCallback.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseClone.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseClone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseCompareAscending.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseCompareAscending.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseCopy.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseCopy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseCreate.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseCreate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseDelay.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseDelay.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseDifference.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseDifference.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseEach.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseEach.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseEachRight.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseEachRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseEvery.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseEvery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseFill.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseFill.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseFilter.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseFilter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseFind.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseFind.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseFlatten.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseFlatten.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseFor.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseFor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseForIn.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseForIn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseForOwn.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseForOwn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseForOwnRight.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseForOwnRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseForRight.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseForRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseFunctions.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseFunctions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseIndexOf.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseIndexOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseInvoke.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseInvoke.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseIsEqual.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseIsEqual.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseIsEqualDeep.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseIsEqualDeep.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseIsFunction.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseIsFunction.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseIsMatch.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseIsMatch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseLodash.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseLodash.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseMap.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseMap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseMatches.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseMatches.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseMatchesProperty.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseMatchesProperty.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseMerge.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseMerge.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseMergeDeep.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseMergeDeep.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseProperty.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseProperty.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/basePullAt.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/basePullAt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseRandom.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseRandom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseReduce.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseReduce.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseSetData.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseSetData.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseSlice.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseSlice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseSome.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseSome.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseSortBy.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseSortBy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseToString.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseToString.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseUniq.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseUniq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseValues.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseValues.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseWrapperValue.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/baseWrapperValue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/before.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/before.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/big-not-pretty.xml" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/big-not-pretty.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/binaryIndex.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/binaryIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/binaryIndexBy.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/binaryIndexBy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/bind.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/bind.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/bindAll.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/bindAll.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/bindCallback.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/bindCallback.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/bindKey.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/bindKey.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/lib/bom.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/lib/bom.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modagusta/www/app/components/browse/browse.js" afterPath="$PROJECT_DIR$/modagusta/www/app/components/browse/browse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modagusta/www/index.html" afterPath="$PROJECT_DIR$/modagusta/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modagusta/www/app/components/menu/menu.html" afterPath="$PROJECT_DIR$/modagusta/www/app/components/menu/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js" afterPath="$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/buffer-overrun.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/buffer-overrun.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/bufferClone.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/bufferClone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/cacheIndexOf.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/cacheIndexOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/cachePush.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/cachePush.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/callback.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/callback.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/camelCase.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/camelCase.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/canon.xml" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/canon.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/capitalize.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/capitalize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/case.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/case.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/cdata-chunked.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/cdata-chunked.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/cdata-end-split.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/cdata-end-split.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/cdata-fake-end.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/cdata-fake-end.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/cdata-multiple.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/cdata-multiple.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/cdata.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/cdata.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/chain.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/chain.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/charAtCallback.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/charAtCallback.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/charsLeftIndex.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/charsLeftIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/charsRightIndex.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/charsRightIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/chunk.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/chunk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/clone.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/clone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/cloneDeep.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/cloneDeep.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/collect.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/collect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/commit.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/commit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/compact.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/compact.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/compareAscending.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/compareAscending.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/compareMultipleAscending.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/compareMultipleAscending.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/compose.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/compose.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/composeArgs.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/composeArgs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/composeArgsRight.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/composeArgsRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/constant.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/constant.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/contains.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/contains.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/countBy.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/countBy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/create.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/create.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createAggregator.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createAggregator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createAssigner.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createAssigner.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createBindWrapper.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createBindWrapper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createCache.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createCache.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createCompounder.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createCompounder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createCtorWrapper.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createCtorWrapper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createExtremum.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createExtremum.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createHybridWrapper.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createHybridWrapper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createPad.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createPad.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createPartialWrapper.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createPartialWrapper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createWrapper.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/createWrapper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/curry.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/curry.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/curryRight.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/curryRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/cyrillic.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/cyrillic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/date.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/date.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/debounce.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/debounce.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/deburr.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/deburr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/deburrLetter.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/deburrLetter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/defaults.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/defaults.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/defer.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/defer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/delay.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/delay.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/detect.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/detect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/difference.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/difference.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/drop.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/drop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/dropRight.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/dropRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/dropRightWhile.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/dropRightWhile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/dropWhile.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/dropWhile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/duplicate-attribute.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/duplicate-attribute.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/each.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/each.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/eachRight.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/eachRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/emoji.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/emoji.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/end_empty_stream.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/end_empty_stream.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/endsWith.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/endsWith.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/entities.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/entities.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/entity-mega.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/entity-mega.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/equalArrays.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/equalArrays.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/equalByTag.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/equalByTag.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/equalObjects.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/equalObjects.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/escape.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/escape.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/escapeHtmlChar.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/escapeHtmlChar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/escapeRegExp.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/escapeRegExp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/escapeStringChar.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/escapeStringChar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/every.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/every.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/example.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/example.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/extend.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/extend.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/extremumBy.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/extremumBy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/fill.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/fill.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/filter.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/filter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/find.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/find.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/findIndex.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/findIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/findKey.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/findKey.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/findLast.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/findLast.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/findLastIndex.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/findLastIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/findLastKey.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/findLastKey.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/findWhere.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/findWhere.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/first.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/first.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/flatten.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/flatten.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/flattenDeep.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/flattenDeep.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/flow.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/flow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/flowRight.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/flowRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/flush.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/flush.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/foldl.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/foldl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/foldr.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/foldr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/forEach.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/forEach.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/forEachRight.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/forEachRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/forIn.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/forIn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/forInRight.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/forInRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/forOwn.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/forOwn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/forOwnRight.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/forOwnRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/functions.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/functions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/get-products.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/get-products.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/getData.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/getData.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/getView.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/getView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/groupBy.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/groupBy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/has.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/has.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/head.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/head.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/hello-world.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/hello-world.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/identity.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/identity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/number/inRange.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/number/inRange.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/include.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/include.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/includes.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/includes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/incompat.coffee" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/incompat.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/incompat2.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/incompat2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/index.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/index.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/lib/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/index.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/indexBy.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/indexBy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/indexOf.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/indexOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/indexOfNaN.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/indexOfNaN.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/initCloneArray.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/initCloneArray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/initCloneByTag.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/initCloneByTag.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/initCloneObject.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/initCloneObject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/initial.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/initial.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/inject.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/inject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/intersection.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/intersection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/invert.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/invert.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/invoke.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/invoke.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isArguments.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isArguments.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isArray.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isArray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/isBindable.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/isBindable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isBoolean.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isBoolean.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isDate.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isDate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isElement.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isElement.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isEmpty.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isEmpty.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isEqual.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isEqual.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isError.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isError.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isFinite.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isFinite.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isFunction.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isFunction.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/isIndex.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/isIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/isIterateeCall.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/isIterateeCall.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/isLength.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/isLength.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isMatch.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isMatch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isNaN.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isNaN.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isNative.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isNative.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isNull.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isNull.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isNumber.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isNumber.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isObject.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isObject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/isObjectLike.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/isObjectLike.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isPlainObject.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isPlainObject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isRegExp.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isRegExp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/isSpace.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/isSpace.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/isStrictComparable.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/isStrictComparable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isString.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isString.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isTypedArray.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isTypedArray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isUndefined.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/isUndefined.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/issue-23.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/issue-23.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/issue-30.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/issue-30.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/issue-35.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/issue-35.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/issue-47.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/issue-47.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/issue-49.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/issue-49.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/issue-84.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/issue-84.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/iteratee.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/iteratee.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/kebabCase.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/kebabCase.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/keys.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/keys.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/keysIn.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/keysIn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/last.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/last.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/lastIndexOf.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/lastIndexOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/lazyClone.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/lazyClone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/lazyReverse.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/lazyReverse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/lazyValue.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/lazyValue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/lodash.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/lodash.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/map.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/mapDelete.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/mapDelete.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/mapGet.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/mapGet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/mapHas.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/mapHas.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/mapSet.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/mapSet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/mapValues.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/mapValues.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/matches.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/matches.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/matchesProperty.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/matchesProperty.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/max.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/max.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/memoize.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/memoize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/merge.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/merge.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/mergeData.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/mergeData.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/metaMap.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/metaMap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/methods.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/methods.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/min.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/mixin.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/mixin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/negate.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/negate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/noop.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/noop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/not-pretty.xml" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/not-pretty.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/date/now.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/date/now.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/number.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/number.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/object.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/object.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/omit.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/omit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/once.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/once.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/package.json" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/package.json" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/package.json" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/package.json" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/pad.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/pad.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/padLeft.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/padLeft.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/padRight.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/padRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/pairs.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/pairs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/parseInt.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/parseInt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/parser-position.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/parser-position.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/parser.js" afterPath="$PROJECT_DIR$/server/parser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/partial.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/partial.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/partialRight.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/partialRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/partition.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/partition.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/pick.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/pick.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/pickByArray.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/pickByArray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/pickByCallback.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/pickByCallback.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/plant.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/plant.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/pluck.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/pluck.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/pretty-print.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/pretty-print.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/lib/processors.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/lib/processors.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/property.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/property.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/propertyOf.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/propertyOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/pull.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/pull.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/pullAt.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/pullAt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/number/random.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/number/random.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/range.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/range.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/reEscape.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/reEscape.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/reEvaluate.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/reEvaluate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/reInterpolate.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/reInterpolate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/rearg.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/rearg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/reduce.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/reduce.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/reduceRight.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/reduceRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/reject.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/reject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/remove.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/remove.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/reorder.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/reorder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/repeat.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/repeat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/replaceHolders.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/replaceHolders.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/rest.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/rest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/result.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/result.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/reverse.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/reverse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/run.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/run.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/sample.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/sample.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/lib/sax.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/lib/sax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/script-close-better.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/script-close-better.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/script.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/select.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/select.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/self-closing-child-strict.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/self-closing-child-strict.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/self-closing-child.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/self-closing-child.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/self-closing-tag.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/self-closing-tag.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/setData.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/setData.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/shimIsPlainObject.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/shimIsPlainObject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/shimKeys.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/shimKeys.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/shopping.xml" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/shopping.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/shuffle.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/shuffle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/size.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/size.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/slice.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/slice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/snakeCase.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/snakeCase.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/some.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/some.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/sortBy.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/sortBy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/sortByAll.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/sortByAll.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/sortedIndex.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/sortedIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/sortedLastIndex.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/sortedLastIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/sortedUniq.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/sortedUniq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/spread.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/spread.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/startCase.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/startCase.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/startsWith.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/startsWith.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/stray-ending.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/stray-ending.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/strict.dtd" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/strict.dtd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/support.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/tail.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/tail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/take.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/take.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/takeRight.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/takeRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/takeRightWhile.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/takeRightWhile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/takeWhile.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/takeWhile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/tap.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/tap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/template.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/template.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/templateSettings.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/templateSettings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/test.html" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/test.xml" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/examples/test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/text.coffee" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/text.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/text.xml" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/text.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/throttle.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/throttle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/thru.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/thru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/times.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/times.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/toArray.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/toArray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/toIterable.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/toIterable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/toJSON.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/toJSON.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/toObject.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/toObject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/toPlainObject.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/lang/toPlainObject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/toString.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/toString.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/trailing-attribute-no-value.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/trailing-attribute-no-value.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/trailing-non-whitespace.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/trailing-non-whitespace.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/transform.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/transform.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/trim.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/trim.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/trimLeft.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/trimLeft.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/trimRight.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/trimRight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/trimmedLeftIndex.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/trimmedLeftIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/trimmedRightIndex.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/trimmedRightIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/trunc.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/trunc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/unclosed-root.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/unclosed-root.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/unescape.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/unescape.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/unescapeHtmlChar.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/unescapeHtmlChar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/union.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/union.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/uniq.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/uniq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/unique.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/unique.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/uniqueId.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/uniqueId.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/unquoted.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/unquoted.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/unzip.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/unzip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/utf8-split.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/utf8-split.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/value.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/value.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/valueOf.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/valueOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/values.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/values.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/valuesIn.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/object/valuesIn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/where.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/collection/where.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/without.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/without.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/words.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/words.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/wrap.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/function/wrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/wrapperChain.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/wrapperChain.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/wrapperClone.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/wrapperClone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/wrapperCommit.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/wrapperCommit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/wrapperPlant.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/wrapperPlant.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/wrapperReverse.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/wrapperReverse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/wrapperToString.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/wrapperToString.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/wrapperValue.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/chain/wrapperValue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/x.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/x.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/lib/xml2js.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/lib/xml2js.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-as-tag-name.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-as-tag-name.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-issue-41.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-issue-41.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-rebinding.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-rebinding.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-strict.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-strict.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-unbound-element.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-unbound-element.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-unbound.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-unbound.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-ns.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-ns.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-prefix-attribute.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-prefix-attribute.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-prefix.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-prefix.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-redefine.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-redefine.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/xor.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/xor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/zip.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/zip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/zipObject.js" afterPath="$PROJECT_DIR$/server/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/array/zipObject.js" />
     </list>
     <ignored path="ModaGusta.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,78 +494,28 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modagusta/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="833">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            <state vertical-scroll-proportion="-5.9615383" vertical-offset="117" max-vertical-offset="833">
+              <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="browse.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="parser.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/parser.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.48364154" vertical-offset="0" max-vertical-offset="703">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="browse.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/browse/browse.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5531915" vertical-offset="826" max-vertical-offset="2567">
-              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="browse.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/browse/browse.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="714">
-              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modagusta/www/app/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="746" max-vertical-offset="1462">
-              <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1700">
-              <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2023">
-              <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/menu/menu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-32.03846" vertical-offset="357" max-vertical-offset="2176">
-              <caret line="70" column="74" selection-start-line="70" selection-start-column="74" selection-end-line="70" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/settings/settings.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2601">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -139,7 +543,6 @@
         <option value="$PROJECT_DIR$/modagusta/platforms/android/ant-build/proguard.txt" />
         <option value="$PROJECT_DIR$/modagusta/plugins/android.json" />
         <option value="$PROJECT_DIR$/modagusta/package.json" />
-        <option value="$PROJECT_DIR$/server/app.js" />
         <option value="$PROJECT_DIR$/modagusta/platforms/android/ant-build/CordovaApp.ap_.d" />
         <option value="$PROJECT_DIR$/modagusta/www/app/components/settings/settings.js" />
         <option value="$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js" />
@@ -147,14 +550,17 @@
         <option value="$PROJECT_DIR$/modagusta/www/app/components/menu/menu.html" />
         <option value="$PROJECT_DIR$/modagusta/www/index.html" />
         <option value="$PROJECT_DIR$/modagusta/www/app/components/browse/browse.html" />
+        <option value="$PROJECT_DIR$/server/app.js" />
         <option value="$PROJECT_DIR$/modagusta/www/app/components/browse/browse.js" />
+        <option value="$PROJECT_DIR$/server/parser.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="768" />
-    <option name="width" value="768" />
-    <option name="height" value="837" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1278" />
+    <option name="height" value="853" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -179,7 +585,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -377,6 +782,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -593,13 +999,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="768" y="0" width="768" height="837" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1278" height="853" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -607,22 +1012,51 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22074468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19413629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46774194" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19413629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46774194" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -645,35 +1079,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/menu/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1069" max-vertical-offset="1836">
-          <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="343" max-vertical-offset="1173">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modagusta/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="731">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/settings/settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
@@ -929,13 +1334,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modagusta/platforms/android/ant-build/CordovaApp.ap_.d">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64675325" vertical-offset="8421" max-vertical-offset="8806">
-          <caret line="510" column="103" selection-start-line="510" selection-start-column="103" selection-end-line="510" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61388886" vertical-offset="0" max-vertical-offset="360">
@@ -959,42 +1357,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1320" max-vertical-offset="2023">
-          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/menu/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-32.03846" vertical-offset="357" max-vertical-offset="2176">
+        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="2176">
           <caret line="70" column="74" selection-start-line="70" selection-start-column="74" selection-end-line="70" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modagusta/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="833">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/browse/browse.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="714">
+        <state vertical-scroll-proportion="0.04579025" vertical-offset="37" max-vertical-offset="714">
           <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1700">
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1007,10 +1381,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8549075" vertical-offset="1320" max-vertical-offset="2023">
+          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/entities/lib/decode_codepoint.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/entities/lib/encode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8756983" vertical-offset="627" max-vertical-offset="1343">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/entities/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/entities/lib/decode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="661" max-vertical-offset="1394">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modagusta/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.9615383" vertical-offset="117" max-vertical-offset="833">
+          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/browse/browse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5531915" vertical-offset="826" max-vertical-offset="2567">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2601">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/parser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48364154" vertical-offset="0" max-vertical-offset="703">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>

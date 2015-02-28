@@ -10,9 +10,11 @@ myApp.controller('BrowseCtrl',  function($scope,$http, $ionicPopup, $rootScope,l
     }
 
 
-  $http.get("http://api.gelirortaklari.com/feed?id=7235&key=bc34a7f1f7a2bd5dff42e9708530e63f7164&offset=0&count=10").
+  $http.get("http://api.gelirortaklari.com/feed?id=7235&key=bc34a7f1f7a2bd5dff42e9708530e63f7164&offset=0&count=1").
   success(function(data, status, headers, config) {
-osman  = data;
+
+  console.log(data);
+
   data = x2js.xml_str2json(data);
 
     var cardTypes = data;
