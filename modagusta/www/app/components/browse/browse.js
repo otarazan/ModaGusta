@@ -15,11 +15,15 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
     $http.get(server + 'product/gender/1').
     success(function(data, status, headers, config) {
 
-        data = x2js.xml_str2json(data);
+
+      //  data = x2js.xml_str2json(data);
 
         var cardTypes = data;
 
         $scope.cards = [];
+
+
+
 
         for (i = 0; i < data.length; i++) {
 
@@ -28,31 +32,33 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
 
 
             eachProduct = {
-                "id": data[i].product_id,
+                "id": data[i].id,
                 "title": data[i].title,
                 "image": $rootScope.eachImgUrl,
-                "productURL": data[i].product_url,
+                "productURL": data[i].productURL,
                 "gender": data[i].gender,
-                "merchantCategory": data[i].merchant_category,
-                "cat1": data[i].category1,
-                "cat2": data[i].category2,
-                "cat3": data[i].category3,
-                "des1": data[i].description1,
-                "des2": data[i].description2,
-                "des3": data[i].description3,
-                "brandName": data[i].brand_name,
+                "merchantCategory": data[i].merchantCategory,
+                "cat1": data[i].cat1,
+                "cat2": data[i].cat2,
+                "cat3": data[i].cat3,
+                "des1": data[i].des1,
+                "des2": data[i].des2,
+                "des3": data[i].des3,
+                "brandName": data[i].brandName,
                 "modelName": data[i].model_name,
-                "oldPrice": data[i].price,
-                "newPrice": data[i].deal_price,
-                "discountRate": discount,
+                "oldPrice": data[i].oldPrice,
+                "newPrice": data[i].newPrice,
+                "discountRate": data[i].discountRate,
                 "city": data[i].city,
-                "startDate": data[i].start_date,
-                "endDate": data[i].end_date,
-                "shortTitle": data[i].short_title
+                "startDate": data[i].startDate,
+                "endDate": data[i].endDate,
+                "shortTitle": data[i].shortTitle
             };
 
-
-            $http.get(data[i].product_url).
+            if(i>10){
+              break;
+            }
+            $http.get(data[i].productURL).
             success(function(data, status, headers, config) {
 
                 $rootScope.eachImgUrl = $(data).find("[id='zoom1']").attr("href");
