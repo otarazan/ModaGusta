@@ -95,7 +95,6 @@ var reklamActionToken;
     }; //sendWishlistMail
 
 
-
     var server="http://localhost:3000/";
 
     $scope.$watch(function() {

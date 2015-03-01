@@ -23,6 +23,19 @@
                     <div class="list">
 
                         <label class="item item-input item-select">
+                          <div class="input-label">
+                              Cinsiyet
+                          </div>
+                          <select>
+                              <option selected>Erkek</option>
+                              <option>Bayan</option>
+                          </select>
+                        </label>
+                    </div>
+
+                    <div class="list">
+
+                        <label class="item item-input item-select">
                             <div class="input-label">
                                 Kategoriler
                             </div>
@@ -33,6 +46,7 @@
                             </select>
                         </label>
                     </div>
+
                     <div class="list">
 
                     <label class="item item-input item-select">
@@ -68,7 +82,7 @@
                     </div>
                 </ion-item>
                 <ion-item>
-                    <button type="button" class="btn btn-default">Filtrele</button>
+                    <button type="button" class="btn btn-default" ng-click="btnFilter()">Filtrele</button>
                 </ion-item>
                 <ion-item nav-clear menu-close href="#/app/settings">
                     Settings
