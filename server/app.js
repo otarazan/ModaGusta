@@ -24,15 +24,15 @@ fs.readdirSync(__dirname + '/models').forEach(function(filename) {
 db.on('error', function(err) {
     console.log('connection error', err);
 });
-db.once('open', function() {
 
-    var Schema = mongoose.Schema;
-    var productsSchema = new Schema({
+
+var Schema = mongoose.Schema;
+var productsSchema = new Schema({
       id:String,
       title:String,
       image:String,
       productURL:String,
-      gender:String,
+      gender:Boolean,
       merchantCategory:String,
       cat1:String,
       cat2:String,
@@ -49,17 +49,18 @@ db.once('open', function() {
       startDate:String,
       endDate:String,
       shortTitle:String
-    });
+});
 
-    var Product = mongoose.model('products',productsSchema);
+var Product = mongoose.model('products',productsSchema);
 
 
+db.once('open', function() {
+
+
+    Product.find({}).remove().exec();
 
     request('http://api.gelirortaklari.com/feed?id=7235&key=bc34a7f1f7a2bd5dff42e9708530e63f7164&page=1', function(error, response, body) {
             if (!error && response.statusCode == 200) {
-
-
-
 
                 parseString(body, function(err, result) {
 
@@ -88,13 +89,13 @@ db.once('open', function() {
                             "endDate": result.products.product[i].end_date,
                             "shortTitle": result.products.product[i].short_title
                         });
-                        eachProduct.save(function(err, fluffy) {
+                         eachProduct.save(function(err, fluffy) {
                             if (err) return console.error(err);
 
-                            //console.log(i + "saved");
+                            console.log(i + ". product saved");
 
                         });
-
+                        console.log(i + "saved");
                         /*console.log(i);
                         request(result.products.product[i].product_url[0], function(error, response, body) {
                             if (!error && response.statusCode == 200) {
@@ -122,30 +123,39 @@ db.once('open', function() {
 });
 
 
-app.get('/users', function(req, res) {
-    mongoose.model('users').find(function(err, users) {
-        res.send(users);
-    });
+app.get('/product/:id', function(req, res) {
+  var p  = Product.find({id:req.params.id});
+  Product.findOne({
+            id: req.params.id
+        }, function(err, product) {
+            if (err) return console.error(err);
+            res.json(product);
+   });
 });
 
-app.get('/posts', function(req, res) {
-    mongoose.model('posts').find(function(err, posts) {
-        res.send(posts);
-    });
+app.get('/product/gender/:gender', function(req, res) {
+
+  Product.find({
+        gender:req.params.gender
+        }, function(err, product) {
+            if (err) return console.error(err);
+            res.json(product);
+   });
 });
 
 
-app.get('/posts/:userId', function(req, res) {
-    mongoose.model('posts').find({
-        user: req.params.userId
-    }, function(err, posts) {
-        mongoose.model('posts').populate(posts, {
-            path: 'user'
-        }, function(err, posts) {
-            res.send(posts);
-        })
+/*app.get('/product/:key/:value', function(req, res) {
+    var key = req.params.key;
+    var obj = {
+        key: req.params.value
+    };
+    Product.find({
+        key: req.params.value
+    }, function(err, product) {
+        if (err) return console.error(err);
+        res.json(product);
     });
-});
+});*/
 
 
 
