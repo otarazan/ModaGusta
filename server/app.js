@@ -11,9 +11,6 @@ var db = mongoose.connection;
 
 mongoose.connect('mongodb://localhost/modagusta');
 
-
-
-
 //load all files in modes dir
 fs.readdirSync(__dirname + '/models').forEach(function(filename) {
     if (~filename.indexOf('.js')) require(__dirname + '/models/' + filename)
@@ -57,66 +54,114 @@ var Product = mongoose.model('products',productsSchema);
 db.once('open', function() {
 
 
-    Product.find({}).remove().exec();
+//    Product.find({}).remove().exec();
+//
+//    request('http://api.gelirortaklari.com/feed?id=7235&key=bc34a7f1f7a2bd5dff42e9708530e63f7164&page=1', function(error, response, body) {
+//            if (!error && response.statusCode == 200) {
+//
+//                parseString(body, function(err, result) {
+//
+//                    for (i = 0; i < result.products.product.length; i++) {
+//
+//                        var discount = ((result.products.product[i].price - result.products.product[i].deal_price) / result.products.product[i].price) * 100;
+//                        var eachProduct = new Product({
+//                            "id": result.products.product[i].product_id,
+//                            "title": result.products.product[i].title,
+//                            "productURL": result.products.product[i].product_url,
+//                            "gender": result.products.product[i].gender,
+//                            "merchantCategory": result.products.product[i].merchant_category,
+//                            "cat1": result.products.product[i].category1,
+//                            "cat2": result.products.product[i].category2,
+//                            "cat3": result.products.product[i].category3,
+//                            "des1": result.products.product[i].description1,
+//                            "des2": result.products.product[i].description2,
+//                            "des3": result.products.product[i].description3,
+//                            "brandName": result.products.product[i].brand_name,
+//                            "modelName": result.products.product[i].model_name,
+//                            "oldPrice": result.products.product[i].price,
+//                            "newPrice": result.products.product[i].deal_price,
+//                            "discountRate": discount,
+//                            "city": result.products.product[i].city,
+//                            "startDate": result.products.product[i].start_date,
+//                            "endDate": result.products.product[i].end_date,
+//                            "shortTitle": result.products.product[i].short_title
+//                        });
+//                         eachProduct.save(function(err, fluffy) {
+//                            if (err) return console.error(err);
+//
+//                            console.log(i + ". product saved");
+//
+//                        });
+//                        console.log(i + "saved");
+//                        /*console.log(i);
+//                        request(result.products.product[i].product_url[0], function(error, response, body) {
+//                            if (!error && response.statusCode == 200) {
+//                                $ = cheerio.load(body);
+//                                eachProduct["image"] = $('#zoom1').attr('href');
+//                                console.log(eachProduct);
+//
+//
+//                            }
+//                        });*/
+//
+//
+//
+//
+//                    } // for
+//
+//                }); //parse string body
+//            }
+//        }) // get all products from gelirortaklari
 
-    request('http://api.gelirortaklari.com/feed?id=7235&key=bc34a7f1f7a2bd5dff42e9708530e63f7164&page=1', function(error, response, body) {
-            if (!error && response.statusCode == 200) {
+var options = {
+  uri: 'http://private-anon-375fa4c77-reklamactionfeed.apiary-proxy.com/restapi/account/login',
+  method: 'POST',
+  json: {
+      "login": "nihan.meral@adsalsagroup.com",
+       "password": "tradsalsa4"
+  }
+};
 
-                parseString(body, function(err, result) {
-
-                    for (i = 0; i < result.products.product.length; i++) {
-
-                        var discount = ((result.products.product[i].price - result.products.product[i].deal_price) / result.products.product[i].price) * 100;
-                        var eachProduct = new Product({
-                            "id": result.products.product[i].product_id,
-                            "title": result.products.product[i].title,
-                            "productURL": result.products.product[i].product_url,
-                            "gender": result.products.product[i].gender,
-                            "merchantCategory": result.products.product[i].merchant_category,
-                            "cat1": result.products.product[i].category1,
-                            "cat2": result.products.product[i].category2,
-                            "cat3": result.products.product[i].category3,
-                            "des1": result.products.product[i].description1,
-                            "des2": result.products.product[i].description2,
-                            "des3": result.products.product[i].description3,
-                            "brandName": result.products.product[i].brand_name,
-                            "modelName": result.products.product[i].model_name,
-                            "oldPrice": result.products.product[i].price,
-                            "newPrice": result.products.product[i].deal_price,
-                            "discountRate": discount,
-                            "city": result.products.product[i].city,
-                            "startDate": result.products.product[i].start_date,
-                            "endDate": result.products.product[i].end_date,
-                            "shortTitle": result.products.product[i].short_title
-                        });
-                         eachProduct.save(function(err, fluffy) {
-                            if (err) return console.error(err);
-
-                            console.log(i + ". product saved");
-
-                        });
-                        console.log(i + "saved");
-                        /*console.log(i);
-                        request(result.products.product[i].product_url[0], function(error, response, body) {
-                            if (!error && response.statusCode == 200) {
-                                $ = cheerio.load(body);
-                                eachProduct["image"] = $('#zoom1').attr('href');
-                                console.log(eachProduct);
-
-
-                            }
-                        });*/
+request(options, function (error, response, body) {
+  if (!error && response.statusCode == 200) {
+    console.log(body) // Print the shortened url.
 
 
 
 
-                    } // for
-
-                }); //parse string body
-            }
-        }) // get all products from gelirortaklari
 
 
+        request('http://private-anon-e3b27c9a4-reklamactionfeed.apiary-proxy.com/restapi/products?accessToken=' + body , function(error, response, body) {
+                    if (!error && response.statusCode == 200) {
+
+                      //  parseString(body, function(err, result) {
+
+                             console.log(body);
+
+                      //   }); //parse string body
+
+                      }
+
+                      console.log(error);
+
+          });
+
+}
+
+}); //get reklamaction token
+
+//$.ajax({
+//  type: "POST",
+//  url: "http://private-anon-375fa4c77-reklamactionfeed.apiary-proxy.com/restapi/account/login",
+//  data: "{\"login\":\"nihan.meral@adsalsagroup.com\",\"password\":\"tradsalsa4\"}",
+//  success: function(data, status, headers, config) {
+//           console.log("reklamaction is ok");
+//            },
+//
+// fail:  function(data, status, headers, config) {
+//            console.log("reklamaction fail result: " + status);
+//         }
+//});
 
 
     console.log('connected.');
@@ -182,9 +227,6 @@ var server = app.listen(3000, function() {
     var host = server.address().address
     var port = server.address().port
 
-
-
-
-    console.log('Example app listening at http://%s:%s', host, port)
+   console.log('Example app listening at http://%s:%s', host, port)
 
 })
