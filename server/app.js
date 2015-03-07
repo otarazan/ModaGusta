@@ -113,42 +113,107 @@ db.once('open', function() {
 //            }
 //        }) // get all products from gelirortaklari
 
-var options = {
-  uri: 'http://private-anon-375fa4c77-reklamactionfeed.apiary-proxy.com/restapi/account/login',
-  method: 'POST',
-  json: {
-      "login": "nihan.meral@adsalsagroup.com",
-       "password": "tradsalsa4"
-  }
-};
 
-request(options, function (error, response, body) {
-  if (!error && response.statusCode == 200) {
-    console.log(body) // Print the shortened url.
+request('http://feed.reklamaction.com/feed/get/json/5e86db9c580f775df52e6e73a13afada', function(error, response, body) {
+        //   if (!error && response.statusCode == 200) {}
+        body = JSON.parse(body);
+    //    console.log(body.Result.Products[1].ListPrice);
+         for (i = 0; i < body.Result.Products.length; i++){
+                    var discount = ((body.Result.Products[i].ListPrice - body.Result.Products[i].SalePrice) / body.Result.Products[i].ListPrice) * 100;
+                    var eachProduct = new Product({
+                                                "id": body.Result.Products[i].Code,
+                                                "title": body.Result.Products[i].Title,
+                                                "productURL": body.Result.Products[i].URL,
+                                                "gender": body.Result.Products[i].Gender,
+                                                "merchantCategory": body.Result.Products[i].MainCategory,
+                                                "cat1": body.Result.Products[i].ChildrenCategory,
+                                                "cat2": null,
+                                                "cat3": null,
+                                                "des1": body.Result.Products[i].FullDesc,
+                                                "des2": body.Result.Products[i].ShortDesc,
+                                                "des3": body.Result.Products[i].description3,
+                                                "brandName": null,
+                                                "modelName": null,
+                                                "oldPrice": body.Result.Products[i].ListPrice,
+                                                "newPrice": body.Result.Products[i].SalePrice,
+                                                "discountRate": discount,
+                                                "city": null,
+                                                "startDate": null,
+                                                "endDate": null,
+                                                "shortTitle": body.Result.Products[i].short_title,
+                                                "image": body.Result.Products[i].Images
+
+                                            });
+                                             eachProduct.save(function(err, fluffy) {
+                                                if (err) return console.error(err);
+
+                                                console.log(i + ". product saved");
+
+                                            });
+                                            console.log(i + "saved");
+console.log(eachProduct.image);
+
+        }//for
 
 
 
 
 
 
-        request('http://private-anon-e3b27c9a4-reklamactionfeed.apiary-proxy.com/restapi/products?accessToken=' + body , function(error, response, body) {
-                    if (!error && response.statusCode == 200) {
 
-                      //  parseString(body, function(err, result) {
 
-                             console.log(body);
 
-                      //   }); //parse string body
 
-                      }
 
-                      console.log(error);
+}); // get reklamaction products
 
-          });
 
-}
 
-}); //get reklamaction token
+
+
+
+
+
+
+
+
+
+//var options = {
+//  uri: 'http://private-anon-375fa4c77-reklamactionfeed.apiary-proxy.com/restapi/account/login',
+//  method: 'POST',
+//  json: {
+//      "login": "tarazansafak@gmail.com",
+//       "password": "Naber123"
+//  }
+//};
+//
+//request(options, function (error, response, body) {
+//  if (!error && response.statusCode == 200) {
+//    console.log(body) // Print the shortened url.
+//
+//
+//
+//
+//
+//
+//        request('http://private-anon-e3b27c9a4-reklamactionfeed.apiary-proxy.com/restapi/products?accessToken=' + body , function(error, response, body) {
+//                    if (!error && response.statusCode == 200) {
+//
+//                      //  parseString(body, function(err, result) {
+//
+//                             console.log(body);
+//
+//                      //   }); //parse string body
+//
+//                      }
+//
+//                      console.log(error);
+//
+//          });
+//
+//}
+//
+//}); //get reklamaction token
 
 //$.ajax({
 //  type: "POST",
