@@ -67,8 +67,6 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
           });
 
       };
-
-
     }
 
     $scope.cardSwipedLeft = function(index) {

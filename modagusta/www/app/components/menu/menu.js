@@ -99,22 +99,21 @@ var reklamActionToken;
         { id: 2, name: 'kadin' }
     ];
     $scope.categories = [
-        { id: 1, name: 'Tümü' },
-        { id: 2, name: 'Ayakkabi' },
-        { id: 3, name: 'Çanta' }
+        { id: 1, name: 'Ayakkabi' },
+        { id: 2, name: 'Çanta' }
     ];
     $scope.discounts = [
-        { id: 1, name: 'Tümü' }
+        { id: 1, name: '%15' }
     ];
     $scope.prices = [
-        { id: 1, name: 'Tümü' }
+        { id: 1, name: '100TL alti' }
     ];
 
 
 
-    $scope.btnBuy = function() { alert('he'); };
     $scope.btnFilter = function(selection) {
 
+      console.log("Your selection:");
       console.log(selection);
 
       $http.post(server+'filter', selection).
