@@ -94,6 +94,30 @@ var reklamActionToken;
 
     }; //sendWishlistMail
 
+    $scope.genders = [
+        { id: 1, name: 'Erkek' },
+        { id: 2, name: 'kadin' }
+    ];
+    $scope.categories = [
+        { id: 1, name: 'Tümü' },
+        { id: 2, name: 'Ayakkabi' },
+        { id: 3, name: 'Çanta' }
+    ];
+    $scope.discounts = [
+        { id: 1, name: 'Tümü' }
+    ];
+    $scope.prices = [
+        { id: 1, name: 'Tümü' }
+    ];
+
+
+    $scope.btnBuy = function() { alert('he'); };
+    $scope.btnFilter = function(selection) {
+
+      console.log(selection);
+
+      $http.post(server+'filter', selection);
+    };
 
     var server="http://localhost:3000/";
 

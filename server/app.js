@@ -4,8 +4,9 @@ var routes = require('./routes/routes');
 var fs = require('fs');
 var http = require('http');
 var cheerio = require('cheerio');
-var app = express()
+var app = express();
 var mongoose = require('mongoose');
+var bodyParser = require('body-parser');
 
 var db = mongoose.connection;
 
@@ -147,10 +148,10 @@ request('http://feed.reklamaction.com/feed/get/json/5e86db9c580f775df52e6e73a13a
                                              eachProduct.save(function(err, fluffy) {
                                                 if (err) return console.error(err);
 
-                                                console.log(i + ". product saved");
+                                                //console.log(i + ". product saved");
 
                                             });
-                                            console.log(i + "saved");
+                                           //  console.log(i + "saved");
 console.log(eachProduct.image);
 
         }//for
@@ -243,6 +244,7 @@ app.get('/product/:id', function(req, res) {
    });
 });
 
+
 app.get('/product/gender/:gender', function(req, res) {
 
   Product.find({
@@ -251,6 +253,15 @@ app.get('/product/gender/:gender', function(req, res) {
             if (err) return console.error(err);
             res.json(product);
    });
+});
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
+
+app.post('/filter', function(req, res, next) {
+  var selections= req.body;
+  console.log(req.body);
+  res.send(req.body);
 });
 
 

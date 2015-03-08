@@ -16,7 +16,7 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
     success(function(data, status, headers, config) {
 
 
-      //  data = x2js.xml_str2json(data);
+        //  data = x2js.xml_str2json(data);
 
         var cardTypes = data;
 
@@ -55,8 +55,8 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
                 "shortTitle": data[i].shortTitle
             };
 
-            if(i>10){
-              break;
+            if (i > 10) {
+                break;
             }
             $http.get(data[i].productURL).
             success(function(data, status, headers, config) {
@@ -75,7 +75,7 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
             });
 
 
-            console.log(eachProduct);
+            //console.log(eachProduct);
 
         };
 

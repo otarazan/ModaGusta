@@ -20,69 +20,36 @@
             <ion-list>
                 <ion-item nav-clear menu-close href="#">
                     Filter
-                    <div class="list">
-
-                        <label class="item item-input item-select">
-                          <div class="input-label">
-                              Cinsiyet
-                          </div>
-                          <select>
-                              <option selected>Erkek</option>
-                              <option>Bayan</option>
-                          </select>
-                        </label>
-                    </div>
-
-                    <div class="list">
-
-                        <label class="item item-input item-select">
-                            <div class="input-label">
-                                Kategoriler
-                            </div>
-                            <select>
-                                <option selected>Tümü</option>
-                                <option>Ayakkabı</option>
-                                <option>Çanta</option>
-                            </select>
-                        </label>
-                    </div>
-
-                    <div class="list">
+                    <label class="item item-input item-select">
+                      <div class="input-label">
+                          Cinsiyet
+                      </div>
+                      <select ng-model="selection.gender" ng-options="item as item.name for item in genders"></select>
+                    </label>
 
                     <label class="item item-input item-select">
-                        <div class="input-label">
-                            İndirimler
-                        </div>
-                        <select>
-                            <option selected>Tümü</option>
-                        </select>
+                      <div class="input-label">
+                        Kategoriler
+                      </div>
+                      <select ng-model="selection.categories" ng-options="item as item.name for item in categories"></select>
                     </label>
-                </div>
-                    <div class="list">
 
-                        <label class="item item-input item-select">
-                            <div class="input-label">
-                                Fiyatlar
-                            </div>
-                            <select>
-                                <option selected>Tümü</option>
-                            </select>
-                        </label>
-                    </div>
-                    <div class="list">
+                    <label class="item item-input item-select">
 
-                        <label class="item item-input item-select">
-                            <div class="input-label">
-                               Markalar
-                            </div>
-                            <select>
-                                <option selected>Tümü</option>
-                            </select>
-                        </label>
-                    </div>
-                </ion-item>
-                <ion-item>
-                    <button type="button" class="btn btn-default" ng-click="btnFilter()">Filtrele</button>
+                      <div class="input-label">
+                        İndirimler
+                      </div>
+                      <select ng-model="selection.discounts" ng-options="item as item.name for item in discounts"></select>
+                    </label>
+
+                    <label class="item item-input item-select">
+                      <div class="input-label">
+                        Prices
+                      </div>
+                      <select ng-model="selection.prices" ng-options="item as item.name for item in prices"></select>
+                    </label>
+                    
+                    <button type="button" class="btn btn-default" data-ng-click="btnFilter(selection)">Filtrele</button>
                 </ion-item>
                 <ion-item nav-clear menu-close href="#/app/settings">
                     Settings
