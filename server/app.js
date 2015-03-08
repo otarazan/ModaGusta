@@ -145,14 +145,14 @@ request('http://feed.reklamaction.com/feed/get/json/5e86db9c580f775df52e6e73a13a
 
                                             });
 
-                console.log(eachProduct);
+               // console.log(eachProduct);
         }//for
 
 }); // get reklamaction products
 
-
-
     console.log('connected.');
+
+
 });
 
 
@@ -167,25 +167,29 @@ app.get('/product/:id', function(req, res) {
 });
 
 
-app.get('/product/gender/:gender', function(req, res) {
-
-  Product.find({
-        gender:req.params.gender
-        }, function(err, product) {
-            if (err) return console.error(err);
-            res.json(product);
-   });
-});
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 
 app.post('/filter', function(req, res, next) {
   var selections= req.body;
-  console.log(req.body);
-  res.send(req.body);
-});
+  //find requested selections
+  console.log("filter request recieved:"+ selections);
+//  Product.find({
+//        gender:1
+//        }, function(err, product) {
+//            if (err) return console.error(err);
+//            res.json(product);
+//            console.log("Done");
+//   }).limit(10);
 
+      Product.find({
+            },{},{ limit : 2 }, function(err, product) {
+                if (err) return console.error(err);
+                console.log(product);
+                res.json(product);
+       });
+});
 
 // CORS (Cross-Origin Resource Sharing) headers to support Cross-site HTTP requests
 
