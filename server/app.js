@@ -70,54 +70,54 @@ var Product = mongoose.model('products',productsSchema);
 db.once('open', function() {
 
 
-//    Product.find({}).remove().exec();
-//
-//    request('http://api.gelirortaklari.com/feed?id=7235&key=bc34a7f1f7a2bd5dff42e9708530e63f7164&page=1', function(error, response, body) {
-//            if (!error && response.statusCode == 200) {
-//
-//                parseString(body, function(err, result) {
-//
-//                    for (i = 0; i < result.products.product.length; i++) {
-//
-//                        var discount = parseInt(((result.products.product[i].price - result.products.product[i].deal_price) / result.products.product[i].price) * 100);
-//                        var eachProduct = new Product({
-//                            "id": result.products.product[i].product_id,
-//                            "title": result.products.product[i].title,
-//                            "productURL": result.products.product[i].product_url,
-//                            "gender": result.products.product[i].gender,
-//                            "cat": result.products.product[i].category1,
-//                            "des": result.products.product[i].description1,
-//                            "brand": result.products.product[i].brand_name,
-//                            "oldPrice": result.products.product[i].price,
-//                            "newPrice": result.products.product[i].deal_price,
-//                            "discountRate": discount
-//                        });
-//                         eachProduct.save(function(err, fluffy) {
-//                            if (err) return console.error(err);
-//
-//                            console.log(i + ". product saved");
-//
-//                        });
-//                        console.log(i + "saved");
-//                        /*console.log(i);
-//                        request(result.products.product[i].product_url[0], function(error, response, body) {
-//                            if (!error && response.statusCode == 200) {
-//                                $ = cheerio.load(body);
-//                                eachProduct["image"] = $('#zoom1').attr('href');
-//                                console.log(eachProduct);
-//
-//
-//                            }
-//                        });*/
-//
-//
-//
-//
-//                    } // for
-//
-//                }); //parse string body
-//            }
-//        }) // get all products from gelirortaklari
+    Product.find({}).remove().exec();
+
+    request('http://api.gelirortaklari.com/feed?id=7235&key=bc34a7f1f7a2bd5dff42e9708530e63f7164&page=1', function(error, response, body) {
+            if (!error && response.statusCode == 200) {
+
+                parseString(body, function(err, result) {
+
+                    for (i = 0; i < result.products.product.length; i++) {
+
+                        var discount = parseInt(((result.products.product[i].price - result.products.product[i].deal_price) / result.products.product[i].price) * 100);
+                        var eachProduct = new Product({
+                            "id": result.products.product[i].product_id,
+                            "title": result.products.product[i].title,
+                            "productURL": result.products.product[i].product_url,
+                            "gender": result.products.product[i].gender,
+                            "cat": result.products.product[i].category1,
+                            "des": result.products.product[i].description1,
+                            "brand": result.products.product[i].brand_name,
+                            "oldPrice": result.products.product[i].price,
+                            "newPrice": result.products.product[i].deal_price,
+                            "discountRate": discount
+                        });
+                         eachProduct.save(function(err, fluffy) {
+                            if (err) return console.error(err);
+
+                            console.log(i + ". product saved");
+
+                        });
+                        console.log(i + "saved");
+                        /*console.log(i);
+                        request(result.products.product[i].product_url[0], function(error, response, body) {
+                            if (!error && response.statusCode == 200) {
+                                $ = cheerio.load(body);
+                                eachProduct["image"] = $('#zoom1').attr('href');
+                                console.log(eachProduct);
+
+
+                            }
+                        });*/
+
+
+
+
+                    } // for
+
+                }); //parse string body
+            }
+        }) // get all products from gelirortaklari
 
 
 request('http://feed.reklamaction.com/feed/get/json/5e86db9c580f775df52e6e73a13afada', function(error, response, body) {
@@ -175,13 +175,6 @@ app.post('/filter', function(req, res, next) {
   var selections= req.body;
   //find requested selections
   console.log("filter request recieved:"+ selections);
-//  Product.find({
-//        gender:1
-//        }, function(err, product) {
-//            if (err) return console.error(err);
-//            res.json(product);
-//            console.log("Done");
-//   }).limit(10);
 
       Product.find({
             },{},{ limit : 2 }, function(err, product) {

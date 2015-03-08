@@ -19,52 +19,37 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
 
       for (i = 0; i < data.length; i++) {
 
-          var discount = ((data[i].price - data[i].deal_price) / data[i].price) * 100;
-          var eachProduct;
-
-
           eachProduct = {
               "id": data[i].id,
               "title": data[i].title,
-              "image": $rootScope.eachImgUrl,
               "productURL": data[i].productURL,
               "gender": data[i].gender,
-              "merchantCategory": data[i].merchantCategory,
-              "cat1": data[i].cat1,
-              "cat2": data[i].cat2,
-              "cat3": data[i].cat3,
-              "des1": data[i].des1,
-              "des2": data[i].des2,
-              "des3": data[i].des3,
-              "brandName": data[i].brandName,
-              "modelName": data[i].model_name,
+              "cat": data[i].cat,
+              "des": data[i].des,
+              "brand": data[i].brand,
               "oldPrice": data[i].oldPrice,
               "newPrice": data[i].newPrice,
               "discountRate": data[i].discountRate,
-              "city": data[i].city,
-              "startDate": data[i].startDate,
-              "endDate": data[i].endDate,
-              "shortTitle": data[i].shortTitle
+              "image": data[i].image
           };
 
-          if (i > 10) {
-              break;
-          }
-          $http.get(data[i].productURL).
-          success(function(data, status, headers, config) {
-
-              $rootScope.eachImgUrl = $(data).find("[id='zoom1']").attr("href");
-
-              eachProduct = {
-                  "image": $rootScope.eachImgUrl
-              };
-              $scope.cards.push(angular.extend({}, eachProduct));
-
-          }).
-          error(function(data, status, headers, config) {
-              // called asynchronously if an error occurs
-              // or server returns response with an error status.
-          });
+          console.log(JSON.stringify(eachProduct));
+  $scope.cards.push(angular.extend({}, eachProduct));
+//          $http.get(data[i].productURL).
+//          success(function(data, status, headers, config) {
+//
+//              $rootScope.eachImgUrl = $(data).find("[id='zoom1']").attr("href");
+//
+//              eachProduct = {
+//                  "image": $rootScope.eachImgUrl
+//              };
+//
+//
+//          }).
+//          error(function(data, status, headers, config) {
+//              // called asynchronously if an error occurs
+//              // or server returns response with an error status.
+//          });
 
       };
     }
