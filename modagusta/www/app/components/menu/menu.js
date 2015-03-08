@@ -111,12 +111,20 @@ var reklamActionToken;
     ];
 
 
+
     $scope.btnBuy = function() { alert('he'); };
     $scope.btnFilter = function(selection) {
 
       console.log(selection);
 
-      $http.post(server+'filter', selection);
+      $http.post(server+'filter', selection).
+      success(function(data, status, headers, config) {
+        $rootScope.loadCards(data);
+      }).
+      error(function(data, status, headers, config) {
+        // called asynchronously if an error occurs
+        // or server returns response with an error status.
+      });
     };
 
     var server="http://localhost:3000/";
