@@ -25,28 +25,43 @@ db.on('error', function(err) {
 
 
 var Schema = mongoose.Schema;
+//var productsSchema = new Schema({
+//      id:String,
+//      title:String,
+//      image:String,
+//      productURL:String,
+//      gender:Boolean,
+//      merchantCategory:String,
+//      cat1:String,
+//      cat2:String,
+//      cat3:String,
+//      des1:String,
+//      des2:String,
+//      des3:String,
+//      brandName:String,
+//      productModelName:String,
+//      oldPrice:String,
+//      newPrice:String,
+//      discountRate:String,
+//      city:String,
+//      startDate:String,
+//      endDate:String,
+//      shortTitle:String
+//});
+
+
 var productsSchema = new Schema({
       id:String,
       title:String,
       image:String,
       productURL:String,
       gender:Boolean,
-      merchantCategory:String,
-      cat1:String,
-      cat2:String,
-      cat3:String,
-      des1:String,
-      des2:String,
-      des3:String,
-      brandName:String,
-      productModelName:String,
+      cat:String,
+      desc:String,
+      brand:String,
       oldPrice:String,
       newPrice:String,
       discountRate:String,
-      city:String,
-      startDate:String,
-      endDate:String,
-      shortTitle:String
 });
 
 var Product = mongoose.model('products',productsSchema);
@@ -64,28 +79,18 @@ db.once('open', function() {
 //
 //                    for (i = 0; i < result.products.product.length; i++) {
 //
-//                        var discount = ((result.products.product[i].price - result.products.product[i].deal_price) / result.products.product[i].price) * 100;
+//                        var discount = parseInt(((result.products.product[i].price - result.products.product[i].deal_price) / result.products.product[i].price) * 100);
 //                        var eachProduct = new Product({
 //                            "id": result.products.product[i].product_id,
 //                            "title": result.products.product[i].title,
 //                            "productURL": result.products.product[i].product_url,
 //                            "gender": result.products.product[i].gender,
-//                            "merchantCategory": result.products.product[i].merchant_category,
-//                            "cat1": result.products.product[i].category1,
-//                            "cat2": result.products.product[i].category2,
-//                            "cat3": result.products.product[i].category3,
-//                            "des1": result.products.product[i].description1,
-//                            "des2": result.products.product[i].description2,
-//                            "des3": result.products.product[i].description3,
-//                            "brandName": result.products.product[i].brand_name,
-//                            "modelName": result.products.product[i].model_name,
+//                            "cat": result.products.product[i].category1,
+//                            "des": result.products.product[i].description1,
+//                            "brand": result.products.product[i].brand_name,
 //                            "oldPrice": result.products.product[i].price,
 //                            "newPrice": result.products.product[i].deal_price,
-//                            "discountRate": discount,
-//                            "city": result.products.product[i].city,
-//                            "startDate": result.products.product[i].start_date,
-//                            "endDate": result.products.product[i].end_date,
-//                            "shortTitle": result.products.product[i].short_title
+//                            "discountRate": discount
 //                        });
 //                         eachProduct.save(function(err, fluffy) {
 //                            if (err) return console.error(err);
@@ -120,114 +125,31 @@ request('http://feed.reklamaction.com/feed/get/json/5e86db9c580f775df52e6e73a13a
         body = JSON.parse(body);
     //    console.log(body.Result.Products[1].ListPrice);
          for (i = 0; i < body.Result.Products.length; i++){
-                    var discount = ((body.Result.Products[i].ListPrice - body.Result.Products[i].SalePrice) / body.Result.Products[i].ListPrice) * 100;
+                    var discount = parseInt(((body.Result.Products[i].ListPrice - body.Result.Products[i].SalePrice) / body.Result.Products[i].ListPrice) * 100);
                     var eachProduct = new Product({
                                                 "id": body.Result.Products[i].Code,
                                                 "title": body.Result.Products[i].Title,
                                                 "productURL": body.Result.Products[i].URL,
                                                 "gender": body.Result.Products[i].Gender,
-                                                "merchantCategory": body.Result.Products[i].MainCategory,
-                                                "cat1": body.Result.Products[i].ChildrenCategory,
-                                                "cat2": null,
-                                                "cat3": null,
-                                                "des1": body.Result.Products[i].FullDesc,
-                                                "des2": body.Result.Products[i].ShortDesc,
-                                                "des3": body.Result.Products[i].description3,
+                                                "cat": body.Result.Products[i].MainCategory,
+                                                "des": body.Result.Products[i].FullDesc,
                                                 "brandName": null,
-                                                "modelName": null,
                                                 "oldPrice": body.Result.Products[i].ListPrice,
                                                 "newPrice": body.Result.Products[i].SalePrice,
                                                 "discountRate": discount,
-                                                "city": null,
-                                                "startDate": null,
-                                                "endDate": null,
-                                                "shortTitle": body.Result.Products[i].short_title,
                                                 "image": body.Result.Products[i].Images
 
                                             });
                                              eachProduct.save(function(err, fluffy) {
                                                 if (err) return console.error(err);
 
-                                                //console.log(i + ". product saved");
-
                                             });
-                                           //  console.log(i + "saved");
-console.log(eachProduct.image);
 
+                console.log(eachProduct);
         }//for
-
-
-
-
-
-
-
-
-
-
 
 }); // get reklamaction products
 
-
-
-
-
-
-
-
-
-
-
-
-//var options = {
-//  uri: 'http://private-anon-375fa4c77-reklamactionfeed.apiary-proxy.com/restapi/account/login',
-//  method: 'POST',
-//  json: {
-//      "login": "tarazansafak@gmail.com",
-//       "password": "Naber123"
-//  }
-//};
-//
-//request(options, function (error, response, body) {
-//  if (!error && response.statusCode == 200) {
-//    console.log(body) // Print the shortened url.
-//
-//
-//
-//
-//
-//
-//        request('http://private-anon-e3b27c9a4-reklamactionfeed.apiary-proxy.com/restapi/products?accessToken=' + body , function(error, response, body) {
-//                    if (!error && response.statusCode == 200) {
-//
-//                      //  parseString(body, function(err, result) {
-//
-//                             console.log(body);
-//
-//                      //   }); //parse string body
-//
-//                      }
-//
-//                      console.log(error);
-//
-//          });
-//
-//}
-//
-//}); //get reklamaction token
-
-//$.ajax({
-//  type: "POST",
-//  url: "http://private-anon-375fa4c77-reklamactionfeed.apiary-proxy.com/restapi/account/login",
-//  data: "{\"login\":\"nihan.meral@adsalsagroup.com\",\"password\":\"tradsalsa4\"}",
-//  success: function(data, status, headers, config) {
-//           console.log("reklamaction is ok");
-//            },
-//
-// fail:  function(data, status, headers, config) {
-//            console.log("reklamaction fail result: " + status);
-//         }
-//});
 
 
     console.log('connected.');
@@ -265,21 +187,6 @@ app.post('/filter', function(req, res, next) {
 });
 
 
-/*app.get('/product/:key/:value', function(req, res) {
-    var key = req.params.key;
-    var obj = {
-        key: req.params.value
-    };
-    Product.find({
-        key: req.params.value
-    }, function(err, product) {
-        if (err) return console.error(err);
-        res.json(product);
-    });
-});*/
-
-
-
 // CORS (Cross-Origin Resource Sharing) headers to support Cross-site HTTP requests
 
 app.all('*', function(req, res, next) {
@@ -290,11 +197,6 @@ app.all('*', function(req, res, next) {
 });
 
 app.use('/', routes);
-
-
-//var xmlparser = require('./parser.js');
-//var data = xmlparser.parse();
-
 
 var request = require('request');
 var parseString = require('xml2js').parseString;
