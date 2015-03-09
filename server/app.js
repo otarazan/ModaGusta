@@ -112,34 +112,35 @@ db.once('open', function() {
 //        }) // get all products from gelirortaklari
 
 
-//request('http://feed.reklamaction.com/feed/get/json/86fda8f5b0f907d4be6a5517b1861d2c', function(error, response, body) {
-//        //   if (!error && response.statusCode == 200) {}
-//        body = JSON.parse(body);
-//    //    console.log(body.Result.Products[1].ListPrice);
-//         for (i = 0; i < body.Result.Products.length; i++){
-//                    var discount = parseInt(((body.Result.Products[i].ListPrice - body.Result.Products[i].SalePrice) / body.Result.Products[i].ListPrice) * 100);
-//                    var eachProduct = new Product({
-//                                                "id": body.Result.Products[i].Code,
-//                                                "title": body.Result.Products[i].Title,
-//                                                "productURL": body.Result.Products[i].URL,
-//                                                "gender": body.Result.Products[i].Gender,
-//                                                "cat": body.Result.Products[i].MainCategory,
-//                                                "des": body.Result.Products[i].FullDesc,
-//                                                "brandName": null,
-//                                                "oldPrice": body.Result.Products[i].ListPrice,
-//                                                "newPrice": body.Result.Products[i].SalePrice,
-//                                                "discountRate": discount,
-//                                                "image": body.Result.Products[i].Images
-//
-//                                            });
-//                                             eachProduct.save(function(err, fluffy) {
-//                                                if (err) return console.error(err);
-//                                            });
-//
-//               // console.log(eachProduct);
-//        }//for
-//
-//}); // get reklamaction products
+request('http://feed.reklamaction.com/feed/get/json/7842dec1653e81a58787326784842b68', function(error, response, body) {
+       Product.find({}).remove().exec();
+        body = JSON.parse(body);
+    //    console.log(body.Result.Products[1].ListPrice);
+         for (i = 0; i < body.Result.Products.length; i++){
+                    var discount = parseInt(((body.Result.Products[i].ListPrice - body.Result.Products[i].SalePrice) / body.Result.Products[i].ListPrice) * 100);
+                    var eachProduct = new Product({
+                                                "id": body.Result.Products[i].Code,
+                                                "title": body.Result.Products[i].Title,
+                                                "productURL": body.Result.Products[i].URL,
+                                                "gender": body.Result.Products[i].Gender,
+                                                "cat": body.Result.Products[i].MainCategory,
+                                                "des": body.Result.Products[i].FullDesc,
+                                                "brandName": null,
+                                                "oldPrice": body.Result.Products[i].ListPrice,
+                                                "newPrice": body.Result.Products[i].SalePrice,
+                                                "discountRate": discount,
+                                                "image": body.Result.Products[i].Images
+                                            });
+                                             eachProduct.save(function(err, fluffy) {
+                                                if (err) return console.error(err);
+
+                                                console.log(i);
+                                            });
+
+               // console.log(eachProduct);
+        }//for
+
+}); // get reklamaction products
 
     console.log('connected.');
 
