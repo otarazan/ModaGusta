@@ -7,6 +7,7 @@ var cheerio = require('cheerio');
 var app = express();
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
+var request = require('request');
 
 var db = mongoose.connection;
 
@@ -195,7 +196,6 @@ app.all('*', function(req, res, next) {
 
 app.use('/', routes);
 
-var request = require('request');
 var parseString = require('xml2js').parseString;
 var server = app.listen(3000, function() {
 
