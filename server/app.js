@@ -26,35 +26,10 @@ db.on('error', function(err) {
 
 
 var Schema = mongoose.Schema;
-//var productsSchema = new Schema({
-//      id:String,
-//      title:String,
-//      image:String,
-//      productURL:String,
-//      gender:Boolean,
-//      merchantCategory:String,
-//      cat1:String,
-//      cat2:String,
-//      cat3:String,
-//      des1:String,
-//      des2:String,
-//      des3:String,
-//      brandName:String,
-//      productModelName:String,
-//      oldPrice:String,
-//      newPrice:String,
-//      discountRate:String,
-//      city:String,
-//      startDate:String,
-//      endDate:String,
-//      shortTitle:String
-//});
-
 
 var productsSchema = new Schema({
       id:String,
       title:String,
-      image:String,
       productURL:String,
       gender:Boolean,
       cat:String,
@@ -63,6 +38,7 @@ var productsSchema = new Schema({
       oldPrice:String,
       newPrice:String,
       discountRate:String,
+      image:String
 });
 
 var Product = mongoose.model('products',productsSchema);
@@ -71,58 +47,74 @@ var Product = mongoose.model('products',productsSchema);
 db.once('open', function() {
 
 
-    Product.find({}).remove().exec();
+  //  Product.find({}).remove().exec();
 
-    request('http://api.gelirortaklari.com/feed?id=7235&key=bc34a7f1f7a2bd5dff42e9708530e63f7164&page=1', function(error, response, body) {
-            if (!error && response.statusCode == 200) {
+//    request('http://api.gelirortaklari.com/feed?id=7235&key=bc34a7f1f7a2bd5dff42e9708530e63f7164&page=1', function(error, response, body) {
+//            if (!error && response.statusCode == 200) {
+//
+//                parseString(body, function(err, result) {
+//
+//                    for (i = 0; i< result.products.product.length; i++) {
+//
+//                        var discount = parseInt(((result.products.product[i].price - result.products.product[i].deal_price) / result.products.product[i].price) * 100);
+//
+//                       var eachProduct  = {
+//                            "id": result.products.product[i].product_id,
+//                            "title": result.products.product[i].title,
+//                            "productURL": result.products.product[i].product_url,
+//                            "gender": result.products.product[i].gender,
+//                            "cat": result.products.product[i].category1,
+//                            "des": result.products.product[i].description1,
+//                            "brand": result.products.product[i].brand_name,
+//                            "oldPrice": result.products.product[i].price,
+//                            "newPrice": result.products.product[i].deal_price,
+//                            "discountRate": discount,
+//                        };
+//
+//                        request(result.products.product[i].product_url[0], function(error, response, body) {
+//                            if (!error && response.statusCode == 200) {
+//                                $ = cheerio.load(body);
+//                                eachProduct["image"] = $('#zoom1').attr('href');
+//
+//
+//
+//                                                      var  tmpeachProduct  = new Product({
+//                                                            "id": eachProduct.id,
+//                                                            "title": eachProduct.title,
+//                                                            "productURL": eachProduct.productURL,
+//                                                            "gender": eachProduct.gender,
+//                                                            "cat": eachProduct.cat,
+//                                                            "des": eachProduct.des,
+//                                                            "brand": eachProduct.brand,
+//                                                            "oldPrice": eachProduct.oldPrice,
+//                                                            "newPrice": eachProduct.newPrice,
+//                                                            "discountRate": eachProduct.discountRate,
+//                                                            "image":eachProduct.image
+//                                                        });
+//
+//
+//                                                         tmpeachProduct.save(function(err, fluffy) {
+//                                                            if (err) return console.error(err);
+//                                                        console.log("saved" + i);
+//
+//                                                        });
+//
+//
+//                            }
+//                        });
+//
+//
+//
+//
+//                    } // for
+//
+//                }); //parse string body
+//            }
+//        }) // get all products from gelirortaklari
 
-                parseString(body, function(err, result) {
 
-                    for (i = 0; i < result.products.product.length; i++) {
-
-                        var discount = parseInt(((result.products.product[i].price - result.products.product[i].deal_price) / result.products.product[i].price) * 100);
-                        var eachProduct = new Product({
-                            "id": result.products.product[i].product_id,
-                            "title": result.products.product[i].title,
-                            "productURL": result.products.product[i].product_url,
-                            "gender": result.products.product[i].gender,
-                            "cat": result.products.product[i].category1,
-                            "des": result.products.product[i].description1,
-                            "brand": result.products.product[i].brand_name,
-                            "oldPrice": result.products.product[i].price,
-                            "newPrice": result.products.product[i].deal_price,
-                            "discountRate": discount
-                        });
-                         eachProduct.save(function(err, fluffy) {
-                            if (err) return console.error(err);
-
-                            console.log(i + ". product saved");
-
-                        });
-                        console.log(i + "saved");
-                        /*console.log(i);
-                        request(result.products.product[i].product_url[0], function(error, response, body) {
-                            if (!error && response.statusCode == 200) {
-                                $ = cheerio.load(body);
-                                eachProduct["image"] = $('#zoom1').attr('href');
-                                console.log(eachProduct);
-
-
-                            }
-                        });*/
-
-
-
-
-                    } // for
-
-                }); //parse string body
-            }
-        }) // get all products from gelirortaklari
-
-
-request('http://feed.reklamaction.com/feed/get/json/5e86db9c580f775df52e6e73a13afada', function(error, response, body) {
-        //   if (!error && response.statusCode == 200) {}
+request('http://feed.reklamaction.com/feed/get/json/7842dec1653e81a58787326784842b68', function(error, response, body) {
+       Product.find({}).remove().exec();
         body = JSON.parse(body);
     //    console.log(body.Result.Products[1].ListPrice);
          for (i = 0; i < body.Result.Products.length; i++){
@@ -139,11 +131,11 @@ request('http://feed.reklamaction.com/feed/get/json/5e86db9c580f775df52e6e73a13a
                                                 "newPrice": body.Result.Products[i].SalePrice,
                                                 "discountRate": discount,
                                                 "image": body.Result.Products[i].Images
-
                                             });
                                              eachProduct.save(function(err, fluffy) {
                                                 if (err) return console.error(err);
 
+                                                console.log(i);
                                             });
 
                // console.log(eachProduct);
@@ -178,7 +170,7 @@ app.post('/filter', function(req, res, next) {
   console.log("filter request recieved:"+ selections);
 
       Product.find({
-            },{},{ limit : 2 }, function(err, product) {
+            },{},{ limit : 20 }, function(err, product) {
                 if (err) return console.error(err);
                 console.log(product);
                 res.json(product);

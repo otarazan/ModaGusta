@@ -33,23 +33,8 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
               "image": data[i].image
           };
 
-          console.log(JSON.stringify(eachProduct));
+        //  console.log(JSON.stringify(eachProduct));
   $scope.cards.push(angular.extend({}, eachProduct));
-//          $http.get(data[i].productURL).
-//          success(function(data, status, headers, config) {
-//
-//              $rootScope.eachImgUrl = $(data).find("[id='zoom1']").attr("href");
-//
-//              eachProduct = {
-//                  "image": $rootScope.eachImgUrl
-//              };
-//
-//
-//          }).
-//          error(function(data, status, headers, config) {
-//              // called asynchronously if an error occurs
-//              // or server returns response with an error status.
-//          });
 
       };
     }
