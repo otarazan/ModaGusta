@@ -18,3 +18,5 @@ npm-debug.log
 *.iml
 .DS_Store
 Thumbs.db
+mode_modules/
+
