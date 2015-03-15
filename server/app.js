@@ -72,7 +72,7 @@ db.once('open', function() {
                               //Save the product
                               product.save(function(err, fluffy) {
                                 if (err) return console.error(err);
-                                console.log("saved :" + JSON.stringify(product));
+                                //console.log("saved :" + JSON.stringify(product));
                               });
                         }
                         done();
@@ -110,35 +110,35 @@ db.once('open', function() {
         }) // get all products from gelirortaklari
 
 
-    // request('http://feed.reklamaction.com/feed/get/json/7842dec1653e81a58787326784842b68', function(error, response, body) {
-    //     Product.find({}).remove().exec();
-    //     body = JSON.parse(body);
-    //     //    console.log(body.Result.Products[1].ListPrice);
-    //     for (i = 0; i < body.Result.Products.length; i++) {
-    //         var discount = parseInt(((body.Result.Products[i].ListPrice - body.Result.Products[i].SalePrice) / body.Result.Products[i].ListPrice) * 100);
-    //         var eachProduct = new Product({
-    //             "id": body.Result.Products[i].Code,
-    //             "title": body.Result.Products[i].Title,
-    //             "productURL": body.Result.Products[i].URL,
-    //             "gender": body.Result.Products[i].Gender,
-    //             "cat": body.Result.Products[i].MainCategory,
-    //             "des": body.Result.Products[i].FullDesc,
-    //             "brandName": null,
-    //             "oldPrice": body.Result.Products[i].ListPrice,
-    //             "newPrice": body.Result.Products[i].SalePrice,
-    //             "discountRate": discount,
-    //             "image": body.Result.Products[i].Images
-    //         });
-    //         eachProduct.save(function(err, fluffy) {
-    //             if (err) return console.error(err);
-    //
-    //             console.log(i);
-    //         });
-    //
-    //         // console.log(eachProduct);
-    //     } //for
-    //
-    // }); // get reklamaction products
+    request('http://feed.reklamaction.com/feed/get/json/7842dec1653e81a58787326784842b68', function(error, response, body) {
+        Product.find({}).remove().exec();
+        body = JSON.parse(body);
+        //    console.log(body.Result.Products[1].ListPrice);
+        for (i = 0; i < body.Result.Products.length; i++) {
+            var discount = parseInt(((body.Result.Products[i].ListPrice - body.Result.Products[i].SalePrice) / body.Result.Products[i].ListPrice) * 100);
+            var eachProduct = new Product({
+                "id": body.Result.Products[i].Code,
+                "title": body.Result.Products[i].Title,
+                "productURL": body.Result.Products[i].URL,
+                "gender": body.Result.Products[i].Gender,
+                "cat": body.Result.Products[i].MainCategory,
+                "des": body.Result.Products[i].FullDesc,
+                "brandName": null,
+                "oldPrice": body.Result.Products[i].ListPrice,
+                "newPrice": body.Result.Products[i].SalePrice,
+                "discountRate": discount,
+                "image": body.Result.Products[i].Images
+            });
+            eachProduct.save(function(err, fluffy) {
+                if (err) return console.error(err);
+
+                console.log(i);
+            });
+
+            // console.log(eachProduct);
+        } //for
+
+    }); // get reklamaction products
 
     console.log('connected.');
 
@@ -168,7 +168,11 @@ app.post('/filter', function(req, res, next) {
     //find requested selections
     console.log("filter request recieved:" + JSON.stringify(selections));
 
-    Product.find({}, {}, {
+    Product.find({"gender":selections.gender.id,
+                        "cat":selections.cat.id,
+                        "discountRate": { $gt: selections.discount.id },
+                        "newPrice": { $gt: selections.price.id },
+                  }, {}, {
         limit: 20
     }, function(err, product) {
         if (err) return console.error(err);
@@ -176,6 +180,15 @@ app.post('/filter', function(req, res, next) {
         res.json(product);
     });
 });
+
+app.get('/cat', function(req, res, next) {
+    var selections = req.body;
+
+    Product.find().distinct('cat', function(error, product) {
+      res.json(product);
+    });
+});
+
 
 // CORS (Cross-Origin Resource Sharing) headers to support Cross-site HTTP requests
 

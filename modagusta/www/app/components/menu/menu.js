@@ -95,24 +95,42 @@ var reklamActionToken;
     }; //sendWishlistMail
 
     $scope.genders = [
-        { id: 1, name: 'Erkek' },
-        { id: 2, name: 'kadin' }
+        { id: false, name: 'Erkek' },
+        { id: true, name: 'kadin' }
     ];
-    $scope.categories = [
-        { id: 1, name: 'Ayakkabi' },
-        { id: 2, name: 'Çanta' }
-    ];
+
+
+    var server="http://localhost:3000/";
+
+    //Get categories from the server
+    $http.get(server+'cat').
+              success(function(data, status, headers, config) {
+                $scope.categories = [];
+                data.forEach(function(entry) {
+                    $scope.categories.push({id: entry, name: entry});
+                });
+                //After getting the categories set everything
+                $scope.selection = {
+                "gender": $scope.genders[1],
+                "cat": $scope.categories[0],
+                "discount": $scope.discounts[0],
+                "price": $scope.prices[0],
+                };
+                  getSelectedProducts($scope.selection);
+              })
+
     $scope.discounts = [
-        { id: 1, name: '%15' }
+        { id: 15, name: '%15' },
+        { id: 82, name: '%82' }
     ];
     $scope.prices = [
-        { id: 1, name: '100TL alti' }
+        { id: 50, name: '50TL alti' },
+        { id: 100, name: '100TL alti' },
+        { id: 1000, name: '1000TL üstü' }
     ];
 
 
-
-    $scope.btnFilter = function(selection) {
-
+    function getSelectedProducts(selection){
       console.log("Your selection:");
       console.log(selection);
 
@@ -124,9 +142,13 @@ var reklamActionToken;
         // called asynchronously if an error occurs
         // or server returns response with an error status.
       });
+    }
+
+
+    $scope.btnFilter = function(selection) {
+      getSelectedProducts(selection);
     };
 
-    var server="http://localhost:3000/";
 
     $scope.$watch(function() {
         return $ionicSideMenuDelegate.isOpenRight();
