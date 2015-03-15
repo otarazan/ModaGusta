@@ -9,22 +9,6 @@ var reklamActionToken;
     }
 
 
-
-
-//
-//$scope.getProductID = function(token){
-//
-//$http.get('http://feed.reklamaction.com/restapi/offers?accessToken='+token).
-//  success(function(data, status, headers, config) {
-//   console.log("product id" + JSON.stringify(data));
-//    $scope.getproductsWithID('1691',token);
-//  }).
-//  error(function(data, status, headers, config) {
-// console.log("cant get product IDs");
-//  });
-//
-//};
-
     $scope.validateEmail = function(email) {
 
             var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -102,6 +86,13 @@ var reklamActionToken;
 
     var server="http://localhost:3000/";
 
+     $http.post(server+'getAll').
+          success(function(data, status, headers, config) {
+            $rootScope.loadCards(data);
+          }).
+          error(function(data, status, headers, config) {
+          });
+
     //Get categories from the server
     $http.get(server+'cat').
               success(function(data, status, headers, config) {
@@ -116,7 +107,7 @@ var reklamActionToken;
                 "discount": $scope.discounts[0],
                 "price": $scope.prices[0],
                 };
-                  getSelectedProducts($scope.selection);
+                //  getSelectedProducts($scope.selection);
               })
 
     $scope.discounts = [
