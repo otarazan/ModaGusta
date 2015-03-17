@@ -63,18 +63,11 @@ db.once('open', function() {
                         if (!error && response.statusCode == 200) {
                               $ = cheerio.load(body);
                               //get Image
-                              console.log($('#Zoomer').attr('href'));
-                              console.log( $('#zoom1').attr('href'));
-                              //product.image = $('#zoom1').attr('href');
-
-                              if (product.image ==null) {
-                                  //return; //this shouldnt happen
-                              }
+                              product.image = $('#Zoomer').attr('href');
 
                               //Save the product
                               product.save(function(err, fluffy) {
                                 if (err) return console.error(err);
-                                //console.log("saved :" + JSON.stringify(product));
                               });
                         }
                         done();
@@ -95,8 +88,7 @@ db.once('open', function() {
                            "brand": result.products.product[i].brand_name,
                            "oldPrice": result.products.product[i].price,
                            "newPrice": result.products.product[i].deal_price,
-                           "discountRate": discount,
-                           "image" : ''
+                           "discountRate": discount
 
                       });
                       q.push(eachProduct );
