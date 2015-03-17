@@ -63,33 +63,18 @@ db.once('open', function() {
                         if (!error && response.statusCode == 200) {
                               $ = cheerio.load(body);
                               //get Image
-                              product.image = $('#Zoomer').attr('href');
-
-                                        var  tmpProduct  = new Product({
-                                                                                          "id": product.id,
-                                                                                          "title": product.title,
-                                                                                          "productURL": product.productURL,
-                                                                                          "gender": product.gender,
-                                                                                          "cat": product.cat,
-                                                                                          "des": product.des,
-                                                                                          "brand": product.brand,
-                                                                                          "oldPrice": product.oldPrice,
-                                                                                          "newPrice": product.newPrice,
-                                                                                          "discountRate": product.discountRate,
-                                                                                          "image":product.image
-                                                                                     });
-
-
-
+                              console.log($('#Zoomer').attr('href'));
+                              console.log( $('#zoom1').attr('href'));
+                              //product.image = $('#zoom1').attr('href');
 
                               if (product.image ==null) {
                                   //return; //this shouldnt happen
                               }
 
                               //Save the product
-                              tmpProduct.save(function(err, fluffy) {
+                              product.save(function(err, fluffy) {
                                 if (err) return console.error(err);
-                            //   console.log("saved :" + JSON.stringify(product.image));
+                                //console.log("saved :" + JSON.stringify(product));
                               });
                         }
                         done();
@@ -100,25 +85,25 @@ db.once('open', function() {
 
                     for (i = 0; i <100; i++) {
                       var discount = parseInt(((result.products.product[i].price - result.products.product[i].deal_price) / result.products.product[i].price) * 100);
+                      var eachProduct = new Product({
+                           "id": result.products.product[i].product_id,
+                           "title": result.products.product[i].title,
+                           "productURL": result.products.product[i].product_url[0],
+                           "gender": result.products.product[i].gender,
+                           "cat": result.products.product[i].category1,
+                           "des": result.products.product[i].description1,
+                           "brand": result.products.product[i].brand_name,
+                           "oldPrice": result.products.product[i].price,
+                           "newPrice": result.products.product[i].deal_price,
+                           "discountRate": discount,
+                           "image" : ''
 
-                         var eachProduct  = {
-                                                  "id": result.products.product[i].product_id,
-                                                  "title": result.products.product[i].title,
-                                                  "productURL": result.products.product[i].product_url[0],
-                                                  "gender": result.products.product[i].gender,
-                                                  "cat": result.products.product[i].category1,
-                                                  "des": result.products.product[i].description1,
-                                                  "brand": result.products.product[i].brand_name,
-                                                  "oldPrice": result.products.product[i].price,
-                                                  "newPrice": result.products.product[i].deal_price,
-                                                  "discountRate": discount,
-                                             };
-
-
-
-
-
+                      });
                       q.push(eachProduct );
+
+
+
+
 
                     } // for
 
@@ -127,35 +112,35 @@ db.once('open', function() {
         }) // get all products from gelirortaklari
 
 
-//    request('http://feed.reklamaction.com/feed/get/json/7842dec1653e81a58787326784842b68', function(error, response, body) {
-//        Product.find({}).remove().exec();
-//        body = JSON.parse(body);
-//        //    console.log(body.Result.Products[1].ListPrice);
-//        for (i = 0; i < body.Result.Products.length; i++) {
-//            var discount = parseInt(((body.Result.Products[i].ListPrice - body.Result.Products[i].SalePrice) / body.Result.Products[i].ListPrice) * 100);
-//            var eachProduct = new Product({
-//                "id": body.Result.Products[i].Code,
-//                "title": body.Result.Products[i].Title,
-//                "productURL": body.Result.Products[i].URL,
-//                "gender": body.Result.Products[i].Gender,
-//                "cat": body.Result.Products[i].MainCategory,
-//                "des": body.Result.Products[i].FullDesc,
-//                "brandName": null,
-//                "oldPrice": body.Result.Products[i].ListPrice,
-//                "newPrice": body.Result.Products[i].SalePrice,
-//                "discountRate": discount,
-//                "image": body.Result.Products[i].Images
-//            });
-//            eachProduct.save(function(err, fluffy) {
-//                if (err) return console.error(err);
-//
-//                console.log(i);
-//            });
-//
-//            // console.log(eachProduct);
-//        } //for
-//
-//    }); // get reklamaction products
+    request('http://feed.reklamaction.com/feed/get/json/7842dec1653e81a58787326784842b68', function(error, response, body) {
+        Product.find({}).remove().exec();
+        body = JSON.parse(body);
+        //    console.log(body.Result.Products[1].ListPrice);
+        for (i = 0; i < body.Result.Products.length; i++) {
+            var discount = parseInt(((body.Result.Products[i].ListPrice - body.Result.Products[i].SalePrice) / body.Result.Products[i].ListPrice) * 100);
+            var eachProduct = new Product({
+                "id": body.Result.Products[i].Code,
+                "title": body.Result.Products[i].Title,
+                "productURL": body.Result.Products[i].URL,
+                "gender": body.Result.Products[i].Gender,
+                "cat": body.Result.Products[i].MainCategory,
+                "des": body.Result.Products[i].FullDesc,
+                "brandName": null,
+                "oldPrice": body.Result.Products[i].ListPrice,
+                "newPrice": body.Result.Products[i].SalePrice,
+                "discountRate": discount,
+                "image": body.Result.Products[i].Images
+            });
+            eachProduct.save(function(err, fluffy) {
+                if (err) return console.error(err);
+
+                console.log(i);
+            });
+
+            // console.log(eachProduct);
+        } //for
+
+    }); // get reklamaction products
 
     console.log('connected.');
 
@@ -164,9 +149,6 @@ db.once('open', function() {
 
 
 app.get('/product/:id', function(req, res) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
     var p = Product.find({
         id: req.params.id
     });
@@ -184,9 +166,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 
 app.post('/filter', function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
     var selections = req.body;
     //find requested selections
     console.log("filter request recieved:" + JSON.stringify(selections));
@@ -204,24 +183,7 @@ app.post('/filter', function(req, res, next) {
     });
 });
 
-app.post('/getAll', function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
-
-    Product.find({}, {}, {
-        limit: 20
-    }, function(err, product) {
-        if (err) return console.error(err);
-      //  console.log(product);
-        res.json(product);
-    });
-});
-
 app.get('/cat', function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
     var selections = req.body;
 
     Product.find().distinct('cat', function(error, product) {
