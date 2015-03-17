@@ -64,7 +64,7 @@ db.once('open', function() {
                               $ = cheerio.load(body);
                               //get Image
                               product.image = $('#Zoomer').attr('href');
-                              console.log($('#Zoomer').attr('href'));
+                              //console.log($('#Zoomer').attr('href'));
                               if (product.image ==null) {
                                   //return; //this shouldnt happen
                               }

@@ -87,11 +87,11 @@ var reklamActionToken;
     var server="http://localhost:3000/";
 
     $http.post(server+'getAll').
-       success(function(data, status, headers, config) {
-         $rootScope.loadCards(data);
-       }).
-       error(function(data, status, headers, config) {
-       });
+             success(function(data, status, headers, config) {
+               $rootScope.loadCards(data);
+             }).
+             error(function(data, status, headers, config) {
+             });
 
     //Get categories from the server
     $http.get(server+'cat').
