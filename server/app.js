@@ -9,6 +9,7 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var request = require('request');
 var async = require("async");
+var nodemailer = require('nodemailer');
 
 
 var db = mongoose.connection;
@@ -37,7 +38,7 @@ var productsSchema = new Schema({
     cat: String,
     desc: String,
     brand: String,
-    oldPrice: String,
+    oldPrice: Number,
     newPrice: String,
     discountRate: String,
     image: String
@@ -98,18 +99,13 @@ db.once('open', function() {
                            "cat": cat,
                            "des": result.products.product[i].description1,
                            "brand": result.products.product[i].brand_name,
-                           "oldPrice": result.products.product[i].price,
+                           "oldPrice": parseInt(result.products.product[i].price),
                            "newPrice": result.products.product[i].deal_price,
                            "discountRate": discount,
                            "image" : ''
 
                       });
-                      console.log(eachProduct.cat)
-
                       q.push(eachProduct );
-
-
-
 
 
                     } // for
@@ -185,8 +181,7 @@ app.post('/filter', function(req, res, next) {
 
     Product.find({"gender":selections.gender.id,
                         "cat":selections.cat.id,
-                        "discountRate": { $gt: selections.discount.id },
-                        "newPrice": { $gt: selections.price.id },
+                        "oldPrice": { $lt: selections.price.maxPrice, $gt: selections.price.minPrice },
                   }, {}, {
         limit: 20
     }, function(err, product) {
@@ -211,15 +206,61 @@ app.post('/getAll', function(req, res, next) {
     });
 });
 
+
+//app.get('/sendWishListMail', function(req, res, next) {
+//    res.header("Access-Control-Allow-Origin", "*");
+//    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+//    res.header('Access-Control-Allow-Headers', 'Content-Type');
+//
+//
+//var transporter = nodemailer.createTransport({
+//    service: 'gmail',
+//    auth: {
+//        user: 'hus.alemdar@gmail.com',
+//        pass: 'Naber123'
+//    }
+//});
+//transporter.sendMail({
+//    from: 'hus.alemdar@gmail.com',
+//    to: 'hus.alemdar@gmail.com',
+//    subject: 'dfsf',
+//    text: 'hello world!'
+//});
+//
+//});
+
 app.get('/cat', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
     res.header('Access-Control-Allow-Headers', 'Content-Type');
     var selections = req.body;
 
+    var cats;
+    var discountRate;
+    var gender;
+
     Product.find().distinct('cat', function(error, product) {
-      res.json(product);
+      cats = product ;
+        Product.find().distinct('discountRate', function(error, product) {
+              discountRate = product ;
+              Product.find().distinct('gender', function(error, product) {
+                     gender = product ;
+
+                     var result = {
+                     'cat':cats
+                     };
+
+                     res.json(result);
+
+
+                });
+          });
+
     });
+
+
+
+
 });
 
 

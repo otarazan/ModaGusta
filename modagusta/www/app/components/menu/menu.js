@@ -100,27 +100,32 @@ var reklamActionToken;
     $http.get(server+'cat').
               success(function(data, status, headers, config) {
                 $scope.categories = [];
-                data.forEach(function(entry) {
+                data.cat.forEach(function(entry) {
                     $scope.categories.push({id: entry, name: entry});
                 });
+
                 //After getting the categories set everything
                 $scope.selection = {
                 "gender": $scope.genders[1],
                 "cat": $scope.categories[0],
-                "discount": $scope.discounts[0],
                 "price": $scope.prices[0],
                 };
                   //getSelectedProducts($scope.selection);
-              })
+              });
+
+
+
 
     $scope.discounts = [
         { id: 15, name: '%15' },
         { id: 82, name: '%82' }
     ];
     $scope.prices = [
-        { id: 50, name: '50TL alti' },
-        { id: 100, name: '100TL alti' },
-        { id: 1000, name: '1000TL üstü' }
+        { id: 50, name: '10 -  20', minPrice:'10', maxPrice:'20' },
+        { id: 100, name: '20 - 50' ,minPrice:'20', maxPrice:'50' },
+        { id: 504, name: '50 -  100', minPrice:'50', maxPrice:'100' },
+        { id: 1002, name: '100 - 300' ,minPrice:'100', maxPrice:'300' },
+             { id: 1002, name: '0 - 1000' ,minPrice:'0', maxPrice:'1000' }
     ];
 
 
