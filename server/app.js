@@ -64,7 +64,11 @@ db.once('open', function() {
                               $ = cheerio.load(body);
                               //get Image
                               product.image = $('#Zoomer').attr('href');
+
                           //    console.log($('#Zoomer').attr('href'));
+
+                              //console.log($('#Zoomer').attr('href'));
+
                               if (product.image ==null) {
                                   //return; //this shouldnt happen
                               }
@@ -84,7 +88,7 @@ db.once('open', function() {
                     for (i = 0; i <100; i++) {
                       var discount = parseInt(((result.products.product[i].price - result.products.product[i].deal_price) / result.products.product[i].price) * 100);
                       var catArr  = result.products.product[i].category1[0].split('&gt;');
-                      var cat = catArr[catArr.length -1];
+                      var cat = catArr[catArr.length -1].trim();
 
                       var eachProduct = new Product({
                            "id": result.products.product[i].product_id,
@@ -152,6 +156,9 @@ db.once('open', function() {
 
 
 app.get('/product/:id', function(req, res) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
     var p = Product.find({
         id: req.params.id
     });
@@ -169,6 +176,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 
 app.post('/filter', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
     var selections = req.body;
     //find requested selections
     console.log("filter request recieved:" + JSON.stringify(selections));
@@ -202,6 +212,9 @@ app.post('/getAll', function(req, res, next) {
 });
 
 app.get('/cat', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
     var selections = req.body;
 
     Product.find().distinct('cat', function(error, product) {
