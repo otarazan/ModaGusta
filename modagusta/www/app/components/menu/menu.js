@@ -86,6 +86,13 @@ var reklamActionToken;
 
     var server="http://localhost:3000/";
 
+    $http.post(server+'getAll').
+       success(function(data, status, headers, config) {
+         $rootScope.loadCards(data);
+       }).
+       error(function(data, status, headers, config) {
+       });
+
     //Get categories from the server
     $http.get(server+'cat').
               success(function(data, status, headers, config) {
@@ -100,7 +107,7 @@ var reklamActionToken;
                 "discount": $scope.discounts[0],
                 "price": $scope.prices[0],
                 };
-                  getSelectedProducts($scope.selection);
+                  //getSelectedProducts($scope.selection);
               })
 
     $scope.discounts = [

@@ -76,7 +76,7 @@
                             {{card.title}}
                         </div>
                         <div style="float:left;">
-                            <a ng-href="http://localhost:3000/buy?id={{card.id}}" target="_blank">
+                            <a ng-href="{{card.productURL}}?modagusta=1" target="_blank">
                             <button class="button button-positive button-small" ng-click="btnBuy()">
                                 BUY
                             </button>

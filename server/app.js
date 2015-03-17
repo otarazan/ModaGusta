@@ -64,10 +64,15 @@ db.once('open', function() {
                               $ = cheerio.load(body);
                               //get Image
                               product.image = $('#Zoomer').attr('href');
+                              console.log($('#Zoomer').attr('href'));
+                              if (product.image ==null) {
+                                  //return; //this shouldnt happen
+                              }
 
                               //Save the product
                               product.save(function(err, fluffy) {
                                 if (err) return console.error(err);
+                                //console.log("saved :" + JSON.stringify(product));
                               });
                         }
                         done();
@@ -88,7 +93,8 @@ db.once('open', function() {
                            "brand": result.products.product[i].brand_name,
                            "oldPrice": result.products.product[i].price,
                            "newPrice": result.products.product[i].deal_price,
-                           "discountRate": discount
+                           "discountRate": discount,
+                           "image" : ''
 
                       });
                       q.push(eachProduct );
@@ -104,7 +110,7 @@ db.once('open', function() {
         }) // get all products from gelirortaklari
 
 
-    request('http://feed.reklamaction.com/feed/get/json/7842dec1653e81a58787326784842b68', function(error, response, body) {
+   /*  request('http://feed.reklamaction.com/feed/get/json/7842dec1653e81a58787326784842b68', function(error, response, body) {
         Product.find({}).remove().exec();
         body = JSON.parse(body);
         //    console.log(body.Result.Products[1].ListPrice);
@@ -134,7 +140,7 @@ db.once('open', function() {
 
     }); // get reklamaction products
 
-    console.log('connected.');
+    console.log('connected.'); */
 
 
 });
@@ -167,6 +173,21 @@ app.post('/filter', function(req, res, next) {
                         "discountRate": { $gt: selections.discount.id },
                         "newPrice": { $gt: selections.price.id },
                   }, {}, {
+        limit: 20
+    }, function(err, product) {
+        if (err) return console.error(err);
+      //  console.log(product);
+        res.json(product);
+    });
+});
+
+
+app.post('/getAll', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+
+    Product.find({}, {}, {
         limit: 20
     }, function(err, product) {
         if (err) return console.error(err);

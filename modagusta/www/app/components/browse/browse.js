@@ -11,32 +11,32 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
         }
     }
 
-    $rootScope.loadCards = function(data){
-      var cardTypes = data;
+    $rootScope.loadCards = function(data) {
+        var cardTypes = data;
 
-      $scope.cards = [];
+        $scope.cards = [];
 
 
-      for (i = 0; i < data.length; i++) {
+        for (i = 0; i < data.length; i++) {
 
-          eachProduct = {
-              "id": data[i].id,
-              "title": data[i].title,
-              "productURL": data[i].productURL,
-              "gender": data[i].gender,
-              "cat": data[i].cat,
-              "des": data[i].des,
-              "brand": data[i].brand,
-              "oldPrice": data[i].oldPrice,
-              "newPrice": data[i].newPrice,
-              "discountRate": data[i].discountRate,
-              "image": data[i].image
-          };
+            eachProduct = {
+                "id": data[i].id,
+                "title": data[i].title,
+                "productURL": data[i].productURL,
+                "gender": data[i].gender,
+                "cat": data[i].cat,
+                "des": data[i].des,
+                "brand": data[i].brand,
+                "oldPrice": data[i].oldPrice,
+                "newPrice": data[i].newPrice,
+                "discountRate": data[i].discountRate,
+                "image": data[i].image
+            };
 
-        //  console.log(JSON.stringify(eachProduct));
-  $scope.cards.push(angular.extend({}, eachProduct));
+            //  console.log(JSON.stringify(eachProduct));
+            $scope.cards.push(angular.extend({}, eachProduct));
 
-      };
+        };
     }
 
     $scope.cardSwipedLeft = function(index) {
@@ -95,7 +95,7 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
 
     $scope.onTap = function(index) {
         //   console.log($scope.cards[index].image);
-        window.location = server + "buy?id=" + $scope.cards[index].id
+        window.location =  $scope.cards[index].productURL + "?modagusta=1";
 
     }
 
