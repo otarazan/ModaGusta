@@ -64,7 +64,7 @@ db.once('open', function() {
                               $ = cheerio.load(body);
                               //get Image
                               product.image = $('#Zoomer').attr('href');
-                              console.log($('#Zoomer').attr('href'));
+                          //    console.log($('#Zoomer').attr('href'));
                               if (product.image ==null) {
                                   //return; //this shouldnt happen
                               }
@@ -83,12 +83,15 @@ db.once('open', function() {
 
                     for (i = 0; i <100; i++) {
                       var discount = parseInt(((result.products.product[i].price - result.products.product[i].deal_price) / result.products.product[i].price) * 100);
+                      var catArr  = result.products.product[i].category1[0].split('&gt;');
+                      var cat = catArr[catArr.length -1];
+
                       var eachProduct = new Product({
                            "id": result.products.product[i].product_id,
                            "title": result.products.product[i].title,
                            "productURL": result.products.product[i].product_url[0],
                            "gender": result.products.product[i].gender,
-                           "cat": result.products.product[i].category1,
+                           "cat": cat,
                            "des": result.products.product[i].description1,
                            "brand": result.products.product[i].brand_name,
                            "oldPrice": result.products.product[i].price,
@@ -97,6 +100,8 @@ db.once('open', function() {
                            "image" : ''
 
                       });
+                      console.log(eachProduct.cat)
+
                       q.push(eachProduct );
 
 
