@@ -88,7 +88,10 @@ var reklamActionToken;
 
     $http.post(server+'getAll').
              success(function(data, status, headers, config) {
-               $rootScope.loadCards(data);
+
+               if ($rootScope.loadCards!=null){
+                 $rootScope.loadCards(data);
+               }
              }).
              error(function(data, status, headers, config) {
              });
