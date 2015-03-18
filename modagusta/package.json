@@ -16,6 +16,9 @@
   },
   "cordovaPlugins": [
     "https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git",
-    "https://github.com/danwilson/google-analytics-plugin.git"
+    "https://github.com/danwilson/google-analytics-plugin.git",
+    "https://git-wip-us.apache.org/repos/asf/cordova-plugin-inappbrowser.git",
+    "org.apache.cordova.inappbrowser",
+    "nl.x-services.plugins.socialsharing"
   ]
 }

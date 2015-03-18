@@ -42,19 +42,15 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
     $scope.cardSwipedLeft = function(index) {
 
         //Remote last item manually
-        $(".td-cards td-card:last").fadeOut(100, function() {
-            this.remove();
-        });
-
-    }
+       $(".td-cards td-card:last").remove();
+}
 
     $scope.likedBtn = function(index) {
         //Remote last item manually
-        $(".td-cards td-card:last").fadeOut(100, function() {
-            this.remove();
-        });
+
+     $(".td-cards td-card:last").remove();
         //Continue same as swiping
-        $scope.cardSwipedRight(index);
+ $scope.cardSwipedRight(index);
     }
     $scope.cardSwipedRight = function(index) {
         console.log('Right swipe: item stored' + $scope.cards[index].id);
@@ -95,7 +91,10 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
 
     $scope.onTap = function(index) {
         //   console.log($scope.cards[index].image);
-        window.location =  $scope.cards[index].productURL + "?modagusta=1";
+    //    window.location =  $scope.cards[index].productURL + "?modagusta=1";
+
+  window.open($scope.cards[index].productURL + "?modagusta=1", '_system', 'location=yes');
+
 
     }
 
@@ -124,9 +123,9 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
 
 
   ionic.Platform.ready(function(){
-   alert(ionic.Platform.version())
+
   });
 
 });
 
-var server = "http://localhost:3000/";
+var server = "http://192.168.1.6:3000/";
