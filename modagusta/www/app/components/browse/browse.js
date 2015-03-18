@@ -104,6 +104,34 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
         //   console.log('Card removed');
     }
 
+    $scope.shareBtn = function(){
+
+   var confirmPopup = $ionicPopup.confirm({
+     title: 'Consume Ice Cream',
+     template: 'Are you sure you want to eat this ice cream?'
+   });
+   confirmPopup.then(function(res) {
+     if(res) {
+       console.log('You are sure');
+     } else {
+       console.log('You are not sure');
+     }
+   });
+
+
+    }
+  ionic.Platform.ready(function(){
+    // will execute when device is ready, or immediately if the device is already ready.
+  });
+
+
+
+  ionic.Platform.ready(function(){
+    if(ionic.Platform.platform()=="win32"){
+      var elem =  document.getElementById('shareBtn').hide();
+     }
+  });
+
 });
 
 var server = "http://localhost:3000/";
