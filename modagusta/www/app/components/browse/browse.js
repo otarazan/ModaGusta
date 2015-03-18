@@ -120,16 +120,11 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
 
 
     }
-  ionic.Platform.ready(function(){
-    // will execute when device is ready, or immediately if the device is already ready.
-  });
 
 
 
   ionic.Platform.ready(function(){
-    if(ionic.Platform.platform()=="win32"){
-      var elem =  document.getElementById('shareBtn').hide();
-     }
+   alert(ionic.Platform.version())
   });
 
 });
