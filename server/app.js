@@ -262,7 +262,39 @@ app.get('/cat', function(req, res, next) {
 
 
 });
+app.post('/sendWishListMail', function(req, res) {
+    console.log("hello");
+    req.on('data', function(data) {
+        var wishList=JSON.parse(data.toString()).wishList;
+        console.log("Received mail data");
 
+        //Prepare data in mail format
+        var mail = "Your Wish List:<br>";
+        for (i = 0; i < wishList.length; i++) {
+            console.log(mail);
+            mail += wishList[i].title + "<a href='#'><img height='60' width='60' src='http://localhost:8100/"+ wishList[i].image +"'/></a><br>";
+        };
+        console.log(mail);
+        var nodemailer = require('nodemailer');
+        var transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+                user: 'hus.alemdar@gmail.com',
+                pass: 'Naber123'
+            }
+        });
+        transporter.sendMail({
+            from: 'hus.alemdar@gmail.com',
+            to: 'tarazansafak@gmail.com',
+            subject: 'ModaGusta WishList',
+            html: mail
+        });
+        res.json("ok");
+
+
+    });
+
+});
 
 // CORS (Cross-Origin Resource Sharing) headers to support Cross-site HTTP requests
 
