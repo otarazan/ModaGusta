@@ -14,7 +14,7 @@ var nodemailer = require('nodemailer');
 
 var db = mongoose.connection;
 
-mongoose.connect('mongodb://localhost/modagusta');
+mongoose.connect('mongodb://admin:admin@ds053251.mongolab.com:53251/heroku_app34701713');
 
 //load all files in modes dir
 fs.readdirSync(__dirname + '/models').forEach(function(filename) {
@@ -77,7 +77,7 @@ db.once('open', function() {
                               //Save the product
                               product.save(function(err, fluffy) {
                                 if (err) return console.error(err);
-                                //console.log("saved :" + JSON.stringify(product));
+                                console.log("saved :" + JSON.stringify(product));
                               });
                         }
                         done();
