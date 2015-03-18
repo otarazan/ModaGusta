@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-      <title>Moda Gusta</title>
+    <center>  <title>Moda Gusta</title></center>
 
 
 
@@ -24,6 +24,24 @@
 
       <script src="lib/collide/collide.js"></script>
       <script src="lib/ionic-contrib-tinder-cards/ionic.tdcards.js"></script>
+
+
+
+
+
+      <script>
+    document.onclick = function (e) {
+        e = e ||  window.event;
+        var element = e.target || e.srcElement;
+
+        if (element.tagName == 'A') {
+            window.open(element.href, "_blank", "location=yes");
+            return false;
+        }
+    };
+</script>
+
+
 
   </head>
 

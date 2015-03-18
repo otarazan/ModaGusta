@@ -84,7 +84,7 @@ var reklamActionToken;
     ];
 
 
-    var server="http://localhost:3000/";
+    var server="http://192.168.1.6:3000/";
 
     $http.post(server+'getAll').
              success(function(data, status, headers, config) {
@@ -146,6 +146,11 @@ var reklamActionToken;
 
     $scope.btnFilter = function(selection) {
       getSelectedProducts(selection);
+    };
+
+
+   $scope.btnBuy = function(url) {
+             window.open(url+ "?modagusta=1", '_system', 'location=yes');
     };
 
 

@@ -6,7 +6,7 @@
         <td-cards>
             <td-card id="td-card" ng-repeat="card in cards" on-destroy="cardDestroyed($index)"
                      on-swipe-left="cardSwipedLeft($index)" on-swipe-right="cardSwipedRight($index)"
-                     on-partial-swipe="cardPartialSwipe(amt)" on-doubletap="onDoubletap($index)"  on-release="onRelease()"  on-touch="cardTouch($index)">
+                     on-partial-swipe="cardPartialSwipe(amt)" on-doubletap="onDoubletap($index)" on-tap="onTap($index)" on-release="onRelease()"  on-touch="cardTouch($index)">
 
                 <div class="title">
                     {{card.title}}
@@ -16,7 +16,7 @@
                         <button class="button button-positive" ng-click="cardSwipedLeft($index)">
                             <i class="icon ion-close"></i>
                         </button>
-                        <button class="button button-positive" onclick="window.plugins.socialsharing.share('Message, subject, image and link',
+                        <button class="button button-positive" id ="shareBtn"onclick="window.plugins.socialsharing.share('Message, subject, image and link',
         'The subject', 'https://www.google.nl/images/srpr/logo4w.png', 'http://www.x-services.nl')"><i class="icon ion-share"></i></button>
                         <button class="button button-positive" ng-click="likedBtn($index)">
                             <i class="icon ion-heart"></i>
