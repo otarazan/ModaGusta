@@ -6,7 +6,7 @@
                 <div class="input-label">
                     Select Thema
                 </div>
-                <select ng-model="thema" ng-options="item as item.name for item in themas"></select>
+                <select id="themaSelection" ng-model="thema"  ng-change="themeChange()" ng-options="item as item.name for item in themas"></select>
 
             </label>
         </div>
