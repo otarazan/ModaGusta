@@ -76,8 +76,8 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
     }
 
     $scope.onDoubletap = function(index) {
-        // console.log('Right swipe');
-        touched = false;
+
+        window.open($scope.cards[index].productURL + "?modagusta=1", '_system', 'location=yes');
     }
 
     $scope.cardTouch = function(index) {
@@ -90,12 +90,6 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
     }
 
     $scope.onTap = function(index) {
-        //   console.log($scope.cards[index].image);
-    //    window.location =  $scope.cards[index].productURL + "?modagusta=1";
-
-  window.open($scope.cards[index].productURL + "?modagusta=1", '_system', 'location=yes');
-
-
     }
 
     $scope.cardDestroyed = function(index) {
