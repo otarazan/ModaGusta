@@ -328,8 +328,10 @@ app.all('*', function(req, res, next) {
 
 app.use('/', routes);
 
+app.set('port', (process.env.PORT || 3000));
+
 var parseString = require('xml2js').parseString;
-var server = app.listen(3000, function() {
+var server = app.listen(app.get('port'), function() {
 
     var host = server.address().address
     var port = server.address().port
