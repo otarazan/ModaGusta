@@ -84,7 +84,7 @@ var reklamActionToken;
     ];
 
 
-    var server="http://192.168.1.6:3000/";
+    var server="http://192.168.1.5:3000/";
 
     $http.post(server+'getAll').
              success(function(data, status, headers, config) {

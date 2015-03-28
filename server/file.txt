@@ -1,0 +1,2 @@
+http://api.gelirortaklari.com/feed?id=3251&key=2b69594239e183f2e31c4edccfcc873213855&offset=0&count=10
+http://api.gelirortaklari.com/feed?id=3251&key=2b69594239e183f2e31c4edccfcc873213855&offset=10&count=20

@@ -14,7 +14,19 @@ var nodemailer = require('nodemailer');
 
 var db = mongoose.connection;
 
-mongoose.connect('mongodb://admin:admin@ds053251.mongolab.com:53251/heroku_app34701713');
+
+
+var fs = require('fs');
+fs.readFile('file.txt', function(err, data) {
+    if(err) throw err;
+    var array = data.toString().split("\n");
+    for(i in array) {
+        console.log(array[i]);
+    }
+});
+
+
+mongoose.connect('mongodb://localhost/modagusta');
 
 //load all files in modes dir
 fs.readdirSync(__dirname + '/models').forEach(function(filename) {
@@ -47,12 +59,19 @@ var productsSchema = new Schema({
 var Product = mongoose.model('products', productsSchema);
 
 
+var fs = require('fs');
+var allProductUrl = fs.readFileSync('file.txt').toString().split("\n");
+
 db.once('open', function() {
 
 
       Product.find({}).remove().exec();
-
-    request('http://api.gelirortaklari.com/feed?id=3251&key=bc34a7f1f7a2bd5dff42e9708530e63f7164&page=1', function(error, response, body) {
+	  
+	  
+	  for(k = 0; k<allProductUrl.length;k++){
+    request(allProductUrl[k], function(error, response, body) {
+		
+		
             if (!error && response.statusCode == 200) {
 
                 parseString(body, function(err, result) {
@@ -86,11 +105,11 @@ db.once('open', function() {
 
 
 
-                    for (i = 0; i <100; i++) {
+                    for (i = 0; i <result.products.product.length; i++) {
                       var discount = parseInt(((result.products.product[i].price - result.products.product[i].deal_price) / result.products.product[i].price) * 100);
                       var catArr  = result.products.product[i].category1[0].split('&gt;');
                       var cat = catArr[catArr.length -1].trim();
-
+					  
                       var eachProduct = new Product({
                            "id": result.products.product[i].product_id,
                            "title": result.products.product[i].title,
@@ -113,6 +132,8 @@ db.once('open', function() {
                 }); //parse string body
             }
         }) // get all products from gelirortaklari
+		
+	  }
 
 
    /*  request('http://feed.reklamaction.com/feed/get/json/7842dec1653e81a58787326784842b68', function(error, response, body) {
@@ -198,7 +219,7 @@ app.post('/getAll', function(req, res, next) {
     res.header('Access-Control-Allow-Headers', 'Content-Type');
 
     Product.find({}, {}, {
-        limit: 20
+        limit: 30
     }, function(err, product) {
         if (err) return console.error(err);
       //  console.log(product);
