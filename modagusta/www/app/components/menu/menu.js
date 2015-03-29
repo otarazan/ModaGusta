@@ -84,7 +84,7 @@ var reklamActionToken;
     ];
 
 
-    var server="http://192.168.1.5:3000/";
+    var server="http://limitless-journey-4984.herokuapp.com/";
 
     $http.post(server+'getAll').
              success(function(data, status, headers, config) {
