@@ -67,12 +67,12 @@ db.once('open', function() {
 
 
       Product.find({}).remove().exec();
-	  
-	  
+
+
 	  for(k = 0; k<allProductUrl.length;k++){
     request(allProductUrl[k], function(error, response, body) {
-		
-		
+
+
             if (!error && response.statusCode == 200) {
 
                 parseString(body, function(err, result) {
@@ -110,7 +110,7 @@ db.once('open', function() {
                       var discount = parseInt(((result.products.product[i].price - result.products.product[i].deal_price) / result.products.product[i].price) * 100);
                       var catArr  = result.products.product[i].category1[0].split('&gt;');
                       var cat = catArr[catArr.length -1].trim();
-					  
+
                       var eachProduct = new Product({
                            "id": result.products.product[i].product_id,
                            "title": result.products.product[i].title,
@@ -134,7 +134,7 @@ db.once('open', function() {
                 }); //parse string body
             }
         }) // get all products from gelirortaklari
-		
+
 	  }
 
 
@@ -229,7 +229,23 @@ app.post('/getAll', function(req, res, next) {
     });
 });
 
+app.get('/providers', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    var selections = req.body;
 
+    var cats;
+    var discountRate;
+    var gender;
+
+    Product.find().distinct('providerName', function(error, providers) {
+
+
+
+      res.json({'providers':providers});
+    });
+});
 
 app.get('/cat', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -259,10 +275,6 @@ app.get('/cat', function(req, res, next) {
           });
 
     });
-
-
-
-
 });
 
 app.post('/sendWishListMail', function(req, res) {
