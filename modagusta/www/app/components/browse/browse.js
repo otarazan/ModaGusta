@@ -118,6 +118,15 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
 
     }
 
+    $scope.trick = function(index){
+
+   window.plugins.socialsharing.share(null, $scope.cards[index].title, $scope.cards[index].image, $scope.cards[index].productURL);
+
+
+    }
+
+
+
 
 
   ionic.Platform.ready(function(){
