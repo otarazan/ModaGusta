@@ -135,4 +135,4 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
 
 });
 
-var server = "http://192.168.1.8:3000/";
+var server = "http://localhost:3000/";

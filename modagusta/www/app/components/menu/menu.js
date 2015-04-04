@@ -91,7 +91,7 @@ var reklamActionToken;
     ];
 
 
-    var server="http://192.168.1.8:3000/";
+    var server="http://localhost:3000/";
 
     $http.post(server+'getAll').
              success(function(data, status, headers, config) {
@@ -115,12 +115,20 @@ var reklamActionToken;
                 $scope.selection = {
                 "gender": $scope.genders[1],
                 "cat": $scope.categories[0],
+                "provider": $scope.providers[0],
                 "price": $scope.prices[0],
                 };
                   //getSelectedProducts($scope.selection);
               });
 
-
+    //Get provideres from the server
+    $http.get(server+'providers').
+              success(function(data, status, headers, config) {
+                $scope.providers = [];
+                data.providers.forEach(function(entry) {
+                    $scope.providers.push({id: entry, name: entry});
+                });
+              });
 
 
     $scope.discounts = [
