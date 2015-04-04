@@ -228,27 +228,6 @@ app.post('/getAll', function(req, res, next) {
 });
 
 
-//app.get('/sendWishListMail', function(req, res, next) {
-//    res.header("Access-Control-Allow-Origin", "*");
-//    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-//    res.header('Access-Control-Allow-Headers', 'Content-Type');
-//
-//
-//var transporter = nodemailer.createTransport({
-//    service: 'gmail',
-//    auth: {
-//        user: 'hus.alemdar@gmail.com',
-//        pass: 'Naber123'
-//    }
-//});
-//transporter.sendMail({
-//    from: 'hus.alemdar@gmail.com',
-//    to: 'hus.alemdar@gmail.com',
-//    subject: 'dfsf',
-//    text: 'hello world!'
-//});
-//
-//});
 
 app.get('/cat', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -284,76 +263,46 @@ app.get('/cat', function(req, res, next) {
 
 });
 
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-var nodemailer = require('nodemailer');
+app.post('/sendWishListMail', function(req, res) {
+ process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+var wishList = req.body.wishList;
+var mailTo = req.body.mailTo;
+  var mail = "Your Wish List:<br>";
+        for (i = 0; i < req.body.wishList.length; i++) {
+            console.log(mail);
+            mail += wishList[i].title +" "+ wishList[i].oldPrice +" TRY"+ "<a href='"+wishList[i].productURL+"'><img height='60' width='60' src='"+wishList[i].image+"'/></a><br>";
+        };
 
-// create reusable transporter object using SMTP transport
-var transporter = nodemailer.createTransport({
-    service: 'Gmail',
-    auth: {
+        var nodemailer = require('nodemailer');
+
+        // create reusable transporter object using SMTP transport
+        var transporter = nodemailer.createTransport({
+        service: 'Gmail',
+        auth: {
         user: 'hus.alemdar@gmail.com',
         pass: 'Naber123'
-    }
-});
-
-// NB! No need to recreate the transporter object. You can use
-// the same transporter object for all e-mails
-
-// setup e-mail data with unicode symbols
-
-var mailOptions = {
-    from: 'Fred Foo ✔ <hus.alemdar@gmail.com>', // sender address
-    to: 'tarazansafak@gmail.com', // list of receivers
-    subject: 'Hello ✔', // Subject line
-    text: 'Hello world ✔', // plaintext body
-    html: '<b>Hello world ✔</b>' // html body
-};
-
-// send mail with defined transport object
-transporter.sendMail(mailOptions, function(error, info){
-    if(error){
-        console.log(error);
-    }else{
-        console.log('Message sent: ' + info.response);
-    }
-});
+        }
+        });
 
 
-
-
-app.post('/sendWishListMail', function(req, res) {
-    console.log("hello");
-    req.on('data', function(data) {
-        var wishList=JSON.parse(data.toString()).wishList;
-        console.log("Received mail data");
-
-        //Prepare data in mail format
-        var mail = "Your Wish List:<br>";
-        for (i = 0; i < wishList.length; i++) {
-            console.log(mail);
-            mail += wishList[i].title + "<a href='#'><img height='60' width='60' src='http://localhost:8100/"+ wishList[i].image +"'/></a><br>";
+        var mailOptions = {
+        from: 'ModaGusta ✔ hus.alemdar@gmail.com', // sender address
+        to: mailTo, // list of receivers
+        subject: 'ModaGusta Your WishList ✔', // Subject line
+        html: mail
         };
-        console.log(mail);
-        var nodemailer = require('nodemailer');
-        var transporter = nodemailer.createTransport({
-            service: 'gmail',
-            auth: {
-                user: 'hus.alemdar@gmail.com',
-                pass: 'Naber123'
-            }
-        });
-        transporter.sendMail({
-            from: 'hus.alemdar@gmail.com',
-            to: 'tarazansafak@gmail.com',
-            subject: 'ModaGusta WishList',
-            html: mail
-        });
-        res.json("ok");
 
-
-    });
+        // send mail with defined transport object
+        transporter.sendMail(mailOptions, function(error, info){
+        if(error){
+        console.log(error);
+        }else{
+        console.log('Message sent: ' + info.response);
+        }
+        });
 
 });
+
 
 // CORS (Cross-Origin Resource Sharing) headers to support Cross-site HTTP requests
 

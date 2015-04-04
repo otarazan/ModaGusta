@@ -58,9 +58,8 @@ var reklamActionToken;
                         //don't allow the user to close unless he enters wifi password
                         e.preventDefault();
                     } else {
-
                         if ($scope.validateEmail($scope.data.email)) {
-                            $http.post(server+"sendWishListMail", {wishList:$scope.wishList}).
+                            $http.post(server+"sendWishListMail", {wishList:$scope.wishList,mailTo:$scope.data.email}).
                                   success(function(data, status, headers, config) {
                                         console.log("sending mail isk");
                                         alert("Mail is sent to: "+$scope.data.email);
@@ -88,7 +87,7 @@ var reklamActionToken;
     ];
 
 
-    var server="http://limitless-journey-4984.herokuapp.com/";
+    var server="http://localhost:3000/";
 
     $http.post(server+'getAll').
              success(function(data, status, headers, config) {

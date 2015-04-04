@@ -124,4 +124,4 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
 
 });
 
-var server = "http://limitless-journey-4984.herokuapp.com/";
+var server = "http://localhost:3000/";
