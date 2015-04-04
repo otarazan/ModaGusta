@@ -11,6 +11,8 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
         }
     }
 
+
+
     $rootScope.loadCards = function(data) {
         var cardTypes = data;
 

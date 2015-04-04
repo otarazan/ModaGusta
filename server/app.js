@@ -96,7 +96,7 @@ db.once('open', function() {
                               //Save the product
                               product.save(function(err, fluffy) {
                                 if (err) return console.error(err);
-                                console.log("saved :" + JSON.stringify(product));
+                               // console.log("saved :" + JSON.stringify(product));
                               });
                         }
                         done();
@@ -198,7 +198,7 @@ app.post('/filter', function(req, res, next) {
     res.header('Access-Control-Allow-Headers', 'Content-Type');
     var selections = req.body;
     //find requested selections
-    console.log("filter request recieved:" + JSON.stringify(selections));
+  //  console.log("filter request recieved:" + JSON.stringify(selections));
 
     Product.find({"gender":selections.gender.id,
                         "cat":selections.cat.id,
@@ -283,6 +283,44 @@ app.get('/cat', function(req, res, next) {
 
 
 });
+
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+var nodemailer = require('nodemailer');
+
+// create reusable transporter object using SMTP transport
+var transporter = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: {
+        user: 'hus.alemdar@gmail.com',
+        pass: 'Naber123'
+    }
+});
+
+// NB! No need to recreate the transporter object. You can use
+// the same transporter object for all e-mails
+
+// setup e-mail data with unicode symbols
+
+var mailOptions = {
+    from: 'Fred Foo ✔ <hus.alemdar@gmail.com>', // sender address
+    to: 'tarazansafak@gmail.com', // list of receivers
+    subject: 'Hello ✔', // Subject line
+    text: 'Hello world ✔', // plaintext body
+    html: '<b>Hello world ✔</b>' // html body
+};
+
+// send mail with defined transport object
+transporter.sendMail(mailOptions, function(error, info){
+    if(error){
+        console.log(error);
+    }else{
+        console.log('Message sent: ' + info.response);
+    }
+});
+
+
+
+
 app.post('/sendWishListMail', function(req, res) {
     console.log("hello");
     req.on('data', function(data) {

@@ -20,5 +20,8 @@
     "https://git-wip-us.apache.org/repos/asf/cordova-plugin-inappbrowser.git",
     "org.apache.cordova.inappbrowser",
     "nl.x-services.plugins.socialsharing"
+  ],
+  "cordovaPlatforms": [
+    "android"
   ]
 }

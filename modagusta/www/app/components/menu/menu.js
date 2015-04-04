@@ -2,6 +2,7 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
 
 var reklamActionToken;
 
+
   if(typeof analytics !== "undefined") { analytics.trackView("Menu Controller"); }
 
     $scope.initEvent = function() {
@@ -15,6 +16,9 @@ var reklamActionToken;
             return re.test(email);
 
         } //validateEmail
+
+
+
 
 
     $scope.btnRemoveFromWishList = function(index) {

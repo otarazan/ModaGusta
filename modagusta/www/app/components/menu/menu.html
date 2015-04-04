@@ -12,24 +12,23 @@
     </ion-side-menu-content>
 
 
-    <ion-side-menu width="myWidthValue + 400" side="left">
+    <ion-side-menu width="myWidthValue + 300" side="left" enable-menu-with-back-views="false">
         <ion-header-bar class="bar-stable">
             <h1 class="title">Menu</h1>
         </ion-header-bar>
         <ion-content>
             <ion-list>
-                <ion-item nav-clear menu-close href="#/app/browse">
                     Filter
                     <label class="item item-input item-select">
                       <div class="input-label">
                           Cinsiyet
                       </div>
-                      <select ng-model="selection.gender" ng-options="item as item.name for item in genders"></select>
+                      <select ng-model="selection.gender" ng-options="item as item.name for item in genders" ng-change="update()"></select>
                     </label>
 
                     <label class="item item-input item-select">
                       <div class="input-label">
-                        Kategoriler
+                        Kategori
                       </div>
                       <select ng-model="selection.cat" ng-options="item as item.name for item in categories"></select>
                     </label>
@@ -53,12 +52,13 @@
 
 
     <!--Rigt menu-->
-    <ion-side-menu width="myWidthValue + 400" side="right">
+    <ion-side-menu width="myWidthValue + 300" side="right">
         <ion-header-bar class="bar-stable">
             <h1 class="title">Wish List</h1>
         </ion-header-bar>
         <ion-content>
             <ion-list>
+
                 <ion-item nav-clear  ng-repeat="card in wishList">
 
                     <div >
