@@ -21,7 +21,7 @@ fs.readFile('file.txt', function(err, data) {
     if(err) throw err;
     var array = data.toString().split("\n");
     for(i in array) {
-        console.log(array[i]);
+     //   console.log(array[i]);
     }
 });
 
@@ -221,10 +221,10 @@ app.post('/getAll', function(req, res, next) {
     res.header('Access-Control-Allow-Headers', 'Content-Type');
 
     Product.find({}, {}, {
-        limit: 15
+        limit: 10
     }, function(err, product) {
         if (err) return console.error(err);
-       console.log(product);
+    //  console.log(product);
         res.json(product);
     });
 });
@@ -271,7 +271,6 @@ var wishList = req.body.wishList;
 var mailTo = req.body.mailTo;
   var mail = "Your Wish List:<br>";
         for (i = 0; i < req.body.wishList.length; i++) {
-            console.log(mail);
             mail += wishList[i].title +" "+ wishList[i].oldPrice +" TRY"+ "<a href='"+wishList[i].productURL+"'><img height='60' width='60' src='"+wishList[i].image+"'/></a><br>";
         };
 
@@ -279,12 +278,12 @@ var mailTo = req.body.mailTo;
         var transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'hus.alemdar@gmail.com',
+                user: 'test@modagusta.com',
                 pass: 'Naber123'
             }
         });
         transporter.sendMail({
-            from: 'hus.alemdar@gmail.com',
+            from: 'test@modagusta.com',
             to: mailTo,
             subject: 'ModaGusta Your WishList ✔',
             html: mail

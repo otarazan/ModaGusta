@@ -58,14 +58,19 @@ var reklamActionToken;
                         e.preventDefault();
                     } else {
                         if ($scope.validateEmail($scope.data.email)) {
-                            $http.post(server+"sendWishListMail", {wishList:$scope.wishList,mailTo:$scope.data.email}).
-                                  success(function(data, status, headers, config) {
-                                        console.log("sending mail isk");
-                                        alert("Mail is sent to: "+$scope.data.email);
-                                  }).
-                                  error(function(data, status, headers, config) {
-                                        console.log("error sending mail");
-                                  });
+
+                        if($scope.wishList!=null&&$scope.wishList.length!=0){
+                                                    $http.post(server+"sendWishListMail", {wishList:$scope.wishList,mailTo:$scope.data.email}).
+                                                          success(function(data, status, headers, config) {
+                                                                console.log("sending mail isk");
+                                                                alert("Mail is sent to: "+$scope.data.email);
+                                                          }).
+                                                          error(function(data, status, headers, config) {
+                                                                console.log("error sending mail");
+                                                          });
+                        }else{alert("Your wishlist is empty!");
+                        }
+
                         } else {
                             alert("Please enter a valid email... ");
                             $scope.sendWishListMail();
@@ -147,6 +152,7 @@ var reklamActionToken;
 
 
     $scope.btnFilter = function(selection) {
+
       getSelectedProducts(selection);
     };
 

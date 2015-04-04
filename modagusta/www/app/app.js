@@ -11,8 +11,18 @@ var myApp = angular.module('starter', ['ionic','ionic.contrib.ui.tinderCards','L
 
 .run(['$ionicPlatform',function($ionicPlatform) {
   $ionicPlatform.ready(function() {
-    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
+
+
+// $cordovaGoogleAnalytics.startTrackerWithId('UA-47701506-5');
+
+
+if (typeof analytics !== 'undefined'){
+      analytics.startTrackerWithId('UA-47701506-5');
+      analytics.trackView('Main');
+    }
+
+
+
     if (window.cordova && window.cordova.plugins.Keyboard) {
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
     }
@@ -21,18 +31,6 @@ var myApp = angular.module('starter', ['ionic','ionic.contrib.ui.tinderCards','L
       StatusBar.styleDefault();
     }
 
- if(typeof analytics !== "undefined") {
-			window.analytics.startTrackerWithId("UA-47701506-5");
-             //     alert("google analytics is available");
-                console.log("analytic is working");
-                window.analytics.trackView('Main');
-                window.analytics.debugMode()
-            }else {
-                     console.log("Google Analytics Unavailable");
-            //            alert("google analytics is NOT available");
-                         console.log("analytic is NOT working");
-
-            }
 
   });
 }]).config(function($stateProvider, $urlRouterProvider) {
