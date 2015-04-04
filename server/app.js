@@ -276,31 +276,18 @@ var mailTo = req.body.mailTo;
         };
 
         var nodemailer = require('nodemailer');
-
-        // create reusable transporter object using SMTP transport
         var transporter = nodemailer.createTransport({
-        service: 'Gmail',
-        auth: {
-        user: 'hus.alemdar@gmail.com',
-        pass: 'Naber123'
-        }
+            service: 'gmail',
+            auth: {
+                user: 'hus.alemdar@gmail.com',
+                pass: 'Naber123'
+            }
         });
-
-
-        var mailOptions = {
-        from: 'ModaGusta ✔ hus.alemdar@gmail.com', // sender address
-        to: mailTo, // list of receivers
-        subject: 'ModaGusta Your WishList ✔', // Subject line
-        html: mail
-        };
-
-        // send mail with defined transport object
-        transporter.sendMail(mailOptions, function(error, info){
-        if(error){
-        console.log(error);
-        }else{
-        console.log('Message sent: ' + info.response);
-        }
+        transporter.sendMail({
+            from: 'hus.alemdar@gmail.com',
+            to: mailTo,
+            subject: 'ModaGusta Your WishList ✔',
+            html: mail
         });
 
 });

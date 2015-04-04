@@ -22,6 +22,7 @@
     "nl.x-services.plugins.socialsharing"
   ],
   "cordovaPlatforms": [
-    "android"
+    "android",
+    "ios"
   ]
 }
