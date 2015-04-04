@@ -47,6 +47,7 @@ var productsSchema = new Schema({
     title: String,
     productURL: String,
     gender: Boolean,
+    providerName: String,
     cat: String,
     desc: String,
     brand: String,
@@ -115,11 +116,12 @@ db.once('open', function() {
                            "title": result.products.product[i].title,
                            "productURL": result.products.product[i].product_url[0],
                            "gender": result.products.product[i].gender,
+                           "providerName" :result.products.product[i].provider_name[0],
                            "cat": cat,
                            "des": result.products.product[i].description1,
                            "brand": result.products.product[i].brand_name,
-                           "oldPrice": parseInt(result.products.product[i].price),
-                           "newPrice": result.products.product[i].deal_price,
+                           "newPrice": parseInt(result.products.product[i].price),
+                           "oldPrice": parseInt(result.products.product[i].deal_price),
                            "discountRate": discount,
                            "image" : ''
 
@@ -219,10 +221,10 @@ app.post('/getAll', function(req, res, next) {
     res.header('Access-Control-Allow-Headers', 'Content-Type');
 
     Product.find({}, {}, {
-        limit: 30
+        limit: 15
     }, function(err, product) {
         if (err) return console.error(err);
-      //  console.log(product);
+       console.log(product);
         res.json(product);
     });
 });

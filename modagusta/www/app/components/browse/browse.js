@@ -26,6 +26,8 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
                 "title": data[i].title,
                 "productURL": data[i].productURL,
                 "gender": data[i].gender,
+                "providerName": data[i].providerName,
+                "providerName": data[i].providerName,
                 "cat": data[i].cat,
                 "des": data[i].des,
                 "brand": data[i].brand,
@@ -124,4 +126,4 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
 
 });
 
-var server = "http://localhost:3000/";
+var server = "http://192.168.1.8:3000/";

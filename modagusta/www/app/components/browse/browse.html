@@ -10,17 +10,17 @@
 
                 <div class="title">
                     {{card.title}}
-                   <del><h3> {{card.oldPrice}} TRY</h3></del>
-                    <h6> {{card.newPrice}} TRY</h6>
-                    <h6> {{card.providerName}} TRY</h6>
+                    <h6 style="display:inline"> {{card.providerName}}</h6>
+                   <del style="display:inline"><h6 style="display:inline"> {{card.oldPrice == "0" ? null : card.oldPrice + "TRY"}}</h6></del>
+                    <h4 style="display:inline"> {{card.newPrice}} TRY</h4>
+
                 </div>
                 <div class="cardMenu">
                     <div align="center">
                         <button class="button button-positive" ng-click="cardSwipedLeft($index)">
                             <i class="icon ion-close"></i>
                         </button>
-                        <button class="button button-positive" id ="shareBtn"onclick="window.plugins.socialsharing.share('Message, subject, image and link',
-        'The subject', 'https://www.google.nl/images/srpr/logo4w.png', 'http://www.x-services.nl')"><i class="icon ion-share"></i></button>
+                        <button class="button button-positive" id ="shareBtn"onclick="window.plugins.socialsharing.share('Message, subject, image and link', 'The subject', 'https://www.google.nl/images/srpr/logo4w.png', 'http://www.x-services.nl')"><i class="icon ion-share"></i></button>
                         <button class="button button-positive" ng-click="likedBtn($index)">
                             <i class="icon ion-heart"></i>
                         </button>

@@ -21,5 +21,7 @@
     "org.apache.cordova.inappbrowser",
     "nl.x-services.plugins.socialsharing"
   ],
-  "cordovaPlatforms": []
+  "cordovaPlatforms": [
+    "android"
+  ]
 }
