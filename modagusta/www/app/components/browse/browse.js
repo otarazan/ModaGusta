@@ -137,4 +137,4 @@ $rootScope.cardFilterOfset =0  ;
 
 });
 
-var server = "http://192.168.1.8:3000/";
+var server = "http://192.168.1.3:3000/";
