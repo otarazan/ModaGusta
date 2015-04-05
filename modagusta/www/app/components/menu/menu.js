@@ -100,9 +100,8 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
     ];
 
     $rootScope.server="http://limitless-journey-4984.herokuapp.com/";
-
-    $http.post($rootScope.server + 'getAll').
     var server="http://192.168.1.3:3000/";
+    $http.post($rootScope.server + 'getAll').
     success(function(data, status, headers, config) {
 
         if ($rootScope.loadCards != null) {
