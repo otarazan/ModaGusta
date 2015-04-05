@@ -14,11 +14,12 @@ var myApp = angular.module('starter', ['ionic','ionic.contrib.ui.tinderCards','L
 
 
 // $cordovaGoogleAnalytics.startTrackerWithId('UA-47701506-5');
-
+ window.analytics.startTrackerWithId('UA-47701506-5');
 
 if (typeof analytics !== 'undefined'){
-      analytics.startTrackerWithId('UA-47701506-5');
-      analytics.trackView('Main');
+    //  analytics.startTrackerWithId('UA-47701506-5');
+     // analytics.trackView('Main');
+     window.analytics.startTrackerWithId('UA-47701506-5');
     }
 
 

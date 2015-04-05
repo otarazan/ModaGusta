@@ -31,7 +31,7 @@ var reklamActionToken;
 
     $scope.clearWishList = function() {
 
-
+ $ionicSideMenuDelegate.toggleRight();
         localStorageService.clearAll();
         $scope.wishList = null;
         $rootScope.wishList = null;

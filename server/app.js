@@ -200,7 +200,7 @@ app.post('/filter', function(req, res, next) {
     res.header('Access-Control-Allow-Headers', 'Content-Type');
     var selections = req.body;
     //find requested selections
-   console.log("filter request recieved:" + JSON.stringify(selections));
+//   console.log("filter request recieved:" + JSON.stringify(selections));
 
     Product.find({"gender":selections.gender.id,
                         "cat":selections.cat.id,
