@@ -214,6 +214,7 @@ app.post('/filter', function(req, res, next) {
                         "providerName":selections.provider.id,
                         "newPrice": { $lt: selections.price.maxPrice, $gt: selections.price.minPrice },
                   }, {}, {
+        skip:selections.ofset,
         limit: 10
     }, function(err, product) {
         if (err) return console.error(err);

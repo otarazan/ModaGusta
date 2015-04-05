@@ -149,7 +149,7 @@ var reklamActionToken;
     function getSelectedProducts(selection){
       console.log("Your selection:");
       console.log(selection);
-     // selection["ofset"] =$rootScope.cardFilterOfset;
+      selection["ofset"] =$rootScope.cardFilterOfset;
       $http.post(server+'filter', selection).
       success(function(data, status, headers, config) {
         $rootScope.loadCards(data);
