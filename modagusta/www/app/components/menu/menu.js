@@ -31,7 +31,7 @@ var reklamActionToken;
 
     $scope.clearWishList = function() {
 
-
+ $ionicSideMenuDelegate.toggleRight();
         localStorageService.clearAll();
         $scope.wishList = null;
         $rootScope.wishList = null;
@@ -93,7 +93,7 @@ var reklamActionToken;
     ];
 
 
-    var server="http://192.168.1.25:3000/";
+    var server="http://192.168.1.8:3000/";
 
     $http.post(server+'getAll').
              success(function(data, status, headers, config) {
@@ -116,7 +116,6 @@ var reklamActionToken;
                 data.cat.forEach(function(entry) {
                     $scope.categories.push({id: entry, name: entry});
                 });
-
                 data.providers.forEach(function(entry) {
                     $scope.providers.push({id: entry, name: entry});
                 });
@@ -151,7 +150,7 @@ var reklamActionToken;
     function getSelectedProducts(selection){
       console.log("Your selection:");
       console.log(selection);
-     // selection["ofset"] =$rootScope.cardFilterOfset;
+      selection["ofset"] =$rootScope.cardFilterOfset;
       $http.post(server+'filter', selection).
       success(function(data, status, headers, config) {
         $rootScope.loadCards(data);

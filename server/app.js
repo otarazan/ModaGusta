@@ -52,7 +52,7 @@ var productsSchema = new Schema({
     desc: String,
     brand: String,
     oldPrice: Number,
-    newPrice: String,
+    newPrice: Number,
     discountRate: String,
     image: String
 });
@@ -200,7 +200,7 @@ app.post('/filter', function(req, res, next) {
     res.header('Access-Control-Allow-Headers', 'Content-Type');
     var selections = req.body;
     //find requested selections
-   console.log("filter request recieved:" + JSON.stringify(selections));
+   //console.log("filter request recieved:" + JSON.stringify(selections));
 
    //find min and max requested price
    var min = Math.min(selections.price.maxPrice, selections.price.minPrice);
