@@ -1,12 +1,16 @@
 myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $rootScope, $ionicSideMenuDelegate, localStorageService) {
 
-var reklamActionToken;
+    var reklamActionToken;
 
 
-  if(typeof analytics !== "undefined") { analytics.trackView("Menu Controller"); }
+    if (typeof analytics !== "undefined") {
+        analytics.trackView("Menu Controller");
+    }
 
     $scope.initEvent = function() {
-        if(typeof analytics !== "undefined") { analytics.trackEvent("Category", "Action", "Label", 25); }
+        if (typeof analytics !== "undefined") {
+            analytics.trackEvent("Category", "Action", "Label", 25);
+        }
     }
 
 
@@ -16,7 +20,6 @@ var reklamActionToken;
             return re.test(email);
 
         } //validateEmail
-
 
 
 
@@ -31,7 +34,7 @@ var reklamActionToken;
 
     $scope.clearWishList = function() {
 
- $ionicSideMenuDelegate.toggleRight();
+        $ionicSideMenuDelegate.toggleRight();
         localStorageService.clearAll();
         $scope.wishList = null;
         $rootScope.wishList = null;
@@ -43,7 +46,7 @@ var reklamActionToken;
     $scope.sendWishListMail = function() {
 
         $scope.data = {}
-        $scope.data.email="tarazansafak@gmail.com";
+        $scope.data.email = "tarazansafak@gmail.com";
         var myPopup = $ionicPopup.show({
             template: '<input type="text" ng-model="data.email">',
             title: 'Please enter your E-mail.',
@@ -59,19 +62,23 @@ var reklamActionToken;
                         e.preventDefault();
                     } else {
                         if ($scope.validateEmail($scope.data.email)) {
-  $ionicSideMenuDelegate.toggleRight();
-                        if($scope.wishList!=null&&$scope.wishList.length!=0){
-                                                    $http.post(server+"sendWishListMail", {wishList:$scope.wishList,mailTo:$scope.data.email}).
-                                                          success(function(data, status, headers, config) {
-                                                                console.log("sending mail isk");
-                                                                alert("Mail is sent to: "+$scope.data.email);
+                            $ionicSideMenuDelegate.toggleRight();
+                            if ($scope.wishList != null && $scope.wishList.length != 0) {
+                                $http.post($rootScope.server + "sendWishListMail", {
+                                    wishList: $scope.wishList,
+                                    mailTo: $scope.data.email
+                                }).
+                                success(function(data, status, headers, config) {
+                                    console.log("sending mail isk");
+                                    alert("Mail is sent to: " + $scope.data.email);
 
-                                                          }).
-                                                          error(function(data, status, headers, config) {
-                                                                console.log("error sending mail");
-                                                          });
-                        }else{alert("Your wishlist is empty!");
-                        }
+                                }).
+                                error(function(data, status, headers, config) {
+                                    console.log("error sending mail");
+                                });
+                            } else {
+                                alert("Your wishlist is empty!");
+                            }
 
                         } else {
                             alert("Please enter a valid email... ");
@@ -92,84 +99,82 @@ var reklamActionToken;
         { id: true, name: 'kadin' }
     ];
 
+    $rootScope.server="http://limitless-journey-4984.herokuapp.com/";
 
+    $http.post($rootScope.server + 'getAll').
     var server="http://192.168.1.3:3000/";
+    success(function(data, status, headers, config) {
 
-    $http.post(server+'getAll').
-             success(function(data, status, headers, config) {
-
-               if ($rootScope.loadCards!=null){
-                 $rootScope.loadCards(data);
-               }
-             }).
-             error(function(data, status, headers, config) {
-             });
+        if ($rootScope.loadCards != null) {
+            $rootScope.loadCards(data);
+        }
+    }).
+    error(function(data, status, headers, config) {});
 
     //Get categories from the server
-    $http.get(server+'cat').
-              success(function(data, status, headers, config) {
-                $scope.categories = [];
-                data.cat.forEach(function(entry) {
+    $http.get($rootScope.server + 'menu').
+    success(function(data, status, headers, config) {
+        //Put result from server to menu
+        $scope.categories = [];
+        $scope.providers = [];
+        $scope.discountRates = [];
+
+        data.cat.forEach(function(entry) {
                     $scope.categories.push({id: entry, name: entry});
-                });
+        });
+        data.providers.forEach(function(entry) {
+                    $scope.providers.push({id: entry, name: entry});
+        });
 
-                //Get providers from the server
-                $http.get(server+'providers').
-                          success(function(data, status, headers, config) {
-                            $scope.providers = [];
-                            data.providers.forEach(function(entry) {
-                                $scope.providers.push({id: entry, name: entry});
-                            });
+        data.discountRate.forEach(function(entry) {
+                    $scope.discountRates.push({id: entry, name: entry});
+        });
 
-                            //After getting the categories set everything
-                            $scope.selection = {
-                            "gender": $scope.genders[1],
-                            "cat": $scope.categories[0],
-                            provider: $scope.providers[0],
-                            price:{
-                                minPrice: 10,
-                                maxPrice: 500
-                              }
-                            };
+        //After getting the categories set everything
+        $rootScope.selection = {
+            "gender": $scope.genders[1],
+            "cat": $scope.categories[0],
+            provider: $scope.providers[0],
+            discountRate: $scope.discountRates[0],
+            price: {
+                minPrice: 10,
+                maxPrice: 1000
+            }
+        };
 
-                          }); //providers
+        data.cat.forEach(function(entry) {
+            $rootScope[entry] = [];
+            $rootScope[entry].cardFilterOfset = 0;
+        });
 
-
-              }); //categories
-
-
-
-
-    $scope.discounts = [
-        { id: 15, name: '%15' },
-        { id: 82, name: '%82' }
-    ];
+    }); //categories
 
 
-    function getSelectedProducts(selection){
-      console.log("Your selection:");
-      console.log(selection);
-      selection["ofset"] =$rootScope.cardFilterOfset;
-      $http.post(server+'filter', selection).
-      success(function(data, status, headers, config) {
-        $rootScope.loadCards(data);
-      }).
-      error(function(data, status, headers, config) {
-        // called asynchronously if an error occurs
-        // or server returns response with an error status.
-      });
+
+    function getSelectedProducts(selection) {
+        console.log("Your selection:");
+        console.log(selection);
+        selection["ofset"] = $rootScope[$rootScope.selection.cat.name].cardFilterOfset;
+        $http.post($rootScope.server + 'filter', selection).
+        success(function(data, status, headers, config) {
+            $rootScope.loadCards(data);
+        }).
+        error(function(data, status, headers, config) {
+            // called asynchronously if an error occurs
+            // or server returns response with an error status.
+        });
     }
 
 
     $scope.btnFilter = function(selection) {
-    $ionicSideMenuDelegate.toggleLeft();
-      getSelectedProducts(selection);
+        $ionicSideMenuDelegate.toggleLeft();
+        getSelectedProducts(selection);
 
     };
 
 
-   $scope.btnBuy = function(url) {
-             window.open(url+ "?modagusta=1", '_system', 'location=yes');
+    $scope.btnBuy = function(url) {
+        window.open(url + "?modagusta=1", '_system', 'location=yes');
     };
 
 
@@ -177,11 +182,11 @@ var reklamActionToken;
         return $ionicSideMenuDelegate.isOpenRight();
     }, function(value) {
 
-      if ($rootScope.wishList == null) {
-          $rootScope.wishList = [];
-      } else {
-          $scope.wishList = localStorageService.get('wishList');
-      }
+        if ($rootScope.wishList == null) {
+            $rootScope.wishList = [];
+        } else {
+            $scope.wishList = localStorageService.get('wishList');
+        }
 
     });
 

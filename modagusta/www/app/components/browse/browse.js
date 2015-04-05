@@ -11,8 +11,6 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
         }
     }
 
-$rootScope.cardFilterOfset =0  ;
-
     $rootScope.loadCards = function(data) {
         var cardTypes = data;
 
@@ -44,21 +42,20 @@ $rootScope.cardFilterOfset =0  ;
     }
 
     $scope.cardSwipedLeft = function(index) {
-
-       $rootScope.cardFilterOfset++ ;
-       $(".td-cards td-card:last").remove();
-}
+        $rootScope[$rootScope.selection.cat.name].cardFilterOfset++;
+        $(".td-cards td-card:last").remove();
+    }
 
     $scope.likedBtn = function(index) {
-       $rootScope.cardFilterOfset++;
+        $rootScope[$rootScope.selection.cat.name].cardFilterOfset++;
 
-     $(".td-cards td-card:last").remove();
+        $(".td-cards td-card:last").remove();
         //Continue same as swiping
- $scope.cardSwipedRight(index);
+        $scope.cardSwipedRight(index);
     }
     $scope.cardSwipedRight = function(index) {
 
-      $rootScope.cardFilterOfset++ ;
+        console.log($rootScope[$rootScope.selection.cat.name].cardFilterOfset++);
         console.log('Right swipe: item stored' + $scope.cards[index].id);
         var card = $scope.cards[index]
 
@@ -95,33 +92,32 @@ $rootScope.cardFilterOfset =0  ;
         //  console.log('Released');
     }
 
-    $scope.onTap = function(index) {
-    }
+    $scope.onTap = function(index) {}
 
     $scope.cardDestroyed = function(index) {
         $scope.cards.splice(index, 1);
-          // console.log('Card removed');
-          console.log($rootScope.cardFilterOfset);
+        // console.log('Card removed');
+        console.log($rootScope.cardFilterOfset);
     }
 
-    $scope.shareBtn = function(){
+    $scope.shareBtn = function() {
 
-   var confirmPopup = $ionicPopup.confirm({
-     title: 'Consume Ice Cream',
-     template: 'Are you sure you want to eat this ice cream?'
-   });
-   confirmPopup.then(function(res) {
-     if(res) {
-       console.log('You are sure');
-     } else {
-       console.log('You are not sure');
-     }
-   });
+        var confirmPopup = $ionicPopup.confirm({
+            title: 'Consume Ice Cream',
+            template: 'Are you sure you want to eat this ice cream?'
+        });
+        confirmPopup.then(function(res) {
+            if (res) {
+                console.log('You are sure');
+            } else {
+                console.log('You are not sure');
+            }
+        });
 
 
     }
 
-    $scope.trick = function(index){
+    $scope.trick = function(index) {
 
         window.plugins.socialsharing.share(null, $scope.cards[index].title, $scope.cards[index].image, $scope.cards[index].productURL);
 
@@ -130,10 +126,9 @@ $rootScope.cardFilterOfset =0  ;
 
 
 
+    ionic.Platform.ready(function() {
 
-  ionic.Platform.ready(function(){
-
-  });
+    });
 
 });
 
