@@ -5,7 +5,7 @@
                 <button class="button button-icon icon ion-navicon" menu-toggle="left">
                 </button>
                 <div class="h1 title"><img src="img/modagusta-bar.png"></div>
-                <button class="button button-icon icon ion-home" menu-toggle="right"></button>
+                <button class="button button-icon icon ion-home" menu-toggle="right">{{osman}}</button>
             </ion-nav-buttons>
         </ion-nav-bar>
         <ion-nav-view name="menuContent"></ion-nav-view>
@@ -40,6 +40,7 @@
                       <select ng-model="selection.provider" ng-options="item as item.name for item in providers"></select>
                     </label>
 
+
                     <label class="item item-input">
                       Min:
                         <div class="range">
@@ -57,10 +58,23 @@
                           {{selection.price.maxPrice}} Try
                         </div>
                     </label>
+                <label class="item item-input item-select">
+                    <div class="input-label">
+                        Indirim Orani
+                    </div>
+                    <select ng-options="%10" data-value="%20"></select>
+                </label>
 <center>
     <button class="button button-positive" data-ng-click="btnFilter(selection)">
         Filtrele
     </button>
+    <br>  <a href="#" onclick="window.open(encodeURI('http://www.google.com/'), '_system')">Bizi takip edin</a>
+    <br> <a href="#" onclick="window.open(encodeURI('http://www.google.com/'), '_system')">Facebook</a>
+    <br> <a href="#" onclick="window.open(encodeURI('http://www.google.com/'), '_system')">Instagram</a>
+    <br> <a href="#" onclick="window.open(encodeURI('http://www.google.com/'), '_system')">Blog</a>
+    <br> <a href="#" onclick="window.open(encodeURI('http://www.google.com/'), '_system')">Website</a>
+    <br> <a href="#" onclick="window.open(encodeURI('http://www.google.com/'), '_system')">hello@modagusta.com</a>
+
 </center>
 
                 </ion-item>
