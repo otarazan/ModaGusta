@@ -103,7 +103,7 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
         { id: true, name: 'kadin' }
     ];
 
-    $rootScope.server="http://192.168.1.3:3000/";
+    $rootScope.server="http://192.168.1.25:3000/";
   //  var server="
     $http.post($rootScope.server + 'getAll').
     success(function(data, status, headers, config) {
