@@ -9,7 +9,6 @@
 
 
       <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-      <link  id="thema" href='css/thema/0.css'  rel="stylesheet">
       <script src="lib/ionic/js/ionic.bundle.js"></script>
       <script src="cordova.js"></script>
       <script src="lib/angular-local-storage-master/dist/angular-local-storage.js"></script>
@@ -51,15 +50,5 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
-    <script>
-      function setThema() {
-        localStorage.setItem("appThema", $('#themaSelection').val());
-        $('#thema').attr('href', 'css/thema/'+localStorage.getItem("appThema")+'.css');
-      }
-
-     $(function() {
-       $('#thema').attr('href', 'css/thema/'+localStorage.getItem("appThema")+'.css');
-    });
-    </script>
   </body>
 </html>

@@ -93,7 +93,7 @@ var reklamActionToken;
     ];
 
 
-    var server="http://192.168.1.8:3000/";
+    var server="http://192.168.1.25:3000/";
 
     $http.post(server+'getAll').
              success(function(data, status, headers, config) {
@@ -113,36 +113,36 @@ var reklamActionToken;
                     $scope.categories.push({id: entry, name: entry});
                 });
 
-                //After getting the categories set everything
-                $scope.selection = {
-                "gender": $scope.genders[1],
-                "cat": $scope.categories[0],
-                "provider": $scope.providers[0],
-                "price": $scope.prices[0],
-                };
-                  //getSelectedProducts($scope.selection);
-              });
+                //Get providers from the server
+                $http.get(server+'providers').
+                          success(function(data, status, headers, config) {
+                            $scope.providers = [];
+                            data.providers.forEach(function(entry) {
+                                $scope.providers.push({id: entry, name: entry});
+                            });
 
-    //Get provideres from the server
-    $http.get(server+'providers').
-              success(function(data, status, headers, config) {
-                $scope.providers = [];
-                data.providers.forEach(function(entry) {
-                    $scope.providers.push({id: entry, name: entry});
-                });
-              });
+                            //After getting the categories set everything
+                            $scope.selection = {
+                            "gender": $scope.genders[1],
+                            "cat": $scope.categories[0],
+                            provider: $scope.providers[0],
+                            price:{
+                                minPrice: 10,
+                                maxPrice: 1000
+                              }
+                            };
+
+                          }); //providers
+
+
+              }); //categories
+
+
 
 
     $scope.discounts = [
         { id: 15, name: '%15' },
         { id: 82, name: '%82' }
-    ];
-    $scope.prices = [
-        { id: 50, name: '10 -  20', minPrice:'10', maxPrice:'20' },
-        { id: 100, name: '20 - 50' ,minPrice:'20', maxPrice:'50' },
-        { id: 504, name: '50 -  100', minPrice:'50', maxPrice:'100' },
-        { id: 1002, name: '100 - 300' ,minPrice:'100', maxPrice:'300' },
-             { id: 1002, name: '0 - 1000' ,minPrice:'0', maxPrice:'1000' }
     ];
 
 
