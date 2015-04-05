@@ -106,34 +106,36 @@ var reklamActionToken;
              });
 
     //Get categories from the server
-    $http.get(server+'cat').
+    $http.get(server+'menu').
               success(function(data, status, headers, config) {
+                console.log("olcay");
+                  console.log(data);
                 $scope.categories = [];
+                $scope.providers = [];
+                $scope.discountRates = [];
                 data.cat.forEach(function(entry) {
                     $scope.categories.push({id: entry, name: entry});
                 });
 
-                //Get providers from the server
-                $http.get(server+'providers').
-                          success(function(data, status, headers, config) {
-                            $scope.providers = [];
-                            data.providers.forEach(function(entry) {
-                                $scope.providers.push({id: entry, name: entry});
-                            });
+                data.providers.forEach(function(entry) {
+                    $scope.providers.push({id: entry, name: entry});
+                });
 
-                            //After getting the categories set everything
-                            $scope.selection = {
-                            "gender": $scope.genders[1],
-                            "cat": $scope.categories[0],
-                            provider: $scope.providers[0],
-                            price:{
-                                minPrice: 10,
-                                maxPrice: 1000
-                              }
-                            };
+                data.discountRate.forEach(function(entry) {
+                    $scope.discountRates.push({id: entry, name: entry});
+                });
 
-                          }); //providers
-
+                //After getting the categories set everything
+                $scope.selection = {
+                  "gender": $scope.genders[1],
+                  "cat": $scope.categories[0],
+                  provider: $scope.providers[0],
+                  discountRate: $scope.discountRates[0],
+                  price:{
+                      minPrice: 10,
+                      maxPrice: 1000
+                  }
+                };
 
               }); //categories
 

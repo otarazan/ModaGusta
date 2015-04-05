@@ -238,51 +238,28 @@ app.post('/getAll', function(req, res, next) {
     });
 });
 
-app.get('/providers', function(req, res, next) {
+app.get('/menu', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
     res.header('Access-Control-Allow-Headers', 'Content-Type');
     var selections = req.body;
 
     var cats;
-    var discountRate;
-    var gender;
 
-    Product.find().distinct('providerName', function(error, providers) {
-      res.json({'providers':providers});
-    });
-});
+    Product.find().distinct('cat', function(error, categories) {
+        Product.find().distinct('providerName', function(error, providers) {
 
-app.get('/cat', function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
-    var selections = req.body;
-
-    var cats;
-    var discountRate;
-    var gender;
-
-
-
-    Product.find().distinct('cat', function(error, product) {
-      cats = product ;
-        Product.find().distinct('discountRate', function(error, product) {
-              discountRate = product ;
-              Product.find().distinct('gender', function(error, product) {
-                     gender = product ;
-
+              Product.find().distinct('discountRate', function(error, discountRate) {
                      var result = {
-                     'cat':cats
+                       'cat':categories,
+                       'providers':providers,
+                       'discountRate':discountRate
                      };
-
                      res.json(result);
+             });//products
+        }); //providers
 
-
-                });
-          });
-
-    });
+    }); //caregories
 });
 
 app.post('/sendWishListMail', function(req, res) {
