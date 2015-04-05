@@ -153,7 +153,7 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
     function getSelectedProducts(selection) {
         console.log("Your selection:");
         console.log(selection);
-        selection["ofset"] = $rootScope[entry].cardFilterOfset;
+        selection["ofset"] = $rootScope[$rootScope.selection.cat.name].cardFilterOfset;
         $http.post($rootScope.server + 'filter', selection).
         success(function(data, status, headers, config) {
             $rootScope.loadCards(data);
