@@ -18,7 +18,7 @@
         </ion-header-bar>
         <ion-content>
             <ion-list>
-                    Filter
+                Filter
                     <label class="item item-input item-select">
                       <div class="input-label">
                           Cinsiyet
@@ -47,8 +47,10 @@
                       <select ng-model="selection.price" ng-options="item as item.name for item in prices"></select>
                     </label>
 
-                    <button type="button" class="btn btn-default" data-ng-click="btnFilter(selection)">Filtrele</button>
 
+                <button class="button button-positive" data-ng-click="btnFilter(selection)">
+                    Filtrele
+                </button>
                 </ion-item>
                 <ion-item nav-clear menu-close href="#/app/settings">
                     Settings

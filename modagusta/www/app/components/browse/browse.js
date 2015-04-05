@@ -11,7 +11,7 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
         }
     }
 
-
+$rootScope.cardFilterOfset =0  ;
 
     $rootScope.loadCards = function(data) {
         var cardTypes = data;
@@ -45,18 +45,20 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
 
     $scope.cardSwipedLeft = function(index) {
 
-        //Remote last item manually
+       $rootScope.cardFilterOfset++ ;
        $(".td-cards td-card:last").remove();
 }
 
     $scope.likedBtn = function(index) {
-        //Remote last item manually
+       $rootScope.cardFilterOfset++;
 
      $(".td-cards td-card:last").remove();
         //Continue same as swiping
  $scope.cardSwipedRight(index);
     }
     $scope.cardSwipedRight = function(index) {
+
+      $rootScope.cardFilterOfset++ ;
         console.log('Right swipe: item stored' + $scope.cards[index].id);
         var card = $scope.cards[index]
 
@@ -98,7 +100,8 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
 
     $scope.cardDestroyed = function(index) {
         $scope.cards.splice(index, 1);
-        //   console.log('Card removed');
+          // console.log('Card removed');
+          console.log($rootScope.cardFilterOfset);
     }
 
     $scope.shareBtn = function(){
@@ -120,8 +123,7 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
 
     $scope.trick = function(index){
 
-   window.plugins.socialsharing.share(null, $scope.cards[index].title, $scope.cards[index].image, $scope.cards[index].productURL);
-
+        window.plugins.socialsharing.share(null, $scope.cards[index].title, $scope.cards[index].image, $scope.cards[index].productURL);
 
     }
 
@@ -135,4 +137,4 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
 
 });
 
-var server = "http://localhost:3000/";
+var server = "http://192.168.1.8:3000/";

@@ -41,6 +41,7 @@ var reklamActionToken;
 
 
     $scope.sendWishListMail = function() {
+
         $scope.data = {}
         $scope.data.email="tarazansafak@gmail.com";
         var myPopup = $ionicPopup.show({
@@ -58,12 +59,13 @@ var reklamActionToken;
                         e.preventDefault();
                     } else {
                         if ($scope.validateEmail($scope.data.email)) {
-
+  $ionicSideMenuDelegate.toggleRight();
                         if($scope.wishList!=null&&$scope.wishList.length!=0){
                                                     $http.post(server+"sendWishListMail", {wishList:$scope.wishList,mailTo:$scope.data.email}).
                                                           success(function(data, status, headers, config) {
                                                                 console.log("sending mail isk");
                                                                 alert("Mail is sent to: "+$scope.data.email);
+
                                                           }).
                                                           error(function(data, status, headers, config) {
                                                                 console.log("error sending mail");
@@ -91,7 +93,7 @@ var reklamActionToken;
     ];
 
 
-    var server="http://localhost:3000/";
+    var server="http://192.168.1.8:3000/";
 
     $http.post(server+'getAll').
              success(function(data, status, headers, config) {
@@ -147,7 +149,7 @@ var reklamActionToken;
     function getSelectedProducts(selection){
       console.log("Your selection:");
       console.log(selection);
-
+     // selection["ofset"] =$rootScope.cardFilterOfset;
       $http.post(server+'filter', selection).
       success(function(data, status, headers, config) {
         $rootScope.loadCards(data);
@@ -160,8 +162,9 @@ var reklamActionToken;
 
 
     $scope.btnFilter = function(selection) {
-
+    $ionicSideMenuDelegate.toggleLeft();
       getSelectedProducts(selection);
+
     };
 
 

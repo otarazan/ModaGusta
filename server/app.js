@@ -200,13 +200,15 @@ app.post('/filter', function(req, res, next) {
     res.header('Access-Control-Allow-Headers', 'Content-Type');
     var selections = req.body;
     //find requested selections
-  //  console.log("filter request recieved:" + JSON.stringify(selections));
+   console.log("filter request recieved:" + JSON.stringify(selections));
 
     Product.find({"gender":selections.gender.id,
                         "cat":selections.cat.id,
-                        "oldPrice": { $lt: selections.price.maxPrice, $gt: selections.price.minPrice },
+                        "providerName":selections.provider.id,
+                        "newPrice": { $lt: selections.price.maxPrice, $gt: selections.price.minPrice },
                   }, {}, {
-        limit: 20
+        skip:selections.ofset,
+        limit: 10
     }, function(err, product) {
         if (err) return console.error(err);
       //  console.log(product);
@@ -240,9 +242,6 @@ app.get('/providers', function(req, res, next) {
     var gender;
 
     Product.find().distinct('providerName', function(error, providers) {
-
-
-
       res.json({'providers':providers});
     });
 });
@@ -256,6 +255,8 @@ app.get('/cat', function(req, res, next) {
     var cats;
     var discountRate;
     var gender;
+
+
 
     Product.find().distinct('cat', function(error, product) {
       cats = product ;
@@ -283,7 +284,7 @@ var wishList = req.body.wishList;
 var mailTo = req.body.mailTo;
   var mail = "Your Wish List:<br>";
         for (i = 0; i < req.body.wishList.length; i++) {
-            mail += wishList[i].title +" "+ wishList[i].oldPrice +" TRY"+ "<a href='"+wishList[i].productURL+"'><img height='60' width='60' src='"+wishList[i].image+"'/></a><br>";
+            mail += wishList[i].title +" "+ wishList[i].newPrice +" TRY"+ "<a href='"+wishList[i].productURL+"'><img height='60' width='60' src='"+wishList[i].image+"'/></a><br>";
         };
 
         var nodemailer = require('nodemailer');
