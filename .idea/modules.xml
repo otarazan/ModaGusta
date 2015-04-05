@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/modagusta/platforms/android/CordovaLib/CordovaLib.iml" filepath="$PROJECT_DIR$/modagusta/platforms/android/CordovaLib/CordovaLib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/ModaGusta.iml" filepath="$PROJECT_DIR$/.idea/ModaGusta.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modagusta/platforms/android/android.iml" filepath="$PROJECT_DIR$/modagusta/platforms/android/android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modagusta/plugins/com.danielcwilson.plugins.googleanalytics/com.danielcwilson.plugins.googleanalytics.iml" filepath="$PROJECT_DIR$/modagusta/plugins/com.danielcwilson.plugins.googleanalytics/com.danielcwilson.plugins.googleanalytics.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modagusta/plugins/nl.x-services.plugins.socialsharing/src/nl.x-services.plugins.socialsharing.iml" filepath="$PROJECT_DIR$/modagusta/plugins/nl.x-services.plugins.socialsharing/src/nl.x-services.plugins.socialsharing.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modagusta/plugins/nl.x-services.plugins.socialsharing/src/nl.x-services.plugins.socialsharing.iml" filepath="$PROJECT_DIR$/modagusta/plugins/nl.x-services.plugins.socialsharing/src/nl.x-services.plugins.socialsharing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ModaGusta.iml" filepath="$PROJECT_DIR$/ModaGusta.iml" />
     </modules>
   </component>
 </project>
+
