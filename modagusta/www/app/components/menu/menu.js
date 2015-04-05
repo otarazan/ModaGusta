@@ -38,6 +38,7 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
         localStorageService.clearAll();
         $scope.wishList = null;
         $rootScope.wishList = null;
+                $rootScope.osman = 0;
 
     }; //clearWishlist
 
@@ -94,13 +95,16 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
 
     }; //sendWishlistMail
 
+
+
+
     $scope.genders = [
         { id: false, name: 'Erkek' },
         { id: true, name: 'kadin' }
     ];
 
-    $rootScope.server="http://limitless-journey-4984.herokuapp.com/";
-    var server="http://192.168.1.3:3000/";
+    $rootScope.server="http://192.168.1.3:3000/";
+  //  var server="
     $http.post($rootScope.server + 'getAll').
     success(function(data, status, headers, config) {
 
@@ -185,6 +189,7 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
             $rootScope.wishList = [];
         } else {
             $scope.wishList = localStorageService.get('wishList');
+
         }
 
     });

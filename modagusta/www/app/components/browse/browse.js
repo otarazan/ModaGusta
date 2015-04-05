@@ -40,6 +40,8 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
 
         };
     }
+    if(localStorageService.get('wishList')!=null)
+     $rootScope.osman = localStorageService.get('wishList').length;
 
     $scope.cardSwipedLeft = function(index) {
         $rootScope[$rootScope.selection.cat.name].cardFilterOfset++;
@@ -53,13 +55,18 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
         //Continue same as swiping
         $scope.cardSwipedRight(index);
     }
+
     $scope.cardSwipedRight = function(index) {
+
+
 
         console.log($rootScope[$rootScope.selection.cat.name].cardFilterOfset++);
         console.log('Right swipe: item stored' + $scope.cards[index].id);
         var card = $scope.cards[index]
 
         var wishList = localStorageService.get('wishList');
+            if(localStorageService.get('wishList')==null){$rootScope.osman = 1 ;}else{   $rootScope.osman = localStorageService.get('wishList').length+1;}
+
 
         if (wishList == null) {
             wishList = [];

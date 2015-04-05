@@ -268,7 +268,7 @@ var wishList = req.body.wishList;
 var mailTo = req.body.mailTo;
   var mail = "Your Wish List:<br>";
         for (i = 0; i < req.body.wishList.length; i++) {
-            mail += wishList[i].title +" "+ wishList[i].newPrice +" TRY"+ "<a href='"+wishList[i].productURL+"'><img height='60' width='60' src='"+wishList[i].image+"'/></a><br>";
+            mail += wishList[i].title +" "+ wishList[i].newPrice +" TRY"+  wishList[i].providerName + "  "+ wishList[i].discountRate  +  "<a href='"+wishList[i].productURL+"'><img height='60' width='60' src='"+wishList[i].image+"'/></a><br>";
         };
 
         var nodemailer = require('nodemailer');
