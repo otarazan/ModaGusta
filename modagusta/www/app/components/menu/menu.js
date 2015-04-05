@@ -93,7 +93,7 @@ var reklamActionToken;
     ];
 
 
-    var server="http://192.168.1.25:3000/";
+    var server="http://192.168.1.8:3000/";
 
     $http.post(server+'getAll').
              success(function(data, status, headers, config) {
@@ -128,7 +128,7 @@ var reklamActionToken;
                             provider: $scope.providers[0],
                             price:{
                                 minPrice: 10,
-                                maxPrice: 1000
+                                maxPrice: 500
                               }
                             };
 

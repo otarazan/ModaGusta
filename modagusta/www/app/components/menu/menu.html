@@ -41,21 +41,20 @@
                     </label>
 
                     <label class="item item-input">
-                      En Ucuz:
+                      Min:
                         <div class="range">
                           <i class="icon ion-pricetag"></i>
-                          <input type="range" ng-model="selection.price.minPrice" min="0" max="1000" value="33">
-                          <i class="icon ion-pricetags"></i>
+                          <input type="range" ng-model="selection.price.minPrice" min="0" max="500" value="10">
+                            {{selection.price.minPrice}} Try
                         </div>
                       </label>
 
-
                       <label class="item item-input">
-                        En Pahali:
+                       Max:
                         <div class="range">
                           <i class="icon ion-pricetag"></i>
-                          <input type="range" ng-model="selection.price.maxPrice" min="0" max="1000" value="33">
-                          <i class="icon ion-pricetags"></i>
+                          <input type="range" ng-model="selection.price.maxPrice" min="0" max="500" value="50">
+                          {{selection.price.maxPrice}} Try
                         </div>
                     </label>
 
