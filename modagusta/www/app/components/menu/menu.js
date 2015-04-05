@@ -64,7 +64,7 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
                         if ($scope.validateEmail($scope.data.email)) {
                             $ionicSideMenuDelegate.toggleRight();
                             if ($scope.wishList != null && $scope.wishList.length != 0) {
-                                $http.post(server + "sendWishListMail", {
+                                $http.post($rootScope.server + "sendWishListMail", {
                                     wishList: $scope.wishList,
                                     mailTo: $scope.data.email
                                 }).
@@ -99,10 +99,9 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
         { id: true, name: 'kadin' }
     ];
 
+    $rootScope.server="http://limitless-journey-4984.herokuapp.com/";
 
-    var server = "http://192.168.1.8:3000/";
-
-    $http.post(server + 'getAll').
+    $http.post($rootScope.server + 'getAll').
     success(function(data, status, headers, config) {
 
         if ($rootScope.loadCards != null) {
@@ -112,7 +111,7 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
     error(function(data, status, headers, config) {});
 
     //Get categories from the server
-    $http.get(server + 'menu').
+    $http.get($rootScope.server + 'menu').
     success(function(data, status, headers, config) {
         //Put result from server to menu
         $scope.categories = [];
@@ -155,7 +154,7 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
         console.log("Your selection:");
         console.log(selection);
         selection["ofset"] = $rootScope[entry].cardFilterOfset;
-        $http.post(server + 'filter', selection).
+        $http.post($rootScope.server + 'filter', selection).
         success(function(data, status, headers, config) {
             $rootScope.loadCards(data);
         }).
