@@ -202,6 +202,13 @@ app.post('/filter', function(req, res, next) {
     //find requested selections
 //   console.log("filter request recieved:" + JSON.stringify(selections));
 
+   //find min and max requested price
+   var min = Math.min(selections.price.maxPrice, selections.price.minPrice);
+   var max = Math.max(selections.price.maxPrice, selections.price.minPrice);
+   //set min and max
+   selections.price.maxPrice=max;
+   selections.price.minPrice=min;
+
     Product.find({"gender":selections.gender.id,
                         "cat":selections.cat.id,
                         "providerName":selections.provider.id,
