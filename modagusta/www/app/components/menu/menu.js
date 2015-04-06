@@ -28,6 +28,7 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
 
         $scope.wishList.splice($scope.wishList.indexOf(index), 1);
         localStorageService.set('wishList', $scope.wishList);
+        $rootScope.osman--;
 
     };
 
@@ -38,7 +39,7 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
         localStorageService.clearAll();
         $scope.wishList = null;
         $rootScope.wishList = null;
-                $rootScope.osman = 0;
+        $rootScope.osman = 0;
 
     }; //clearWishlist
 
@@ -105,7 +106,7 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
         { id: true , name: 'kadin' }
     ];
 
-    $rootScope.server="http://192.168.1.25:3000/";
+    $rootScope.server="http://192.168.1.3:3000/";
   //  var server="
     $http.post($rootScope.server + 'getAll').
     success(function(data, status, headers, config) {
