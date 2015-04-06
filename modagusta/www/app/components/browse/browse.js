@@ -104,7 +104,6 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
     $scope.cardDestroyed = function(index) {
         $scope.cards.splice(index, 1);
         // console.log('Card removed');
-        console.log($rootScope.cardFilterOfset);
     }
 
     $scope.shareBtn = function() {
@@ -139,4 +138,4 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
 
 });
 
-var server = "http://192.168.1.3:3000/";
+var server = "http://192.168.1.25:3000/";

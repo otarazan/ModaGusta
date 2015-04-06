@@ -1,11 +1,10 @@
 <ion-side-menus enable-menu-with-back-views="false">
     <ion-side-menu-content>
-        <ion-nav-bar   align-title="center" class="bar-calm">
+        <ion-nav-bar   align-title="center" class="bar-dark">
             <ion-nav-buttons side="left">
                 <button class="button button-icon icon ion-navicon" menu-toggle="left">
                 </button>
-                <div class="h1 title">Modagusta</div>
-
+                <div class="h1 title"><img src="img/modagusta-bar.png"/></div>
                 <button class="button button-icon icon ion-home" menu-toggle="right">{{osman}}</button>
             </ion-nav-buttons>
         </ion-nav-bar>
@@ -31,7 +30,7 @@
                       <div class="input-label">
                         Kategori
                       </div>
-                      <select ng-model="selection.cat" ng-options="item as item.name for item in categories"></select>
+                      <select ng-model="selection.cat" ng-options="item as item.name for item in cat"></select>
                     </label>
 
                     <label class="item item-input item-select">
@@ -61,9 +60,9 @@
                     </label>
                 <label class="item item-input item-select">
                     <div class="input-label">
-                        Indirim Orani
+                        Indirim orani:
                     </div>
-                    <select ng-options="%10" data-value="%20"></select>
+                    <select ng-model="selection.discountRate" ng-options="item as item.name for item in discountRates"></select>
                 </label>
 <center>
     <button class="button button-positive" data-ng-click="btnFilter(selection)">

@@ -20,6 +20,8 @@ if (typeof analytics !== 'undefined'){
     //  analytics.startTrackerWithId('UA-47701506-5');
      // analytics.trackView('Main');
      window.analytics.startTrackerWithId('UA-47701506-5');
+    }else{
+        alert("No google");
     }
 
 
