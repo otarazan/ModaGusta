@@ -202,6 +202,8 @@ app.post('/filter', function(req, res, next) {
     //find requested selections
    //console.log("filter request recieved:" + JSON.stringify(selections));
 
+   // Here we are updating parameters to handle in server
+   //
    //find min and max requested price
    var min = Math.min(selections.price.maxPrice, selections.price.minPrice);
    var max = Math.max(selections.price.maxPrice, selections.price.minPrice);
@@ -209,11 +211,28 @@ app.post('/filter', function(req, res, next) {
    selections.price.maxPrice=max;
    selections.price.minPrice=min;
 
-    Product.find({"gender":selections.gender.id,
-                        "cat":selections.cat.id,
-                        "providerName":selections.provider.id,
-                        "newPrice": { $lt: selections.price.maxPrice, $gt: selections.price.minPrice },
-                  }, {}, {
+   var queryObj={};
+
+
+    //if the parameters i Tumu, dont add this to query
+   if(selections.cat.id!="Tümü"){
+        queryObj.cat=selections.cat.id;
+   }
+   if(selections.gender.id!="Tümü"){
+        queryObj.gender=selections.gender.id;
+   }
+   if(selections.providers.id!="Tümü"){
+        queryObj.providers=selections.providers.id;
+   }
+
+   if(selections.discountRate.id!="Tümü"){
+        queryObj.discountRate=selections.discountRate.id;
+   }
+
+   queryObj.newPrice={ $lt: selections.price.maxPrice, $gt: selections.price.minPrice };
+   //end of building query obj
+
+    Product.find(queryObj, {}, {
         skip:selections.ofset,
         limit: 10
     }, function(err, product) {
@@ -249,17 +268,28 @@ app.get('/menu', function(req, res, next) {
     Product.find().distinct('cat', function(error, categories) {
         Product.find().distinct('providerName', function(error, providers) {
 
-              Product.find().distinct('discountRate', function(error, discountRate) {
+              Product.find().distinct('discountRate', function(error, discountRates) {
                      var result = {
                        'cat':categories,
                        'providers':providers,
-                       'discountRate':discountRate
+                       'discountRates':discountRates
                      };
+
+                     //add default menu parameters
+                     result.cat.push("Tümü");
+                     result.cat.reverse();
+
+                     result.providers.push("Tümü");
+                     result.providers.reverse();
+
+                     result.discountRates=["Tümü","10","20","30","40","50","60"];
+
+
                      res.json(result);
              });//products
         }); //providers
 
-    }); //caregories
+    }); //categories
 });
 
 app.post('/sendWishListMail', function(req, res) {

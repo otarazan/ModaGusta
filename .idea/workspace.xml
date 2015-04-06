@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f56e0fa9-1161-406e-b2ee-faa25432574c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modagusta/www/app/components/browse/browse.html" afterPath="$PROJECT_DIR$/modagusta/www/app/components/browse/browse.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/app.js" afterPath="$PROJECT_DIR$/server/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modagusta/www/app/components/browse/browse.js" afterPath="$PROJECT_DIR$/modagusta/www/app/components/browse/browse.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modagusta/www/app/components/menu/menu.html" afterPath="$PROJECT_DIR$/modagusta/www/app/components/menu/menu.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js" afterPath="$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js" />
@@ -71,10 +70,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modagusta/www/index.html">
+      <file leaf-file-name="menu.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="31" selection-start="316" selection-end="316" vertical-scroll-proportion="-3.8888888" vertical-offset="93" max-vertical-offset="1242">
+            <state line="158" column="0" selection-start="5150" selection-end="5150" vertical-scroll-proportion="0.7377483" vertical-offset="2287" max-vertical-offset="3798">
               <folding />
             </state>
           </provider>
@@ -83,16 +82,16 @@
       <file leaf-file-name="menu.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/menu/menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="38" selection-start="337" selection-end="371" vertical-scroll-proportion="-1.8947369" vertical-offset="0" max-vertical-offset="2430">
+            <state line="64" column="117" selection-start="3009" selection-end="3009" vertical-scroll-proportion="-10.4" vertical-offset="840" max-vertical-offset="2430">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="7" selection-start="3390" selection-end="3404" vertical-scroll-proportion="0.6585987" vertical-offset="1373" max-vertical-offset="3654">
+            <state line="224" column="13" selection-start="7342" selection-end="7342" vertical-scroll-proportion="-8.366667" vertical-offset="3781" max-vertical-offset="6282">
               <folding />
             </state>
           </provider>
@@ -101,16 +100,16 @@
       <file leaf-file-name="browse.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/browse/browse.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="33" selection-start="4001" selection-end="4001" vertical-scroll-proportion="0.0" vertical-offset="1879" max-vertical-offset="2664">
+            <state line="26" column="25" selection-start="736" selection-end="744" vertical-scroll-proportion="-8.366667" vertical-offset="217" max-vertical-offset="2646">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="browse.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="browse.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/browse/browse.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="70" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.45859873" vertical-offset="0" max-vertical-offset="828">
+            <state line="19" column="70" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
               <folding />
             </state>
           </provider>
@@ -131,10 +130,11 @@
       <list>
         <option value="$PROJECT_DIR$/modagusta/www/index.html" />
         <option value="$PROJECT_DIR$/modagusta/www/css/ionic.app.css" />
-        <option value="$PROJECT_DIR$/modagusta/www/app/components/browse/browse.js" />
-        <option value="$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js" />
-        <option value="$PROJECT_DIR$/modagusta/www/app/components/menu/menu.html" />
         <option value="$PROJECT_DIR$/modagusta/www/app/components/browse/browse.html" />
+        <option value="$PROJECT_DIR$/modagusta/www/app/components/browse/browse.js" />
+        <option value="$PROJECT_DIR$/modagusta/www/app/components/menu/menu.html" />
+        <option value="$PROJECT_DIR$/server/app.js" />
+        <option value="$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js" />
       </list>
     </option>
   </component>
@@ -186,6 +186,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ModaGusta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModaGusta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModaGusta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -290,6 +304,10 @@
               <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="settings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -318,6 +336,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModaGusta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModaGusta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modagusta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -561,7 +605,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/browse/browse.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="70" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.45859873" vertical-offset="0" max-vertical-offset="828">
+        <state line="19" column="70" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
           <folding />
         </state>
       </provider>
@@ -575,14 +619,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/browse/browse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="33" selection-start="4001" selection-end="4001" vertical-scroll-proportion="0.0" vertical-offset="1879" max-vertical-offset="2664">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="7" selection-start="3390" selection-end="3404" vertical-scroll-proportion="0.6585987" vertical-offset="1373" max-vertical-offset="3654">
+        <state line="26" column="25" selection-start="736" selection-end="744" vertical-scroll-proportion="-8.366667" vertical-offset="217" max-vertical-offset="2646">
           <folding />
         </state>
       </provider>
@@ -601,9 +638,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/menu/menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="158" column="0" selection-start="5150" selection-end="5150" vertical-scroll-proportion="0.7377483" vertical-offset="2287" max-vertical-offset="3798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="224" column="13" selection-start="7342" selection-end="7342" vertical-scroll-proportion="-8.366667" vertical-offset="3781" max-vertical-offset="6282">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modagusta/www/app/components/menu/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="38" selection-start="337" selection-end="371" vertical-scroll-proportion="-1.8947369" vertical-offset="0" max-vertical-offset="2430">
+        <state line="64" column="117" selection-start="3009" selection-end="3009" vertical-scroll-proportion="-10.4" vertical-offset="840" max-vertical-offset="2430">
           <folding />
         </state>
       </provider>

@@ -94,13 +94,15 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
 
 
     }; //sendWishlistMail
+        console.log($rootScope.cardFilterOfset);
 
 
 
 
     $scope.genders = [
+        { id: 'Tümü' , name: 'Tümü' },
         { id: false, name: 'Erkek' },
-        { id: true, name: 'kadin' }
+        { id: true , name: 'kadin' }
     ];
 
     $rootScope.server="http://192.168.1.25:3000/";
@@ -118,25 +120,28 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
     $http.get($rootScope.server + 'menu').
     success(function(data, status, headers, config) {
         //Put result from server to menu
-        $scope.categories = [];
+        $scope.cat = [];
         $scope.providers = [];
         $scope.discountRates = [];
 
         data.cat.forEach(function(entry) {
-                    $scope.categories.push({id: entry, name: entry});
+                    $scope.cat.push({id: entry, name: entry});
         });
+
+        //$scope.providers.push({id: "Tümü" , name: 'Tümü'});
         data.providers.forEach(function(entry) {
                     $scope.providers.push({id: entry, name: entry});
         });
 
-        data.discountRate.forEach(function(entry) {
+        //$scope.discountRates.push({id: null, name: 'Tümü'});
+        data.discountRates.forEach(function(entry) {
                     $scope.discountRates.push({id: entry, name: entry});
         });
 
         //After getting the categories set everything
         $rootScope.selection = {
-            "gender": $scope.genders[1],
-            "cat": $scope.categories[0],
+            gender: $scope.genders[0],
+            cat: $scope.cat[0],
             provider: $scope.providers[0],
             discountRate: $scope.discountRates[0],
             price: {
@@ -144,6 +149,9 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
                 maxPrice: 1000
             }
         };
+
+        $rootScope["Tümü"]=[];
+        $rootScope["Tümü"].cardFilterOfset=0;
 
         data.cat.forEach(function(entry) {
             $rootScope[entry] = [];

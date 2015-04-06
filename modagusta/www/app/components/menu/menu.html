@@ -30,7 +30,7 @@
                       <div class="input-label">
                         Kategori
                       </div>
-                      <select ng-model="selection.cat" ng-options="item as item.name for item in categories"></select>
+                      <select ng-model="selection.cat" ng-options="item as item.name for item in cat"></select>
                     </label>
 
                     <label class="item item-input item-select">
@@ -60,9 +60,9 @@
                     </label>
                 <label class="item item-input item-select">
                     <div class="input-label">
-                        Indirim Orani
+                        Indirim orani:
                     </div>
-                    <select ng-options="%10" data-value="%20"></select>
+                    <select ng-model="selection.discountRate" ng-options="item as item.name for item in discountRates"></select>
                 </label>
 <center>
     <button class="button button-positive" data-ng-click="btnFilter(selection)">

@@ -104,7 +104,6 @@ myApp.controller('BrowseCtrl', function($scope, $http, $ionicPopup, $rootScope, 
     $scope.cardDestroyed = function(index) {
         $scope.cards.splice(index, 1);
         // console.log('Card removed');
-        console.log($rootScope.cardFilterOfset);
     }
 
     $scope.shareBtn = function() {
