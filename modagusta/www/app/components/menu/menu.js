@@ -106,7 +106,7 @@ myApp.controller('MenuCtrl', function($scope, $http, $ionicPopup, $timeout, $roo
         { id: true , name: 'kadin' }
     ];
 
-    $rootScope.server="http://192.168.1.3:3000/";
+    $rootScope.server="http://limitless-journey-4984.herokuapp.com/";
   //  var server="
     $http.post($rootScope.server + 'getAll').
     success(function(data, status, headers, config) {
